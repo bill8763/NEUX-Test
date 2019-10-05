@@ -1,0 +1,49 @@
+
+body{
+    // to prevent ios input focust hightlight in incorrect position
+    &.ios-keyIn{
+        -webkit-overflow-scrolling:auto;
+    }
+}
+
+// show and hide on different device
+@media (min-width: $screen-nb) {
+    .show-pad-and-mobile {
+        display: none !important;
+    }
+}
+
+@media (min-width: $screen-pad) {
+    .show-mobile {
+        display: none !important;
+    }
+}
+
+@media(max-width: $screen-sm-than-nb) {
+    .show-pc {
+        display: none !important;
+    }
+}
+
+@media(min-width: $screen-sm-than-nb) {
+    .show-pc-and-mobile {
+        display: none !important;
+    }
+}
+
+
+@media (min-width: $screen-nb) {
+    .show-pad {
+        display: none !important;
+    }
+}
+
+@media (max-width: $screen-sm-than-pad) {
+    .show-pc-and-pad {
+        display: none !important;
+    }
+    .show-pad {
+        display: none !important;
+    }
+
+}

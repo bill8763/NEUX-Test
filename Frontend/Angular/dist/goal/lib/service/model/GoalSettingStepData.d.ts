@@ -1,0 +1,31 @@
+import { GoalSettingYearConfig } from "./GoalSettingYearConfig";
+import { GoalSettingGoalStatus } from "./GoalSettingGoalStatus";
+import { GoalSettingStep1 } from "./GoalSettingStep1";
+import { GoalSettingStep2 } from "./GoalSettingStep2";
+import { GoalSettingStep3 } from "./GoalSettingStep3";
+import { GoalSettingStep4 } from "./GoalSettingStep4";
+import { GoalSettingStep5 } from "./GoalSettingStep5";
+import { AgencyPlanDataForOverview } from "./AgencyPlanDataForOverview";
+export declare class GoalSettingStepData {
+    private _DataYear;
+    private _YearConfig;
+    private _GoalStatus;
+    private _Step1;
+    private _Step2;
+    private _Step3;
+    private _Step4;
+    private _Step5;
+    private _AgencyPlan;
+    private _ActualList;
+    constructor(DataYear: any);
+    readonly DataYear: number;
+    YearConfig: GoalSettingYearConfig;
+    GoalStatus: GoalSettingGoalStatus;
+    Step1: GoalSettingStep1;
+    Step2: GoalSettingStep2;
+    Step3: GoalSettingStep3;
+    Step4: GoalSettingStep4;
+    Step5: GoalSettingStep5;
+    AgencyPlan: AgencyPlanDataForOverview;
+    ActualList: Array<string>;
+}

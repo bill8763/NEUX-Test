@@ -1,0 +1,29 @@
+@import 'style-import';
+
+.progress-title-bottom{
+    padding-bottom: $space-ui-title-btm;
+}
+.progress-title-top{
+    padding-top: $space-ui-title-top;
+}
+:host{
+    ::ng-deep{
+        app-ui-table-list2{
+            .table-list{
+                .list-content{
+                    .list-li{
+                        .list-title{
+                            padding-left: 0!important;
+                            padding-right: 0!important;
+                            flex: 0 0 61%!important;
+                        }
+                        .list-content{
+                            text-align: right!important;
+                            width: auto!important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

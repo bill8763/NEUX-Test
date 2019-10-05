@@ -1,0 +1,37 @@
+import { APIFactory, APIDispatch, ProfileCodeService, ContactItem, PageInfo, ValidationResult } from '@allianzSND/core';
+import { Observable } from 'rxjs';
+import { CustomerItem } from './model/CustomerItem';
+import { CustomerAlertItem } from './model/CustomerAlertItem';
+import { CustomerTel } from './model/CustomerTel';
+import { CustomerFilterCriteria } from '../components/bean/customer-filter-criteria';
+import { CustomerFilterPreset } from '../components/bean/customer-filter-preset';
+import { CustomerBirthday } from './model/CustomerBirthday';
+import { CriteriaSearch } from '../interface/CriteriaSearch';
+import { DefaultCustomerCriteriaSearch } from '../components/customer-filter/DefaultCustomerCriteriaSearch';
+export declare class CustomerService {
+    private dispatcher;
+    private APIFactory;
+    private profileCodeService;
+    private defaultCriteriaSearch;
+    private customCriteriaSearch;
+    private _isFirstTime;
+    constructor(dispatcher: APIDispatch, APIFactory: APIFactory, profileCodeService: ProfileCodeService, defaultCriteriaSearch: DefaultCustomerCriteriaSearch, customCriteriaSearch: CriteriaSearch);
+    isFirstTime(): boolean;
+    updateMessageToRead(messageType: string, messageDataCategory: string): Observable<any>;
+    getOverTimeCustomerList(clientID: any): Observable<Array<CustomerAlertItem>>;
+    getAutoDeleteCustomerList(clientID: any): Observable<Array<CustomerAlertItem>>;
+    updateCustomerFollowStatus(clientID: any, isFollow: any): Observable<any>;
+    getFilterCriteriaPreset(): Observable<CustomerFilterPreset>;
+    saveFilterCriteria(filterCriteria: CustomerFilterCriteria): Observable<any>;
+    checkInFilterCriteria(clientID: string, filterCriteria: CustomerFilterCriteria): Observable<boolean>;
+    getCustomerList(filterCriteria: CustomerFilterCriteria, _pageInfo: PageInfo): Observable<Array<CustomerItem>>;
+    getCustomerBirthdayList(targetDate: any, subN: any, addN: any): Observable<Array<CustomerBirthday>>;
+    getCustomerDetail(clientID: string): Observable<any>;
+    importContact(items: Array<ContactItem>): Observable<string>;
+    validProfile(customerDetail: any): ValidationResult;
+    private isEmailFormat;
+    deleteCustomerProfile(clientID: string): Observable<any>;
+    getCustomerContactNote(clientID: string, pageInfo: PageInfo): Observable<Array<any>>;
+    deleteCustomerContact(contactClientID: string): Observable<any>;
+    getCustomerContactTel(clientID: string): Observable<Array<CustomerTel>>;
+}

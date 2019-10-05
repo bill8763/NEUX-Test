@@ -1,0 +1,26 @@
+{
+  "Header": {
+    "status": true,
+    "Time": "20190107000005",
+    "PageInfo": {
+      "pageNo": 1,
+      "pageSize": 10,
+      "totalPage": 3,
+      "totalRec": 30
+    },
+    "QueryParams": {}
+  },
+  "Body": [
+    {
+      "DataYear": 2019,
+      "IsNeedSetting": "N",
+      "IsFirstTime": "N",
+      "ApproveStatus": "R",
+      "Remainingdays": 15,
+      "GoalSetMonth": 5,
+      "PersonnelGoalApplicableYM": 1,
+      "TeamGoalApplicableYM": 3,
+      "SupervisorComment": "very good."
+    }
+  ]
+}

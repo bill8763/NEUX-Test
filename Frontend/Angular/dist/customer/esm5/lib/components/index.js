@@ -1,0 +1,13 @@
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+export { CustomersComponent } from './customers/customers.component';
+export { CustomerContactListComponent } from './customer-contact-list/customer-contact-list.component';
+export { CustomerDetailComponent } from './customer-detail/customer-detail.component';
+export { CustomerEditComponent } from './customer-edit/customer-edit.component';
+export { CustomerFilterComponent } from './customer-filter/customer-filter.component';
+export { CustomerImportComponent } from './customer-import/customer-import.component';
+export { CustomerListComponent } from './customer-list/customer-list.component';
+export { CustomerConfirmAction, CustomerDetailResult, CustomerFilterCriteria, CustomerFilterPreset, CustomerImportGroup } from './bean';
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290Ijoibmc6Ly9AYWxsaWFuelNORC9jdXN0b21lci8iLCJzb3VyY2VzIjpbImxpYi9jb21wb25lbnRzL2luZGV4LnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7QUFBQSxtQ0FBYyxpQ0FBaUMsQ0FBQztBQUNoRCw2Q0FBYyx5REFBeUQsQ0FBQztBQUN4RSx3Q0FBYyw2Q0FBNkMsQ0FBQztBQUM1RCxzQ0FBYyx5Q0FBeUMsQ0FBQztBQUN4RCx3Q0FBYyw2Q0FBNkMsQ0FBQztBQUM1RCx3Q0FBYyw2Q0FBNkMsQ0FBQztBQUM1RCxzQ0FBYyx5Q0FBeUMsQ0FBQztBQUN4RCwrSEFBYyxRQUFRLENBQUMiLCJzb3VyY2VzQ29udGVudCI6WyJleHBvcnQgKiBmcm9tICcuL2N1c3RvbWVycy9jdXN0b21lcnMuY29tcG9uZW50JztcbmV4cG9ydCAqIGZyb20gJy4vY3VzdG9tZXItY29udGFjdC1saXN0L2N1c3RvbWVyLWNvbnRhY3QtbGlzdC5jb21wb25lbnQnO1xuZXhwb3J0ICogZnJvbSAnLi9jdXN0b21lci1kZXRhaWwvY3VzdG9tZXItZGV0YWlsLmNvbXBvbmVudCc7XG5leHBvcnQgKiBmcm9tICcuL2N1c3RvbWVyLWVkaXQvY3VzdG9tZXItZWRpdC5jb21wb25lbnQnO1xuZXhwb3J0ICogZnJvbSAnLi9jdXN0b21lci1maWx0ZXIvY3VzdG9tZXItZmlsdGVyLmNvbXBvbmVudCc7XG5leHBvcnQgKiBmcm9tICcuL2N1c3RvbWVyLWltcG9ydC9jdXN0b21lci1pbXBvcnQuY29tcG9uZW50JztcbmV4cG9ydCAqIGZyb20gJy4vY3VzdG9tZXItbGlzdC9jdXN0b21lci1saXN0LmNvbXBvbmVudCc7XG5leHBvcnQgKiBmcm9tICcuL2JlYW4nOyJdfQ==

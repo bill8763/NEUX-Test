@@ -1,0 +1,81 @@
+<!-- Edit Recruitment -->
+<div class="goal-edit-info" *ngIf="editRecruitment">
+  <div class="goal-edit-info-item goal-edit-left">
+    <p class="title-txt txt-width-auto">{{language.recruitmentTotal | translate}}</p>
+    <p class="desc-txt">{{editRecruitment.RecruitmentTotal | numberFormat}}</p>
+  </div>
+</div>
+
+<app-ui-form-layout-advanced *ngIf="editRecruitment">
+  <!-- row 1 -->
+  <app-ui-form-layout-row>
+    <app-ui-form-layout-col [colPC]="6" [colNB]="6" [colPad]="6" [colMobile]="6">
+      <app-ui-form-input [inputTitle]="language.Q1 | translate" [name]="'0'" [(nxValue)]="editRecruitment.Q1"
+        [isDisable]="editRecruitment.WorkingQuarter > 1" [maxLength]="QLengthRestriction" [placeholder]="0"
+        [type]="'dollar'" (nxValueChange)="valueChange('Q1')" [id]="'input_agencyQ1'"></app-ui-form-input>
+    </app-ui-form-layout-col>
+
+    <app-ui-form-layout-col [colPC]="6" [colNB]="6" [colPad]="6" [colMobile]="6">
+      <app-ui-form-input [inputTitle]="language.Q2 | translate" [name]="'0'" [(nxValue)]="editRecruitment.Q2"
+        [isDisable]="editRecruitment.WorkingQuarter > 2" [maxLength]="QLengthRestriction" [placeholder]="0"
+        [isDisable]="false" [type]="'dollar'" (nxValueChange)="valueChange('Q2')" [id]="'input_agencyQ2'">
+      </app-ui-form-input>
+
+    </app-ui-form-layout-col>
+  </app-ui-form-layout-row>
+  <!-- end: row 1 -->
+
+  <!-- row ２ -->
+  <app-ui-form-layout-row>
+    <app-ui-form-layout-col [colPC]="6" [colNB]="6" [colPad]="6" [colMobile]="6">
+      <app-ui-form-input [inputTitle]="language.Q3 | translate" [name]="'0'" [(nxValue)]="editRecruitment.Q3"
+        [isDisable]="editRecruitment.WorkingQuarter > 3" [maxLength]="QLengthRestriction" [placeholder]="0"
+        [isDisable]="false" [type]="'dollar'" (nxValueChange)="valueChange('Q3')" [id]="'input_agencyQ3'">
+      </app-ui-form-input>
+
+    </app-ui-form-layout-col>
+
+    <app-ui-form-layout-col [colPC]="6" [colNB]="6" [colPad]="6" [colMobile]="6">
+      <app-ui-form-input [inputTitle]="language.Q4 | translate" [name]="'0'" [(nxValue)]="editRecruitment.Q4"
+        [isDisable]="editRecruitment.WorkingQuarter > 4" [maxLength]="QLengthRestriction" [placeholder]="0"
+        [isDisable]="false" [type]="'dollar'" (nxValueChange)="valueChange('Q4')" [id]="'input_agencyQ4'">
+      </app-ui-form-input>
+    </app-ui-form-layout-col>
+  </app-ui-form-layout-row>
+  <!-- end: row ２ -->
+  <!-- row 3 -->
+  <app-ui-form-layout-row>
+    <app-ui-form-layout-col [colPC]="12" [colNB]="12" [colPad]="12" [colMobile]="12">
+      <app-ui-form-input [inputTitle]="language.FYFC | translate" [name]="'0'" [(nxValue)]="editRecruitment.FYFC"
+        [maxLength]="FYFCLengthRestriction" [placeholder]="0" [isDisable]="false" [type]="'dollar'"
+        (nxValueChange)="valueChange('FYFC')" [id]="'input_agencyFYFC'"></app-ui-form-input>
+    </app-ui-form-layout-col>
+  </app-ui-form-layout-row>
+  <!-- end: row 3 -->
+  <!-- row 4 -->
+  <app-ui-form-layout-row>
+    <app-ui-form-layout-col [colPC]="12" [colNB]="12" [colPad]="12" [colMobile]="12">
+      <app-ui-form-input [inputTitle]="language.ANP | translate" [name]="'0'" [(nxValue)]="editRecruitment.ANP"
+        [maxLength]="ANPLengthRestriction" [placeholder]="0" [isDisable]="false" [type]="'dollar'"
+        (nxValueChange)="valueChange('ANP')" [id]="'input_agencyANP'"></app-ui-form-input>
+    </app-ui-form-layout-col>
+  </app-ui-form-layout-row>
+  <!-- end: row 4 -->
+</app-ui-form-layout-advanced>
+<!-- reset -->
+<app-ui-link [isUnderLine]="false" imgSrc="../assets/img/icon-reset.svg" [id]="'btn_agencyReset'" Action action="agencyReset" (actionClick)="resetRecruitment()" [isReset]=true
+  *ngIf="isShowResetButton">
+  <ng-container textType="linktext">{{language.reset | translate}}</ng-container>
+</app-ui-link>
+<!-- end of reset -->
+<!-- end: form -->
+<!-- end: content -->
+<ng-container textType="modal-btm-detail">
+  <app-ui-btn-layout>
+    <app-ui-btn [btnWd]="'md'" [btnHeight]="'sm'" [id]="'btn_agencySet'" Action action="agencySet" (actionClick)="saveRecruitment()">
+      <ng-container TextType="cust">{{language.saved | translate}}</ng-container>
+    </app-ui-btn>
+  </app-ui-btn-layout>
+</ng-container>
+<!-- end: btm -->
+<!-- end: Edit Recruitment -->

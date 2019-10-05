@@ -1,0 +1,135 @@
+<div class="progress-content">
+  
+  <!-- 'RolesOfPage' -->
+  <ng-container [ngSwitch]="RolesOfPage">
+
+    <!-- roles : head -->
+    <ng-container *ngSwitchCase="'headPage'">
+      <app-ui-main-full>
+        <div main class="progress-team-view-block hasNoTab">
+          <app-ui-infinite-scroll (refreshCallback)="RefreshHeadContent($event)"
+                                  [syncFunction]="['PROGRESS']"
+                                  [(refreshFinish)]="IsHeadRefreshFinished" 
+                                  [translateText]="Language.loading | translate">
+            <ng-container *ngTemplateOutlet="tabPersonalTeam"></ng-container>
+            <snd-progress-head-leader [ProgressYearConfigList]="ProgressYearConfigList" 
+                                      [TeamMainDataList]="TeamMainDataList"
+                                      [TeamIndirectDataList]="TeamIndirectDataList" 
+                                      (zoneHeadStateEvent)="OnZoneHeadStateEvent($event)"
+                                      (onClick)="clickInfoHead()"
+                                      (onClickTableCard)="clickInfoTableCard()">
+                                      </snd-progress-head-leader>
+          </app-ui-infinite-scroll>
+        </div>
+      </app-ui-main-full>
+    </ng-container>
+    <!-- end of roles: head -->
+
+    <!-- roles : normal leader -->
+    <ng-container *ngSwitchCase="'leaderPage'">
+      <!--tab personal or team-->
+      <ng-template #tabPersonalTeam>
+        <app-ui-content-b-gap [gapSize]="GAP_SIZE_40" *ngIf="!IsAgent">
+          <app-ui-tab-style1 class="tab-item-block space-detail" (onTabChildClick)="TabChangeView($event)" [maxShow]="4" [tabIndex]="IsShowTabTeam ? 1 : 0">
+            <app-ui-tab-child>{{ Language.personal | translate}}</app-ui-tab-child>
+            <app-ui-tab-child>{{ Language.team | translate}}</app-ui-tab-child>
+          </app-ui-tab-style1>
+        </app-ui-content-b-gap>
+      </ng-template>
+      <!-- end of tab personal or team -->
+
+      <!-- personal -->
+      <ng-container *ngIf="!IsShowTabTeam; else teamView">
+        <div class="progress-personal-view-block">
+          <app-ui-main-collapse #mainCollapse [title]="'Progress Details'" [isHideCollapseBlock]="isHideCollapseBlock">
+
+            <div class="side-menu-content" side-menu>
+              <ng-container *ngIf="WindowWidth < 1024">
+                <ng-container *ngTemplateOutlet="tabPersonalTeam"></ng-container>
+              </ng-container>
+              <app-progress-list [ProgressYearConfigList]="ProgressYearConfigList" 
+                                [PersonalData]="PersonalData"
+                                [PersonalDataYesterdayPoints]="PersonalDataYesterdayPoints"
+                                (personalDataStateEvent)="OnPersonalDataStateEvent($event)">
+                                </app-progress-list>
+            </div>
+
+            <div class="main-content" main [ngClass]="IsAgent?'hasNoTab':''">
+              <div class="team-tab-block">
+                <ng-container *ngIf="WindowWidth >= 1024">
+                  <ng-container *ngTemplateOutlet="tabPersonalTeam"></ng-container>
+                </ng-container>
+              </div>
+              <app-ui-infinite-scroll #inputScrollContent
+                                      [syncFunction]="['PROGRESS']" 
+                                      (refreshCallback)="RefreshPersonalContent($event)"
+                                      [(refreshFinish)]="IsPersonalRefreshFinished" 
+                                      [translateText]="Language.loading | translate" >
+                <app-progress-personal [inputScrollContent]="personalInfinitiScroll"
+                                      [MonthlyPlanFYFCData] = "MonthlyPlanFYFCData"
+                                      [ProgressYearConfigList]="ProgressYearConfigList" 
+                                      [PersonalActivitiesData]="PersonalActivitiesData"
+                                      [PersonalActivitiesGoalPlanData]="PersonalActivitiesGoalPlanData"
+                                      (personalDataStateActivitiesEvent)="OnPersonalDataStateActivitiesEvent($event)"
+                                      (onClick)="clickInfoPersonal()">
+                                      </app-progress-personal>
+              </app-ui-infinite-scroll>
+            </div>
+            <!-- end: main-content -->
+
+            <!-- Popup -->
+            <div global-main>
+            </div>
+            <!-- end: Popup -->
+          </app-ui-main-collapse>
+        </div>
+      </ng-container>
+      <!-- end of personal -->
+
+      <!-- team -->
+      <ng-template #teamView>
+        <app-ui-main-full>
+          <div main class="progress-team-view-block">
+            <div class="tab-block">
+              <ng-container *ngTemplateOutlet="tabPersonalTeam"></ng-container>
+            </div>
+            <app-ui-infinite-scroll #teamInfinitiScroll 
+                                    [syncFunction]="['PROGRESS']"
+                                    (refreshCallback)="RefreshTeamContent($event)"
+                                    [(refreshFinish)]="IsTeamRefreshFinished" 
+                                    [translateText]="Language.loading | translate">
+              <app-progress-team [inputScrollContent]="" 
+                                 [ProgressYearConfigList]="ProgressYearConfigList" 
+                                 [TeamMainDataList]="TeamMainDataList"
+                                 [TeamDirectDataList]="TeamDirectDataList" 
+                                 [TeamIndirectDataList]="TeamIndirectDataList"
+                                 (progressDataTeamValueEvent)="OnTeamDataStateEvent($event)"
+                                 (onClickTableCard)="clickInfoTableCard()"
+                                 (onClickInfoDirect)="clickInfoDirect()"
+                                 (onClickInfoIndirect)="clickInfoIndirect()">
+                                  </app-progress-team>
+            </app-ui-infinite-scroll>
+          </div>
+        </app-ui-main-full>
+      </ng-template>
+      <!-- end of team -->
+    </ng-container>
+    <!-- end of roles: normal leader -->
+
+  </ng-container>
+  <!-- end of roles -->
+
+  <!-- popoup -->
+  
+  <!-- end of table card info popup -->
+  <snd-progress-info-modal 
+    [(isPopupOpenProgressBarListInfo)]="isPopupOpenProgressBarListInfo"
+    [(isPopupOpenTableCardInfo)]="isPopupOpenTableCardInfo"
+    [(isPopupOpenInderectInfo)]="isPopupOpenInderectInfo"
+    [(isPopupOpenDerectInfo)]="isPopupOpenDerectInfo"
+    [(isPopupOpenHeadTablerInfo)]="isPopupOpenHeadTablerInfo">
+  </snd-progress-info-modal>
+  <!-- end of popup -->
+
+  
+</div>

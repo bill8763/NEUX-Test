@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin id="cordova-plugin-detect-screenshot" version="1.0.6" xmlns="http://apache.org/cordova/ns/plugins/1.0">
+  <name>cordova-plugin-detect-screenshot</name>    <!-- ios -->
+    <platform name="ios">
+
+        <config-file target="config.xml" parent="/*">
+            <feature name="detect-screenshot">
+                <param name="ios-package" value="screenshot" />
+                <param name="onload" value="true" />
+            </feature>
+        </config-file>
+
+        <header-file src="src/ios/detect-screenshot.h" />
+        <source-file src="src/ios/detect-screenshot.m" />
+
+    </platform>
+</plugin>

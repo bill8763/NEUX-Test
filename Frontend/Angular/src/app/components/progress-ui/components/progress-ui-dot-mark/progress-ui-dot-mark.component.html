@@ -1,0 +1,13 @@
+<div class="dot-mark">
+  <ul class="mark-ul">
+    <li class="mark-li" *ngFor="let text of ActivityData" [ngClass]="{'active':text.active}">
+      <div class="dot-mark-dot-text" 
+          [style.width]="size+'px'" 
+          [style.height]="size+'px'" 
+          [style.font-size]="(fontSize<12?12:fontSize)+'px'" 
+          [style.transform]="'scale('+countFontSize()+')'">
+          {{text.text}}
+      </div>
+    </li>
+  </ul>
+</div>

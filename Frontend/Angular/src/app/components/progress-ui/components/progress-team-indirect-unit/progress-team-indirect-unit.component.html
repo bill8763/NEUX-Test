@@ -1,0 +1,154 @@
+<!-- indirect unit table -->
+<div class="progress-table-block">
+  <div class="progress-title-content" *ngIf="IsShowIndirect">
+    <app-ui-title-style1 class="" titleInfo>
+      <ng-container textType="titleText">{{ Language.indirectUnitTitle | translate}}</ng-container>
+    </app-ui-title-style1>
+  </div>
+  
+  <div #cardContentBlock class="progress-collapse-table" *ngIf="IsShowIndirect">
+    <app-ui-table-collapse-content [titleText]="Language.indirectUnitTitle | translate" [isOpen] = "false">
+      <ng-container body> <!-- (onTableScroll)="resetInfoPos()"-->
+        <app-ui-table-content [dataHeadArray]="TableHeadData" 
+          (onItemClick)="OrderEvent($event)" (onRowClick)="RouteToInnerPage($event)" [thMinHeight]="50" [fixed]="false"
+          [showControlbar]="true">
+          <ng-container controlBarContent>
+              <snd-ui-information (onClick)="infoClick()"> 
+                  <!-- <ng-container info-content>
+                       <div class="progress-dot-info-content info-block">
+                          <div class="dot-title-content">
+                            <div class="info-title-main">{{ Language.informationDescriptionText | translate}}</div>
+                          </div>
+                          <div class="dot-title-sub-block">
+                            <h6 class="dot-title-sub">{{ Language.infoActivityLabelText | translate}}</h6>
+                          </div>
+                          <div class="dot-sample">
+                            <ul class="dot-sample-ul">
+                              <li class="dot-sample-li">
+                                <div class="sample-icon">
+                                  <app-progress-ui-dot-mark [fontSize]="14" [ActivityData]="[{text:'F',active:false}]" [ActivityString]="'F'"></app-progress-ui-dot-mark>
+                                </div>
+                                <div class="sample-text">{{ Language.infoRedMeanText | translate}}</div>
+                              </li>
+                              <li class="dot-sample-li">
+                                <div class="sample-icon">
+                                  <app-progress-ui-dot-mark [fontSize]="14" [ActivityData]="[{text:'F',active:false}]"></app-progress-ui-dot-mark>
+                                </div>
+                                <div class="sample-text">{{ Language.infoGreyMeanText | translate}}</div>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="dot-detail-info-block">
+                            <div class="dot-sample-text">{{ Language.infoIfAnActivity1Text | translate}}<span
+                                class="height-light">{{ Language.infoIfAnActivity2Text | translate}}</span>.</div>
+                            <ul class="dot-list-ul">
+                              <li class="dot-list-li">
+                                <app-progress-ui-dot-list [ActivityData]="[{text:'F',active:true}]" [titleText]="'Find'">
+                                  {{ Language.infoToFindText | translate}}
+                                </app-progress-ui-dot-list>
+                              </li>
+                              <li class="dot-list-li">
+                                <app-progress-ui-dot-list [ActivityData]="[{text:'S',active:true}]" [titleText]="'Schedule'">
+                                  {{ Language.infoTryTo1Text | translate}} <span class="height-light">{{ Language.infoTryTo2Text | translate}}</span>
+                                  {{ Language.infoTryTo3Text | translate}}
+                                </app-progress-ui-dot-list>
+                              </li>
+                              <li class="dot-list-li">
+                                <app-progress-ui-dot-list [ActivityData]="[{text:'M',active:true}]" [titleText]="'Meet/Present'">
+                                  <span class="height-light">{{ Language.infoMoreActive1Text | translate}}</span>
+                                  {{ Language.infoMoreActive2Text | translate}} <span
+                                    class="height-light">{{ Language.infoMoreActive3Text | translate}}</span>
+                                  {{ Language.infoMoreActive4Text | translate}}
+                                </app-progress-ui-dot-list>
+                              </li>
+                              <li class="dot-list-li">
+                                <app-progress-ui-dot-list [ActivityData]="[{text:'Su',active:true}]" [titleText]="'Submit'">
+                                  {{ Language.infoTryHard1Text | translate}} <span
+                                    class="height-light">{{ Language.infoTryHard2Text | translate}}</span> {{ Language.infoTryHard3Text | translate}}
+                                </app-progress-ui-dot-list>
+                              </li>
+                              <li class="dot-list-li">
+                                <app-progress-ui-dot-list [ActivityData]="[{text:'C',active:true}]" [titleText]="'Close'">
+                                  <span class="height-light">{{ Language.infoHighQuality1Text | translate}}</span>
+                                  {{ Language.infoHighQuality2Text | translate}}
+                                </app-progress-ui-dot-list>
+                              </li>
+                            </ul>
+                          </div>
+                      </div>
+                    
+                      <div class="progress-detail-info-content info-block">
+                        <div class="detail-info-subtitle">
+                          <div class="title-text">{{ Language.infoTitle | translate}}</div>
+                        </div>
+                        <div class="detail-info-info">
+                    
+                          <ul class="detail-info-list-block">
+                            <li class="detail-info-list">
+                              <div class="detail-info-title">
+                                <div class="title-text">{{ Language.month | translate}}:</div>
+                              </div>
+                              <div class="detail-info-text">{{ Language.infoMonthDetailText | translate}}</div>
+                    
+                            </li>
+                            <li class="detail-info-list">
+                              <div class="detail-info-title">
+                                <div class="title-text">{{ Language.quarter | translate}}:</div>
+                              </div>
+                              <div class="detail-info-text">{{ Language.infoQuarterDetailText | translate}}</div>
+                    
+                            </li>
+                            <li class="detail-info-list">
+                              <div class="detail-info-title">
+                                <div class="title-text">{{ Language.year | translate}}:</div>
+                              </div>
+                              <div class="detail-info-text">{{ Language.infoYearDetailText | translate}}</div>
+                            </li>
+                            <li class="detail-info-list">
+                              <div class="detail-info-title">
+                                <div class="title-text">{{ Language.forecast | translate}} {{ Language.recruitment | translate}}:</div>
+                              </div>
+                              <div class="detail-info-text">{{ Language.infoForecastRecruitmentDetailText | translate}}</div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div> 
+                  </ng-container> -->
+              </snd-ui-information> 
+          </ng-container>
+          <app-ui-table-row-head>
+            <app-ui-table-item [itemMinSize]="'md'" [textAlign]="'center'">
+
+              <snd-ui-information class="show-pc-and-pad" (onClick)="infoClick()"> 
+              </snd-ui-information> 
+            </app-ui-table-item>
+
+            <ng-container *ngFor="let tableHead of TableHeadData">
+              <app-ui-table-item [itemMinSize]="'md'" [sort]="true">{{tableHead}}</app-ui-table-item>
+            </ng-container>
+          </app-ui-table-row-head>
+
+          <app-ui-table-row *ngFor="let indirectItem of TeamIndirectDataList">
+            <app-ui-table-item [itemMinSize]="'md'">
+              <snd-ui-table-text-group [titleText]="indirectItem.AgentName" [subTitleText]="indirectItem.JobGrade"
+                [titleColor]="(indirectItem.Drilldown)?'blue':'default'">
+              </snd-ui-table-text-group>
+            </app-ui-table-item>
+            <app-ui-table-item [itemMinSize]="'md'" [heightLight]="'style4'">{{ ShowDesh(indirectItem.Goal) | numberFormat }}
+            </app-ui-table-item>
+            <app-ui-table-item [itemMinSize]="'md'"
+              [heightLight]="GetForecastStyle(indirectItem.Forecast,indirectItem.Goal)">
+              {{ ShowDesh(indirectItem.Forecast) | numberFormat }}</app-ui-table-item>
+            <app-ui-table-item [itemMinSize]="'md'" [heightLight]="'style4'">{{ ShowDesh(indirectItem.Actual) | numberFormat }}
+            </app-ui-table-item>
+            <app-ui-table-item [itemMinSize]="'md'" [heightLight]="'style4'">{{ ShowDesh(indirectItem.Shortfall) | numberFormat }}
+            </app-ui-table-item>
+          </app-ui-table-row>
+
+        </app-ui-table-content>
+      </ng-container>
+    </app-ui-table-collapse-content>
+  </div>
+</div>
+<!-- end of indirect unit table -->
+

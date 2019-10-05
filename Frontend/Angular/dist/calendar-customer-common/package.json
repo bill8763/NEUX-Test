@@ -1,0 +1,24 @@
+{
+  "name": "calendar-customer-common",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^6.0.0-rc.0 || ^6.0.0",
+    "@angular/core": "^0.0.1",
+    "@angular/ui": "^0.0.1",
+    "@angular/calendar": "^0.0.1",
+    "@angular/customer": "^0.0.1"
+  },
+  "main": "bundles/calendar-customer-common.umd.js",
+  "module": "fesm5/calendar-customer-common.js",
+  "es2015": "fesm2015/calendar-customer-common.js",
+  "esm5": "esm5/calendar-customer-common.js",
+  "esm2015": "esm2015/calendar-customer-common.js",
+  "fesm5": "fesm5/calendar-customer-common.js",
+  "fesm2015": "fesm2015/calendar-customer-common.js",
+  "typings": "calendar-customer-common.d.ts",
+  "metadata": "calendar-customer-common.metadata.json",
+  "sideEffects": false,
+  "dependencies": {
+    "tslib": "^1.9.0"
+  }
+}

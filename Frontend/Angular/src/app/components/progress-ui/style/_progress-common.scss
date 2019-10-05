@@ -1,0 +1,21 @@
+@import 'style-import';
+:host{
+   ::ng-deep{
+        .progress-content-space{
+            padding-bottom: $space-ui-element;
+            display: block;
+        }
+        .level-2-tab-padding{
+            padding-left: 10px;
+            padding-right: 10px;
+            @media screen and (max-width:$screen-sm-than-nb){
+                padding-left: 0;
+                padding-right: 0;
+            }
+        }
+        .tab-page{
+            text-align: right;
+        }
+    } 
+}
+

@@ -1,0 +1,175 @@
+@import "style-import";
+
+:host ::ng-deep {
+  .modal-content-block {
+    .txt {
+      font-size: $font-size-h8;
+      font-weight: normal;
+      line-height: 1.5;
+      letter-spacing: normal;
+      color: $color-grey1;
+    } // end .txt
+
+    .center-txt {
+      text-align: center;
+    } // end .center-txt
+
+    .vertical-center-txt {
+      display: flex;
+      width: 100%;
+      align-items: center;
+
+      &.center-txt {
+        justify-content: center;
+      } // end .center-txt
+    } // end .vertical-center-txt
+  } // end .modal-content-block
+} // end ::ng-deep
+
+
+.goal-edit-info {
+    display: flex;
+    justify-content: space-between;
+  
+    &.goal-edit-left {
+      justify-content: flex-start;
+    } // end .goal-edit-left
+  
+    .goal-edit-info-item {
+      display: inline-flex;
+      flex: 1;
+      justify-content: space-between;
+  
+      &:nth-child(even) {
+        margin-left: 30px;
+      }
+    } // end .goal-edit-info-item
+    .title-txt {
+        &:not(:last-child) {
+          margin-right: 15px;
+        }
+    
+        font-size: $font-size-h8;
+        font-weight: 600;
+        line-height: 1.5;
+        letter-spacing: normal;
+        color: $color-main2;
+    } // end .title-txt
+    
+    .desc-txt {
+        font-size: $font-size-h8;
+        font-weight: bold;
+        line-height: 1.5;
+        letter-spacing: normal;
+        text-align: center;
+        color: $color-grey1;
+    } // end .desc-txt
+
+    .error-txt {
+        color: $color-error;
+    }
+}
+
+:host ::ng-deep{
+    app-ui-main-full.goal-setting-full .ui-page-content{
+        ::ng-deep{
+            app-ui-modal-style-text1{
+                .modal-component-block .modal-content-block{
+                    overflow-x: hidden;
+                    // .modal-content-detail{
+                        .gas-layout-form{
+                            margin-top: 60px;
+                        }
+                        .goal-edit-info {
+                            padding: 0 30px;
+                            .goal-edit-left .title-txt{
+                                //   margin-left: 25px;
+                                font-size: $font-size-h9;
+                                font-weight: normal;
+                                line-height: 2;
+                                letter-spacing: $letter-space-normal;
+                                color: $color-grey1;    
+                                @media screen and (max-width: $screen-pad){
+                                    margin-left: 0px;
+                                
+                                }
+                            }
+                            @media screen and (max-width: $screen-pad){
+                                padding: 0;
+                                .goal-edit-info-item.goal-edit-left{
+                                    justify-content: space-between;
+                                }
+                            }
+
+                        }
+                        ::ng-deep{
+                            app-ui-form-layout-col{
+                                .col-content app-ui-info-text2{
+                                    .info-unit-block{
+                                        margin-top: -30px;
+                                        .text-block{
+                                            p{
+                                                text-align: center;
+                                                font-weight: bold;
+                                                font-size: $font-size-h6;
+                                            }
+                                        }
+                                    }
+                                }
+                                app-ui-form-input{
+                                    .input-block nx-formfield .nx-formfield__input input[placeholder]{
+                                        text-align: center;
+                                        font-weight: bold;
+                                        font-size: $font-size-h6;
+                                    }
+                                }
+
+                            }
+                        }
+                    // }
+                }
+            }
+        }
+    
+    }
+    app-ui-link .ui-link-block{
+        justify-content: flex-end;
+        .link {
+            .link-text{
+                white-space: nowrap;
+            }
+            .img-block{
+                margin: 5px;
+                .ng-star-inserted{
+                    max-width: 14px;
+                }
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width: $screen-sm-than-nb){
+    .goal-edit-info {
+        flex-wrap: wrap;
+  
+        .goal-edit-info-item {
+            &:nth-child(even) {
+                margin-left: 0;
+                margin-top: 20px;
+            }
+  
+            width: 100%;
+            flex: auto;
+            justify-content: flex-start;
+        } // end .goal-edit-info-item
+  
+        .title-txt {
+            width: 5.75em;
+
+            &.txt-width-auto {
+                width: auto;
+            }
+        } // end .title-txt
+    } // end .goal-edit-info
+}  // end screen < 1024

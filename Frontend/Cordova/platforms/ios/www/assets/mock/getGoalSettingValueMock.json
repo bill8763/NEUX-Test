@@ -1,0 +1,32 @@
+{
+    "Header": {
+        "record_length": 3,
+        "status": true
+    },
+    "Body": [
+        {
+            "ClientID": "708ffc59-f53d-449f-9aac-b90c0a286d1a",
+            "DataYear": 2019,
+            "DataType": "PERSON_ANP",
+            "Value": "300"
+        },
+        {
+            "ClientID": "692325d0-45f6-47c3-af72-31dbfc1c0f84",
+            "DataYear": 2019,
+            "DataType": "PERSON_FYFC",
+            "Value": "250"
+        },
+        {
+            "ClientID": "b038b56e-35cb-4b59-a42c-532d39bb8111",
+            "DataYear": 2019,
+            "DataType": "TEAM_FYFC",
+            "Value": "2500"
+        },
+        {
+            "ClientID": "77b5f38c-5cbb-4c62-b8b3-9a33853a33ff",
+            "DataYear": 2019,
+            "DataType": "PROMOTION_PLAN",
+            "Value": "ss"
+          }
+    ]
+}

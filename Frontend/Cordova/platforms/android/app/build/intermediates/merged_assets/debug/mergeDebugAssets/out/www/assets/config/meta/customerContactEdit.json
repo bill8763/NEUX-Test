@@ -1,0 +1,26 @@
+{
+  "source": {
+    "type": "INPUT",
+    "write": "addCustomerContactNote"
+  },
+  "columns": [{
+    "id": "DisplayDate",
+    "name": "Note time",
+    "type": "Label",
+    "ref": ""
+  }, {
+    "id": "Note",
+    "name": "Message",
+    "type": "Textarea",
+    "maxLength": 500,
+    "required": "true",
+    "placeholder": "Note_Placeholder",
+    "ref": ""
+  }],
+  "group": [],
+  "footer": [{
+    "id": "save",
+    "type": "submit",
+    "name": "Customer_Save"
+  }]
+}

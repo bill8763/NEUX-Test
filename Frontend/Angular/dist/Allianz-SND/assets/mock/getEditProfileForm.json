@@ -1,0 +1,308 @@
+{
+    "Header": {
+      "Time": "2019012101357",
+      "PageInfo": {
+        "pageNo": 1,
+        "pageSize": 10,
+        "totalPage": 3,
+        "totalRec": 30
+      },
+      "QueryParams": {}
+    },
+    "Body": {
+      "optionTel" :[
+        {
+          "key" : "home",
+          "value" : "Home"
+        },
+        {
+          "key" : "phone",
+          "value" : "Phone"
+        }
+      ],
+      "optionEmail":[
+        {
+          "key" : "office",
+          "value" : "Office"
+        },
+        {
+          "key" : "home",
+          "value" : "Home"
+        },
+        {
+          "key" : "private",
+          "value" : "private"
+        }
+      ],
+      "optionHome":[
+        {
+          "key" : "addressType_1",
+          "value" : "?"
+        },
+        {
+          "key" : "addressType_2",
+          "value" : "??"
+        }
+      ],
+      "optionCity":[
+        {
+          "key" : "city_1",
+          "value" : "~"
+        },
+        {
+          "key" : "city_2",
+          "value" : "~~"
+        }
+      ],
+      "optionArea":[
+        {
+          "key" : "country_1",
+          "value" : "="
+        },
+        {
+          "key" : "country_2",
+          "value" : "=="
+        }
+      ],
+      "optionAge":[
+        {
+          "key" : "Age1",
+          "value" : "0-15y"
+        },
+        {
+          "key" : "Age2",
+          "value" : "16-24y"
+        },
+        {
+          "key" : "Age3",
+          "value" : "25-34y"
+        },
+        {
+          "key" : "Age4",
+          "value" : "35-44y"
+        },
+        {
+          "key" : "Age5",
+          "value" : "45-54y"
+        },
+        {
+          "key" : "Age6",
+          "value" : "55y or more"
+        }
+      ],
+      "optionGender":[
+        {
+          "key" : "M",
+          "value" : "Male" 
+        },
+        {
+          "key" : "F",
+          "value" : "Female"
+        }
+      ],
+      "optionIncome":[
+        {
+          "key" : "Income_1",
+          "value" : "<35k" 
+        },
+        {
+          "key" : "Income_2",
+          "value" : "35k-49k" 
+        },
+        {
+          "key" : "Income_3",
+          "value" : "50k-75k" 
+        },
+        {
+          "key" : "Income_4",
+          "value" : "75k-99k" 
+        },
+        {
+          "key" : "Income_5",
+          "value" : ">100k" 
+        }
+      ],
+      "optionSource":[
+        {
+          "key" : "Source_1",
+          "value" : "Relatives"
+        },
+        {
+          "key" : "Source_2",
+          "value" : "Friends"
+        },
+        {
+          "key" : "Source_3",
+          "value" : "Classmate"
+        },
+        {
+          "key" : "Source_4",
+          "value" : "Alumni"
+        },
+        {
+          "key" : "Source_5",
+          "value" : "Neighbors"
+        },
+        {
+          "key" : "Source_6",
+          "value" : "Community tenants"
+        },
+        {
+          "key" : "Source_7",
+          "value" : "Work"
+        },
+        {
+          "key" : "Source_8",
+          "value" : "Business related"
+        },
+        {
+          "key" : "Source_9",
+          "value" : "Persons who provide service"
+        },
+        {
+          "key" : "Source_10",
+          "value" : "Professional"
+        },
+        {
+          "key" : "Source_11",
+          "value" : "Social or religious group"
+        },
+        {
+          "key" : "Source_12",
+          "value" : "Leisure"
+        },
+        {
+          "key" : "Source_13",
+          "value" : "hobbies"
+        },
+        {
+          "key" : "Source_14",
+          "value" : "Known by family"
+        },
+        {
+          "key" : "Source_15",
+          "value" : "Engage Experience"
+        },
+        {
+          "key" : "Source_16",
+          "value" : "Discovery Experience"
+        }
+      ],
+      "optionMarriage":[
+        {
+          "key" : "Marriage_1",
+          "value" : "Single"
+        },
+        {
+          "key" : "Marriage_2",
+          "value" : "Married"
+        },
+        {
+          "key" : "Marriage_3",
+          "value" : "Single with child"
+        }
+      ],
+      "optionChildren":[
+        {
+          "key" : "Children_1",
+          "value" : "0"
+        },
+        {
+          "key" : "Children_2",
+          "value" : "1-2"
+        },
+        {
+          "key" : "Children_3",
+          "value" : "3-4"
+        },
+        {
+          "key" : "Children_4",
+          "value" : ">5"
+        }
+      ],
+      "optionFamiliarity":[
+        {
+          "key" : "Familiarity_1",
+          "value" : "Close"
+        },
+        {
+          "key" : "Familiarity_2",
+          "value" : "Known(acquaintance)"
+        },
+        {
+          "key" : "Familiarity_3",
+          "value" : "Nodding acquaintance"
+        }
+      ],
+      "optionRecentStatus":[
+        {
+          "key" : "Recent_status_1",
+          "value" : "Newly married"
+        },
+        {
+          "key" : "Recent_status_2",
+          "value" : "child get birth"
+        },
+        {
+          "key" : "Recent_status_3",
+          "value" : "Get promoted"
+        },
+        {
+          "key" : "Recent_status_4",
+          "value" : "change work"
+        },        
+        {
+          "key" : "Recent_status_5",
+          "value" : "Become a boss"
+        },
+        {
+          "key" : "Recent_status_6",
+          "value" : "Buy house"
+        }
+      ],
+      "optionManpa":[
+        {
+          "key" : "MANPA_1",
+          "value" : "M:Ability to pay"
+        },
+        {
+          "key" : "MANPA_2",
+          "value" : "A:Accessible"
+        },
+        {
+          "key" : "MANPA_3",
+          "value" : "N:Have Needs"
+        },
+        {
+          "key" : "MANPA_4",
+          "value" : "P:coulld be Approved"
+        },
+        {
+          "key" : "MANPA_5",
+          "value" : "A:Have right to decide"
+        }
+      ],
+      "optionContactFrequancyPerYear":[
+        {
+          "key" : "Contact_Frequancy_1",
+          "value" : "0"
+        },
+        {
+          "key" : "Contact_Frequancy_2",
+          "value" : "1-3"
+        },
+        {
+          "key" : "Contact_Frequancy_3",
+          "value" : "4-6"
+        },
+        {
+          "key" : "Contact_Frequancy_4",
+          "value" : "7-10"
+        },
+        {
+          "key" : "Contact_Frequancy_5",
+          "value" : "11 or more"
+        }
+      ]
+    }
+}

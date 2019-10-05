@@ -1,0 +1,11 @@
+
+// change px to rem by base = 16
+@function caculate-rem($val){
+    @return (($val/$font-base-num)* 1rem);
+}
+
+// change px to vw (used when screen larger than 1024)
+@function caculate-vw($target) { 
+    $vw-context: (1000*.01) * 1px;
+    @return ($target/$vw-context) * 1vw;
+}

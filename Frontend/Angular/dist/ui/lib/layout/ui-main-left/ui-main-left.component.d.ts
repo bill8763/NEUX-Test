@@ -1,0 +1,36 @@
+import { OnInit, EventEmitter, ElementRef, ChangeDetectorRef } from '@angular/core';
+export declare class UIMainLeftComponent implements OnInit {
+    private changeDector;
+    private elementRef;
+    moreTitle: string;
+    menuHeaderTitle: string;
+    updateTimeTitle: string;
+    updateTime: string;
+    _isMoreOpen: boolean;
+    isMoreOpen: boolean;
+    isMoreOpenChange: EventEmitter<{}>;
+    _isMenuHeaderOpen: boolean;
+    isMenuHeaderOpen: boolean;
+    isMenuHeaderOpenChange: EventEmitter<{}>;
+    _mobileContentHeight: number;
+    mobileContentHeight: number;
+    mobileContentHeightChange: EventEmitter<{}>;
+    contentBlock: ElementRef;
+    menuFooter: ElementRef;
+    menuLogo: ElementRef;
+    mobileHeader: ElementRef;
+    pcMenuContainer: ElementRef;
+    pcMenuList: ElementRef;
+    pcMenuFooter: ElementRef;
+    pcLayout: ElementRef;
+    windowWidth: number;
+    windowHeight: number;
+    menuFooterHeight: number;
+    constructor(changeDector: ChangeDetectorRef, elementRef: ElementRef);
+    ngOnInit(): void;
+    onResize(event: any): void;
+    closeMoreHandler(isOpen: any): void;
+    closeMenuHeaderHandler(isOpen: any): void;
+    calculateHeight(): void;
+    ngAfterContentInit(): void;
+}

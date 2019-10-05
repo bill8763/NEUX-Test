@@ -1,0 +1,13 @@
+<app-ui-table-edit-content [titleText]="language.agencyPlanExpected | translate" [styleType]="styleType" (onClick)="onEditClick()">
+  <ng-container header *ngIf="recruitmentData">
+    <app-ui-table-list>
+      <list-item [titleText]="language.Q1 | translate" [itemMinSize]="'sm'">{{recruitmentData.Q1 | numberFormat}}</list-item>
+      <list-item [titleText]="language.Q2 | translate" [itemMinSize]="'sm'">{{recruitmentData.Q2 | numberFormat}}</list-item>
+      <list-item [titleText]="language.Q3 | translate" [itemMinSize]="'sm'">{{recruitmentData.Q3 | numberFormat}}</list-item>
+      <list-item [titleText]="language.Q4 | translate" [itemMinSize]="'sm'">{{recruitmentData.Q4 | numberFormat}}</list-item>
+      <list-item [titleText]="language.recruitmentTotal | translate" [itemMinSize]="'la'">{{recruitmentData.RecruitmentTotal | numberFormat}}</list-item>
+      <list-item [titleText]="language.FYFC | translate" [itemMinSize]="'md'">{{recruitmentData.FYFC | numberFormat}}</list-item>
+      <list-item [titleText]="language.ANP | translate" [itemMinSize]="'md'">{{recruitmentData.ANP | numberFormat}}</list-item>
+    </app-ui-table-list>
+  </ng-container>
+</app-ui-table-edit-content>

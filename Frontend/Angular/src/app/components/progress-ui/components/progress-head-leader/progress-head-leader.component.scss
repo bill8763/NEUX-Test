@@ -1,0 +1,10 @@
+@import 'style-import';
+
+@media screen and(max-width: $screen-sm-than-nb){
+    .progress-head-leader{
+        padding-top: 30px;
+        // padding-left: $space-layout-mobile-sm;
+        // padding-right: $space-layout-mobile-sm;
+    }
+    
+}

@@ -1,0 +1,85 @@
+<app-ui-card-content-btn [hasBtn]="isHasBtn" class="card-block" *ngIf="data">
+  <ng-container infoContent>
+    <!-- title -->
+    <div class="card-title-block">
+      <h3 class="card-title font-size_h5">{{language.goalSettingStep4Title | translate}}</h3>
+      <h5 class="card-subtitle font-size_h9">{{goalEffectiveWorkingMonthTitle}}</h5>
+    </div>
+    <div class="card-title-other info-block margin-top">
+      <div class="goal-edit-info">
+        <div class="goal-edit-info-item goal-edit-left flex-display">
+          <p class="title-txt txt-width-auto">{{language.FYFCGoal | translate}}</p>
+          <p class="desc-txt">{{goal | numberFormat}}</p>
+        </div>
+      </div>
+      <div class="goal-edit-info">
+        <div class="goal-edit-info-item goal-edit-left flex-display">
+          <p class="title-txt txt-width-auto">{{language.FYFCForecast | translate}}</p>
+          <p class="desc-txt">{{data.Forecast | numberFormat}}</p>
+        </div>
+      </div>
+      <div class="goal-edit-info">
+        <div class="goal-edit-info-item goal-edit-left flex-display">
+          <p class="title-txt txt-width-auto">{{language.FYFCShortfall | translate}}</p>
+          <p class="desc-txt" [ngStyle]="{'color': isShortfallLegal?'':'red'}">
+            {{data.Shortfall | numberFormat}}</p>
+        </div>
+      </div>
+      <app-ui-form-layout-row>
+        <app-ui-form-layout-col>
+          <app-ui-form-error-msg *ngIf="validationResult.isError('Shortfall')">
+            {{validationResult.getErrorMsg('Shortfall') | translate}}
+          </app-ui-form-error-msg>
+        </app-ui-form-layout-col>
+      </app-ui-form-layout-row>
+    </div>
+    <!-- end of title -->
+    <!-- content -->
+    <div class="content-block">
+      <app-ui-form-layout-advanced>
+        <app-ui-form-layout-row *ngFor="let x of totalRow;index as n_row">
+          <ng-container *ngFor="let i of [0,1]">
+            <app-ui-form-layout-col *ngIf="(n_row*2+i+1)<=this.yearConfig.MonthQuantityOfYear" [colPC]="6" [colNB]="6"
+              [colPad]="6" [colMobile]="6">
+              <app-ui-form-input *ngIf="(n_row*2+i+1)> PerformanceSettlementMonth" [type]="'dollar'" [maxLength]="10"
+                [inputTitle]="n_row*2+i+1" [(nxValue)]="data.MonthList[n_row*2+i].Plan"
+                (nxValueChange)="onChange(n_row*2+i+1,$event)" [placeholder]="0" [isDisable]="false" [isError]="false" [id]="'input_month' + n_row*2+i + 'plan'">
+              </app-ui-form-input>
+              <app-ui-info-text2 *ngIf=" (n_row*2+i+1)<= PerformanceSettlementMonth" class="margin-toptop">
+                <ng-container textType="title">{{n_row*2+i+1}}</ng-container>
+                <ng-container textType="tip">(Actual)</ng-container>
+                <ng-container textType="text">{{data.MonthList[n_row*2+i].Actual| numberFormat}}
+                </ng-container>
+              </app-ui-info-text2>
+              <app-ui-form-error-msg
+                *ngIf="validationResult && validationResult.isError('Plan_'+(n_row*2+i+1).toString())">
+                {{validationResult.getErrorMsg('Plan_'+(n_row*2+i+1).toString()) | translate}}</app-ui-form-error-msg>
+            </app-ui-form-layout-col>
+          </ng-container>
+        </app-ui-form-layout-row>
+        <!-- end: row ２ -->
+
+      </app-ui-form-layout-advanced>
+      <!-- reset -->
+      <app-ui-link [isUnderLine]="false" imgSrc="../assets/img/icon-reset.svg" [id]="'btn_goalsettingStep4Reset'" Action action="goalsettingStep4Reset" (actionClick)="onReset()" [isReset]=true
+        [hidden]="!isShowResetBtn">
+        <ng-container textType="linktext">{{language.reset | translate}}</ng-container>
+      </app-ui-link>
+      <!-- end of reset -->
+
+    </div>
+    <!-- end of content -->
+  </ng-container>
+  <ng-container btnContent>
+    <app-ui-btn-layout *ngIf="!isAgentLeader">
+      <app-ui-btn [btnColor]="isNextYear? 'main1':'main2'" [btnWd]="'lg'" [id]="'btn_goalsettingStep4'" Action action="goalsettingStep4" (actionClick)="doNext()" [isDisable]="isDisableBtn">
+        <ng-container TextType="cust">{{language.submit | translate}}</ng-container>
+      </app-ui-btn>
+    </app-ui-btn-layout>
+    <app-ui-btn-layout *ngIf="isAgentLeader">
+      <app-ui-btn [btnColor]="isNextYear? 'main1':'main2'" [btnWd]="'lg'" [id]="'btn_goalsettingStep4Agent'" Action action="goalsettingStep4Agent" (actionClick)="doNext()" [isDisable]="isDisableBtn">
+        <ng-container TextType="cust">{{language.next | translate}}</ng-container>
+      </app-ui-btn>
+    </app-ui-btn-layout>
+  </ng-container>
+</app-ui-card-content-btn>

@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "148907388315",
+    "firebase_url": "https://notifaction-test-bf4b8.firebaseio.com",
+    "project_id": "notifaction-test-bf4b8",
+    "storage_bucket": "notifaction-test-bf4b8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:148907388315:android:bc59710318082c98",
+        "android_client_info": {
+          "package_name": "tw.com.allianz.SandDUat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "148907388315-5o9jgoumjpql70sg84b2bgi62fl2rpkc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAyhjJyE5Mnf1TLJk_VgJExzQguaXOTaiw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:148907388315:android:747fd04011f80c91",
+        "android_client_info": {
+          "package_name": "wk.snd.allianz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "148907388315-5o9jgoumjpql70sg84b2bgi62fl2rpkc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAyhjJyE5Mnf1TLJk_VgJExzQguaXOTaiw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
