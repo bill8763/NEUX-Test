@@ -13,7 +13,7 @@ while test $# -gt 0; do
         CORDOVA_DIR="../Allianz-SND_cordova"
         exit 0
         ;;
-    *)cscscdsc
+    *)
         break
         ;;
     esac
