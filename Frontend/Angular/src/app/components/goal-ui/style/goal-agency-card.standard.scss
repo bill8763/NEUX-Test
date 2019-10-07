@@ -1,0 +1,19 @@
+@import 'style-import';
+
+// left & right card standard style
+:host{
+    width: calc(50% - #{$space-ui-version/2});
+    
+    ::ng-deep{
+        app-goal-ui-title-list{ 
+            .list-block{ 
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+@media screen and (max-width: $screen-sm-than-nb){
+    :host{
+        width: 100%;
+    }
+} 

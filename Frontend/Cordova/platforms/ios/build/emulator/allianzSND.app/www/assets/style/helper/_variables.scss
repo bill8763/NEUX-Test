@@ -1,0 +1,306 @@
+
+/*
+
+|- variable
+|--- 01 color
+|--- 02 font setting
+|--- 03 screen width
+|--- 04 layout
+|--- 05 space
+|--- 06 radius
+|--- 07 component - tab
+|--- 08 component - form
+|--- 09 component - modal
+|--- 10 component - refresh
+|--- 11 component - icon
+
+
+*/
+
+// ======  01 color  ======
+
+// 01-1. grey
+$color-grey1: #414141; //color of text
+$color-grey3: #767676;
+$color-grey5: #C2C2C2;
+$color-grey7: #ECECEC;
+
+// 01-2. color of main/sub/other
+$color-main1: #007D8C;  // CI Color
+$color-main1-light: #b1dadd; //light main color
+$color-main2: #007AB3;  // blue action color
+$color-sub1: #224d9b;  // action color
+$color-sub2: #0068b7;  //  Adorn
+$color-sub3: $color-grey3;  // dark grey (4)
+$color-sub4: $color-grey7;  // light grey (5)
+
+// 01-3.background color
+$color-bg-sub1: #DCF7F1;
+$bg-color-main1: #003781;
+$bg-color-main1-light: $color-sub2;
+$bg-color-grey1: #f5f5f5;
+$bg-color-light-gary-blue: #ddeaf1;
+$color-bg: $bg-color-grey1;
+
+// 01-4. hightlight color
+$color-light1: #3da556;
+$color-light1-light: #88fea4;
+$color-light2: #F86200;
+$color-light2-light: #fcaa76;
+
+// 01-5. action color
+$color-active: $bg-color-grey1;
+$color-click:  #f1f9fa; // light blue
+$color-alert: #F1C8D0; // light pink
+$color-error: #DC3149; // light red
+$color-error-light: #f9a6a6;
+
+// 01-6. label color
+$color-label1: #FF934F;
+$color-label2: #FDD25C;
+$color-label3: #CCDD61;
+$color-label4: #7FE4E0;
+$color-label5: #96DCFA;
+$color-label6: #496EBD;
+$color-label7: #CAD4DE;
+
+//01-7. color common use
+$color-white: #fff;
+$color-black: #000;
+
+//01-8. other color
+$color-native: #007aff; //native ios color
+$color-link: #00a7ea;
+$color-loading: $color-grey7;
+
+//01-9. safe area
+$color-safe-area-btm: $color-black;
+$color-safe-area-top: $color-black;
+
+//01-10. text color
+$color-font-normal: $color-grey1;
+
+//01-11. shadow color
+$color-shadow-card: 0 2px 4px 0 rgba(0, 0, 0, 0.19);   // white card shadow
+$color-shadow-list: 0 0 19px 0 rgba(0, 41, 95, 0.31);  // list layout shadow
+
+
+
+
+// ===== 02 font setting ======
+
+// 02-1 font basic setting
+$font-family: 'Allianz Neo';
+$font-line-height: 28px;
+$letter-space-normal: 0.2px;
+$letter-space-lg: 0.3px;
+
+// 02-2 font base  when text sm : base = 16 ; text md : base = 18; text lg : base = 20
+$font-base-num: 16;
+$font-base-num-md: 18;
+$font-base-num-lg: 20;
+$font-size-md: 1rem; //16px
+
+// 02-3.a title font size 
+$font-size-h2:     $font-size-md*(40/$font-base-num);  //40px
+$font-size-h4:     $font-size-md*(26/$font-base-num); //26px;
+$font-size-h5:     $font-size-md*(24/$font-base-num); //24px;
+
+// 02-3.b setting font size  ( has it own rule about scale fon size, not follow the rule of base rem)
+$font-size-config:(
+    font-size_lg :(
+        font-size-h2: $font-size-md*(40/$font-base-num-lg),  // 40px
+        font-size-h4: $font-size-md*(26/$font-base-num-lg),  //26px
+        font-size-h5: $font-size-md*(24/$font-base-num-lg)   //24px
+    ),
+    font-size_md :(
+        font-size-h2: $font-size-md*(40/$font-base-num-md), // 40px
+        font-size-h4: $font-size-md*(26/$font-base-num-md),  // 26px
+        font-size-h5: $font-size-md*(24/$font-base-num) // use sm ratio to the base
+    ),
+    font-size_sm:(
+        font-size-h2: $font-size-md*(40/$font-base-num),  // 40px
+        font-size-h4: $font-size-md*(26/$font-base-num),  //26px;
+        font-size-h5: $font-size-md*(24/$font-base-num)  //24px;
+    )
+);
+
+@function get-font-size($key, $type:'font-size_sm'){
+    @each $font-name, $font-size in map-get($font-size-config, $type){
+        @if($key == $font-name){
+            @return $font-size;
+        }
+    }
+}
+
+@mixin get-font-size($font-size){
+    font-size: get-font-size($font-size, 'font-size_sm');
+    .font-size_lg &{
+        font-size: get-font-size($font-size, 'font-size_lg');
+    }
+    .font-size_md &{
+        font-size: get-font-size($font-size, 'font-size_md');
+    }
+}
+
+// 02-4 font size normal
+$font-size-h6:    $font-size-md*(20/$font-base-num); //20px
+$font-size-h7:    $font-size-md*(18/$font-base-num); //18px
+$font-size-h8:    $font-size-md; // 16px
+$font-size-h9:    1rem * (14/$font-base-num); // 14px
+$font-size-h10:   $font-size-md *(12/$font-base-num); //12px
+
+
+
+// ====== 03 screen width  ======
+$screen-desktop:         1200px;
+$screen-sm-than-desktop: 1199px;
+$screen-pad-pro:         1366px;
+$screen-lg-than-nb:      1025px;
+$screen-nb:              1024px;
+$screen-sm-than-nb:      1023px;
+$screen-lg-pad:          992px;
+$screen-lg-than-pad:     769px;
+$screen-pad:             768px;
+$screen-sm-than-pad:     767px;
+$screen-lg-mobile:       500px;
+$screen-mobile:    	     375px;
+$screen-sm-than-mobile:  374px;
+$screen-sm:              320px;
+
+
+
+// ====== 04 layout ======
+
+// 04-1. header, footer
+$header-mobile-height: 55px; // allianz whitle header
+$footer-mobile-height: 55px;
+$header-height: 44px;   // blue header
+
+// 04-2. layout
+$layout-sidemenu-wd: 250px; //list menu width
+$pos-sidemenu: -40px; // list push left 
+$space-top-btm-sidemenu: 40px; // list top bottom space
+$wd-header-back-btn: 12px; 
+$space-header-back: 20px; //header in mobile left arrow
+$layout-size-back-btn: 44px; // back btn size
+
+
+
+// ===== 05 space =====
+
+// 05-1 basic space
+$space-base: 5px;
+
+// 05-2 space aboout block 
+$space-ui-version:   20px;
+$space-ui-title-top: 20px;
+$space-ui-title-btm: 15px;
+$space-ui-element:   20px;
+$space-layout-btm:   100px;
+
+// 05-3 space about layout left and right
+$space-layout-pc: 40px;
+$space-layout-nb: 40px;
+$space-layout-nb-lg: 50px;
+$space-layout-pad: 40px;
+$space-layout-pad-lg: 50px;
+$space-layout-mobile-inpage: 20px; // inpage when mobile 
+$space-layout-mobile: 10px;
+$space-layout-mobile-sm: 5px;
+
+// 05-4 space about layout top and down
+
+//space top btm
+$space-top-btm-pad: 40px;
+$space-top-btm-sm: 30px;
+
+// bottom space of detail 
+$space-widnow-btm: 100px;
+
+
+// 05-6 space layout
+
+// 05-6-1 goal
+$space-goal-inner-LR-pad: $space-layout-pad-lg;
+$space-goal-inner-LR-mobile: $space-layout-mobile-sm;
+
+$space-progress-sideMain-LR-pad: $space-layout-pad;
+$space-progress-sideMain-LR-mobile: $space-layout-mobile-sm;
+
+
+
+
+
+
+
+//=====  06 radius (card of tag) ===== 
+$radius-card: 5px; // white card radius
+$radius-sm: 3px; // tag radius
+
+
+//=====  07 component - tab ===== 
+$space-tab-content-lg: 40px;
+$space-tab-content-sm: 20px;
+
+
+
+//=====  08 component - form ===== 
+
+// 08-1 form layout
+$grid-spacing: 6px; // space about grid layout
+$grid-columns: 12;
+
+// 08-2 radio checkbox size
+$size-form-check-radio: 24px;
+$height-form-unit: 30px; // input select min-height
+
+// 08-3 font style in form
+$form-font-weight-content: normal; 
+$form-font-weight-title: bold;
+$size-form-font: $font-size-h6;  // normal form 
+$size-form-title: $font-size-h8; // title form
+
+// 08-4 color of form 
+$color-form-disable: $color-grey5; // disable color
+$color-form-placeholder: $color-grey5; // placeholder color
+$color-form-font-normal: $color-font-normal; // normal status font color
+$color-form-active: $color-main2;  // active status color
+$color-form-border-line: $color-font-normal; // border color
+
+// 08-5 form move space
+$pos-form-unit-title: 30px; // input select top title position
+$pos-title-top: $pos-form-unit-title; // position about title move up 
+
+// 08-6 form space
+$space-form-ele-text: 12px; //checkbox or radio space between text and element
+$space-form-right: 30px; // form single item space (in right)
+$space-form-btm: 30px;  // form element bottom space (表單元件的下間距)
+$space-form-btw: 15px; //  form space (表單之間的間距)
+$space-form-add: 10px; //  if form has add, the space about add and form last item
+$pos-form-add-in-col: $space-form-btm - $space-form-add; // add space in col which need to caculate (表單底下有add且在col需要扣掉的間距)
+
+
+// ====== 09 component - modal ======
+
+// modal size
+$modal-wd-sm: 355px;
+$modal-wd-md: 500px;
+$modal-wd-lg: 750px;
+$modal-height: 600px;
+$space-modal-content: 20px;
+$modal-font-size-title: $font-size-h7;
+$icon-modal-close-size: 40px;
+
+
+
+// ======  10 component - refresh ======
+$refresh-img-size: 40px;
+$refresh-img-margin: 35px;
+
+
+// ====== 11 component - icon ======
+$icon-size-normal: 24px;
+
+
+

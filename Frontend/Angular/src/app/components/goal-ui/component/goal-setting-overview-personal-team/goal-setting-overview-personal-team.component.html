@@ -1,0 +1,159 @@
+<app-ui-main-full class="goal-setting-full">
+    <div main class="main-goal-setting">
+
+        <div class="goal-setting-overview-personal-team-block">
+            <app-ui-content-b-gap class="tab-item-block space-inner-lg" [gapSize]="GAP_SIZE_20" [hidden]="!isShowPersonalTeamTab">
+                <app-ui-tab-style1 (onTabChildClick)="changeTab($event)" [maxShow]="4" [tabIndex]="tabIndex">
+                    <!--[maxShow] 控制一次最多顯示幾個tab 預設4個-->
+                    <app-ui-tab-child>{{language.personal | translate}}</app-ui-tab-child>
+                    <app-ui-tab-child>{{language.team | translate}}</app-ui-tab-child>
+                </app-ui-tab-style1>
+            </app-ui-content-b-gap>
+
+            <snd-goal-setting-overview-year-tab *ngIf="isLoadRoleFinish" [performanceType]="performanceType"
+                [ngClass]="!isShowPersonalTeamTab ? 'marginTop':''">
+            </snd-goal-setting-overview-year-tab>
+        </div>
+    </div>
+    <!-- end: main -->
+
+
+    <!-- popup -->
+    <div global-main>
+        <!-- Edit Personal plan-FYFC -->
+        <app-ui-modal-style-text1 *ngIf="allStepData&&allStepData.Step4" [(isPopupOpen)]="isPopupPersonalPlanFYFC"
+            class="wd-md goal-popup-edit" (close)="onClosePersonalPlanFYFCPopup()">
+            <ng-container textType="modal-title-detail">{{language.editPersonalPlanFYFCTitle | translate}}
+            </ng-container>
+            <ng-container textType="modal-content-detail">
+                <div class="goal-edit-info">
+                    <div class="goal-edit-info-item goal-edit-left">
+                        <p class="title-txt txt-width-auto">{{language.FYFCGoal | translate}}</p>
+                        <p class="desc-txt">{{allStepData.Step1.FYFC | numberFormat}} </p>
+                    </div>
+                </div>
+                <div class="goal-edit-info">
+                    <div class="goal-edit-info-item goal-edit-left">
+                        <p class="title-txt txt-width-auto">{{language.FYFCForecast | translate}}</p>
+                        <p class="desc-txt"
+                            [ngStyle]="{'color': step4ForecastTextColorIsRed?'red':''}">
+                            {{allStepData.Step4.Forecast | numberFormat}}</p>
+                    </div>
+                </div>
+                <div class="goal-edit-info">
+                    <div class="goal-edit-info-item goal-edit-left">
+                        <p class="title-txt txt-width-auto">{{language.FYFCActual | translate}}</p>
+                        <p class="desc-txt">{{allStepData.Step4.Actual | numberFormat}}</p>
+                    </div>
+                </div>
+
+                <app-ui-form-layout-advanced>
+
+                    <ng-container *ngFor="let row of rowList; let i = index">
+                        <app-ui-form-layout-row>
+                            <app-ui-form-layout-col [colPC]="6" [colNB]="6" [colPad]="6" [colMobile]="6">
+                                <app-ui-form-input *ngIf="i*2+1>settlementMonth"
+                                    [inputTitle]="i*2+1" [name]="'0'"
+                                    [(nxValue)]="allStepData.Step4.MonthList[i*2].Plan"
+                                    (nxValueChange)="step4ValueChange(i*2);" [placeholder]="0" [isError]="false" [type]="'dollar'">
+                                </app-ui-form-input>
+                                <app-ui-info-text2 *ngIf="i*2+1<=settlementMonth"
+                                    class="margin-toptop">
+                                    <ng-container textType="title">{{i*2+1}}
+                                    </ng-container>
+                                    <ng-container textType="tip">({{language.actual | translate}})
+                                    </ng-container>
+                                    <ng-container textType="text" *ngIf="allStepData.Step4.MonthList[i*2].Actual!=='--'">
+                                        {{allStepData.Step4.MonthList[i*2].Actual | numberFormat}}
+                                    </ng-container>
+                                    <ng-container textType="text" *ngIf="allStepData.Step4.MonthList[i*2].Actual==='--'">
+                                        --
+                                    </ng-container>
+                                </app-ui-info-text2>
+                                <app-ui-form-error-msg *ngIf="!!validationResult.getErrorMsg('Plan_'+(i*2+1))">
+                                    {{validationResult.getErrorMsg('Plan_'+(i*2+1)).toString() |translate}}
+                                </app-ui-form-error-msg>
+                            </app-ui-form-layout-col>
+
+                            <app-ui-form-layout-col [colPC]="6" [colNB]="6" [colPad]="6" [colMobile]="6"
+                                *ngIf="i*2+1<allStepData.Step4.MonthList.length">
+                                <app-ui-form-input *ngIf="i*2+2>settlementMonth"
+                                    [inputTitle]="i*2+2" [name]="'0'"
+                                    [(nxValue)]="allStepData.Step4.MonthList[i*2+1].Plan"
+                                    (nxValueChange)="step4ValueChange(i*2+1);" [placeholder]="0" [isError]="false" [type]="'dollar'">
+                                </app-ui-form-input>
+                                <app-ui-info-text2 *ngIf="i*2+2<=settlementMonth"
+                                    class="margin-toptop">
+                                    <ng-container textType="title">{{i*2+2}}
+                                    </ng-container>
+                                    <ng-container textType="tip">({{language.actual | translate}})
+                                    </ng-container>
+                                    <ng-container textType="text"
+                                        *ngIf="allStepData.Step4.MonthList[i*2+1].Actual!=='--'">
+                                        {{allStepData.Step4.MonthList[i*2+1].Actual | numberFormat}}
+                                    </ng-container>
+                                    <ng-container textType="text"
+                                        *ngIf="allStepData.Step4.MonthList[i*2+1].Actual==='--'">
+                                        --
+                                    </ng-container>
+                                </app-ui-info-text2>
+                                <app-ui-form-error-msg *ngIf="!!validationResult.getErrorMsg('Plan_'+(i*2+2))">
+                                    {{validationResult.getErrorMsg('Plan_'+(i*2+2)).toString() |translate}}
+                                </app-ui-form-error-msg>
+                            </app-ui-form-layout-col>
+                        </app-ui-form-layout-row>
+                    </ng-container>
+
+
+                </app-ui-form-layout-advanced>
+                <!-- reset -->
+                <app-ui-link [isUnderLine]="false" imgSrc="../assets/img/icon-reset.svg" (onClick)="reset()"
+                    [hidden]="!isShowStep4ResetBtn" [isReset]=true>
+                    <ng-container textType="linktext">{{language.reset | translate}}</ng-container>
+                </app-ui-link>
+                <!-- end of reset -->
+                <!-- end: form -->
+            </ng-container>
+            <!-- end: content -->
+            <ng-container textType="modal-btm-detail">
+                <app-ui-btn-layout>
+                    <app-ui-btn [btnStyle]="'border'" [btnWd]="'md'" [btnHeight]="'sm'"
+                        [id]="'btn_goalsettingOverviewClearPersonalFYFC'" Action action="goalsettingOverviewClearPersonalFYFC" (actionClick)="clearPersonal_plan_FYFC()">
+                        <ng-container TextType="cust">{{language.clear | translate}}</ng-container>
+                    </app-ui-btn>
+                    <app-ui-btn [btnWd]="'md'" [btnHeight]="'sm'" [isDisable]="!isPersonalPlanFYFCSaveCanClick"
+                        [id]="'btn_goalsettingOverviewSavePersonalFYFC'" Action action="goalsettingOverviewSavePersonalFYFC" (actionClick)="savePersonalPlanFYFC()">
+                        <ng-container TextType="cust">{{language.save | translate}}</ng-container>
+                    </app-ui-btn>
+                </app-ui-btn-layout>
+            </ng-container>
+            <!-- end: btm -->
+        </app-ui-modal-style-text1>
+        <!-- end: Edit Recruitment -->
+
+        <!-- Plan Approve -->
+        <app-ui-modal-style-img-base class="wd-sm goal-popup-setting" [typeBtn]="'type3'" [(isPopupOpen)]="this.isPopupPlanApprove" (close)="dismissPlanApprove($event)">
+            <ng-container textType="modal-img-detail">
+                <nx-icon name='product-expensive-objects-jewelery' size='auto' [fill]="false" [outline]='false'>
+                </nx-icon>
+            </ng-container>
+            <ng-container textType="modal-title-detail">{{language.needToBeRecommentTitle | translate}}</ng-container>
+            <ng-container textType="modal-content-detail">
+                <p class="txt vertical-center-txt center-txt">{{needToBeRecommentContent}}</p>
+            </ng-container>
+            <!-- end: content -->
+            <ng-container textType="modal-btm-detail">
+                <app-ui-btn-layout>
+                    <app-ui-btn [btnColor]="'main2'" [btnWd]="'md'" [btnHeight]="'sm'" [id]="'btn_goalsettingOverviewSubmitGoal'" Action action="goalsettingOverviewSubmitGoal" (actionClick)="submitGoal(true)">
+                        <ng-container TextType="cust">{{language.submit | translate}}</ng-container>
+                    </app-ui-btn>
+                </app-ui-btn-layout>
+            </ng-container>
+            <!-- end: btm -->
+        </app-ui-modal-style-img-base>
+        <!-- end: Plan Apporve -->
+
+    </div>
+
+    <!-- end: global-main -->
+</app-ui-main-full>

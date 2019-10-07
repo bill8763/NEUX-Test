@@ -1,0 +1,71 @@
+<!-- info content data 1 -->
+<div class="goal-agency-title-content">
+    <div class="goal-agency-info-content">
+      <div class="goal-info-info">
+        <div class="goal-info-left">
+          <ng-content></ng-content>
+          <snd-goal-ui-text *ngIf="windowWidth < 1024" class="sub-text">{{subTitle}}</snd-goal-ui-text>
+          <ul class="goal-info-ul-item">
+            <li class="goal-info-li-item">
+                <app-goal-ui-title-num-unit
+                [imgUrl]="imgUrl"
+                [title]="titleMain"
+                [num]="numUnitLeft1"
+                [unit]="textUnitLeft1"></app-goal-ui-title-num-unit>
+            </li>
+            <li class="goal-info-li-item">
+                <app-goal-ui-title-num-unit
+                [num]="numUnitLeft2"
+                [unit]="textUniLeft2"></app-goal-ui-title-num-unit>
+            </li>
+          </ul>
+        </div>  <!-- of info left -->
+        <div class="goal-info-right">
+          <snd-goal-ui-text *ngIf="windowWidth >= 1024" class="sub-text">{{subTitle}}</snd-goal-ui-text>
+          <ul class="goal-info-ul-item">
+            <li class="goal-info-li-item">
+                <snd-goal-ui-title-desc-list
+                [title]="titleText1"
+                [desc]="descText1"
+                [descColor]="descColor1"
+                ></snd-goal-ui-title-desc-list>
+            </li>
+            <li class="goal-info-li-item">
+                <snd-goal-ui-title-desc-list
+                [title]="titleText2"
+                [desc]="descText2"
+                [descColor]="descColor2"></snd-goal-ui-title-desc-list>
+            </li>
+          </ul>
+         </div> <!-- of info right -->
+      </div>
+      <div class="goal-info-info goal-info-btm">
+        <!-- info left -->
+        <div class="goal-info-left">
+          <snd-goal-ui-title-table
+            class="data-table-block"
+            [title]="titleTable1"
+            [desc]="descTable1">
+          </snd-goal-ui-title-table>
+        </div>
+        <!-- end of info left -->
+        <!-- info right -->
+        <div class="goal-info-right">
+          <snd-goal-ui-title-table
+            class="data-table-block"
+            [title]="titleTable2"
+            [desc]="descTable2">
+          </snd-goal-ui-title-table>
+          
+          <snd-goal-ui-title-table
+            *ngIf="titleTable3&&descTable3"
+            class="data-table-block"
+            [title]="titleTable3"
+            [desc]="descTable3">
+          </snd-goal-ui-title-table>
+        </div>
+        <!-- end of info right -->
+      </div>
+    </div>
+  </div>
+  <!-- end of info content 1 -->

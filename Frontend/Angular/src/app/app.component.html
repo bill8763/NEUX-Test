@@ -1,0 +1,8 @@
+<router-outlet></router-outlet>
+<snd-notification></snd-notification>
+<snd-ui-loading-box *ngIf="isLoadingOpen" [isOpen]="isLoadingOpen"></snd-ui-loading-box>
+<!-- tmp -->
+<div *ngIf="debugMode" class="dev-block">
+  <p>Timeout:{{timeoutSecond}}</p>
+</div>
+<!-- end of temp -->

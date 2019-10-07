@@ -1,0 +1,11 @@
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+export {} from './InitialTask.interface';
+export {} from './fetchConfigFinish.interface';
+export {} from './fetchLanguageFinish.interface';
+export {} from './fetchSettingFinish.interface';
+export {} from './registerDataSyncFunc.interface';
+export {} from './initialFinish.interface';
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290Ijoibmc6Ly9AYWxsaWFuelNORC9jb3JlLyIsInNvdXJjZXMiOlsibGliL2luaXRUYXNrL2ludGVyZmFjZS9pbmRleC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7O0FBQUEsZUFBYyx5QkFBeUIsQ0FBQztBQUN4QyxlQUFjLCtCQUErQixDQUFDO0FBQzlDLGVBQWMsaUNBQWlDLENBQUM7QUFDaEQsZUFBYyxnQ0FBZ0MsQ0FBQztBQUMvQyxlQUFjLGtDQUFrQyxDQUFDO0FBQ2pELGVBQWMsMkJBQTJCLENBQUMiLCJzb3VyY2VzQ29udGVudCI6WyJleHBvcnQgKiBmcm9tICcuL0luaXRpYWxUYXNrLmludGVyZmFjZSc7XG5leHBvcnQgKiBmcm9tICcuL2ZldGNoQ29uZmlnRmluaXNoLmludGVyZmFjZSc7XG5leHBvcnQgKiBmcm9tICcuL2ZldGNoTGFuZ3VhZ2VGaW5pc2guaW50ZXJmYWNlJztcbmV4cG9ydCAqIGZyb20gJy4vZmV0Y2hTZXR0aW5nRmluaXNoLmludGVyZmFjZSc7XG5leHBvcnQgKiBmcm9tICcuL3JlZ2lzdGVyRGF0YVN5bmNGdW5jLmludGVyZmFjZSc7XG5leHBvcnQgKiBmcm9tICcuL2luaXRpYWxGaW5pc2guaW50ZXJmYWNlJztcbiJdfQ==

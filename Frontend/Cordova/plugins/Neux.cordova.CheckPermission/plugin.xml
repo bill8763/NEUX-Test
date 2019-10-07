@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="Neux.cordova.CheckPermission" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+	<name>CheckPermission</name>
+	<js-module name="CheckPermission" src="www/CheckPermission.js">
+		<clobbers target="cordova.plugins.CheckPermission" />
+	</js-module>
+	<platform name="android">
+		<config-file parent="/*" target="res/xml/config.xml">
+			<feature name="CheckPermission">
+				<param name="android-package" value="Neux.cordova.CheckPermission.CheckPermission" />
+			</feature>
+		</config-file>
+		<config-file parent="/*" target="AndroidManifest.xml" />
+		<source-file src="src/android/CheckPermission.java" target-dir="src/Neux/cordova/CheckPermission/CheckPermission" />
+	</platform>
+	<platform name="ios">
+		<config-file parent="/*" target="config.xml">
+			<feature name="CheckPermission">
+				<param name="ios-package" value="CheckPermission" />
+			</feature>
+		</config-file>
+	<header-file src="src/ios/CheckPermission.h" />
+	<source-file src="src/ios/CheckPermission.m" />
+</platform>
+</plugin>

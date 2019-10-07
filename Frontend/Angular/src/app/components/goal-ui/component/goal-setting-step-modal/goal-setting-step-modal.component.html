@@ -1,0 +1,74 @@
+
+
+  <!-- personal progressbarlist info popup -->
+<app-ui-modal-style-img-base class="wd-sm" [isHasBtmBlock]="false" [typeBtn]="'style3'" [(isPopupOpen)]="isPopOpenInfoStep3">
+    <ng-container textType="modal-img-detail">
+      <nx-icon class="icon-i" name="info-circle" fill="false" outline="false" size="auto"></nx-icon>
+    </ng-container>
+    <ng-container textType="modal-title-detail">{{language.agencyPlanInformationTitle | translate}}</ng-container>
+    <ng-container textType="modal-content-detail">
+        <div class="info-detail-block">
+            <!-- content -->
+            <div class="info-content-block">
+              <!-- list data -->
+              <ul class="info-list-data-block">
+                <!-- item -->
+                <li class="list-data-item-block">
+                  <div class="title-sm-main">{{language.find | translate}}</div>
+                  <p class="content-detail-block">{{language.goalSettingCreateCustomer | translate}}</p>
+                </li>
+                <!-- end of item -->
+                <!-- item -->
+                <li class="list-data-item-block">
+                  <div class="title-block">
+                    <div class="title-sm-main">{{language.schedule | translate}}</div>
+                  </div>
+                  <div class="content-block">
+                    <p class="content-detail-block">
+                      {{language.goalSettingCustomerJournal | translate}}<br />
+                      {{language.goalSettingCalendar | translate}}<br />
+                      {{language.goalSettingActivityType | translate}}
+                    </p>
+                  </div>
+                </li>
+                <!-- end of item -->
+                <!-- item -->
+                <li class="list-data-item-block">
+                  <div class="title-block">
+                    <div class="title-sm-main">{{language.meetPresentText | translate}}</div>
+                  </div>
+                  <div class="content-block">
+                    <p class="content-detail-block">{{language.goalSettingFastQuotation | translate}}</p>
+                  </div>
+                </li>
+                <!-- end of item -->
+                <!-- item -->
+                <li class="list-data-item-block">
+                  <div class="title-block">
+                    <div class="title-sm-main">{{language.submit | translate}}</div>
+                  </div>
+                  <div class="content-block">
+                    <p class="content-detail-block">{{language.submission | translate}}</p>
+                  </div>
+                </li>
+                <!-- end of item -->
+                <!-- item -->
+                <li class="list-data-item-block">
+                  <div class="title-block">
+                    <div class="title-sm-main">{{language.inforce | translate}}</div>
+                  </div>
+                  <div class="content-block">
+                    <p class="content-detail-block">{{language.goalSettingInforcePolicy | translate}}</p>
+                  </div>
+                </li>
+                <!-- end of item -->
+              </ul>
+        
+              <!-- end of list data -->
+        
+            </div>
+            <!-- end of content -->
+        </div>
+    </ng-container>
+</app-ui-modal-style-img-base>
+<!-- end of personal progressbar list info popup -->

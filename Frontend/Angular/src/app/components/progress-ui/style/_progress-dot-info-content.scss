@@ -1,0 +1,87 @@
+@import 'style-import';
+// info inner content
+.progress-dot-info-content{
+    text-align: left;
+    .dot-title-sub-block{
+        .dot-title-sub{
+            font-size: $font-size-h9;
+            font-weight: bold;
+            padding: 0;
+            margin: 0;
+            text-align: left;
+        }
+
+        padding-bottom: $space-ui-element;
+    }
+    .dot-title-content{
+        @include informationTitle('.info-title-main');
+    }
+    .dot-sample{
+        margin-bottom: $space-ui-element;
+        .dot-sample-ul,.dot-sample-li{
+            list-style-type: none;
+        }
+        .dot-sample-ul{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .dot-sample-li{
+            list-style-type: none;
+            display: inline-flex;
+            width: 100%;
+            vertical-align: top;
+            align-items: center;
+            &+.dot-sample-li{
+                margin-top: 10px;
+            }
+            .sample-icon{
+                min-width: 16px;
+                &+.sample-text{
+                    margin-left: 10px;
+                }
+            }
+            .sample-text{
+                font-size: $font-size-h9;
+                font-weight: normal;
+                line-height: 2;
+            }
+        }
+    }
+    .dot-sample-text{
+        font-size: $font-size-h9;
+        font-weight: bold;
+        line-height: 1.71;
+        margin-bottom: $space-ui-element;
+        ::ng-deep{
+            .height-light{
+                color: $color-main2;
+                font-weight: bold;
+            }
+        }
+    }
+    .dot-list-ul{
+        .dot-list-li{
+            list-style-type: none;
+            &+.dot-list-li{
+                margin-top: $space-ui-element;
+            }
+        }
+    }
+    .dot-detail-info-block{
+        background-color: $color-grey7;
+        padding: 15px;
+    }
+    @media screen and (max-width:$screen-sm-than-nb){
+        .dot-sample{
+            .dot-sample-li{
+                width: 100%;
+                margin-right: 0px;
+                
+                &+.dot-sample-li{
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}

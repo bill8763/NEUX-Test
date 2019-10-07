@@ -1,0 +1,64 @@
+<div class="progress-team-block" #infoScrollContent>
+
+  <!--tab-->
+  <!-- <app-ui-content-b-gap [gapSize]="GAP_SIZE_40">
+    <app-ui-tab-style1 (onTabChildClick)="consoleEvent('tab',$event)" [maxShow]="4" [tabIndex]="1">
+      <app-ui-tab-child>Personal</app-ui-tab-child>
+      <app-ui-tab-child>Team</app-ui-tab-child>
+    </app-ui-tab-style1>
+  </app-ui-content-b-gap> -->
+  <!-- end of tab -->
+
+  <app-ui-content-b-gap [gapSize]="GAP_SIZE_40" *ngIf="IsShowYearTab">
+    <div class="tab-page">
+      <app-ui-tab-page (onTabChildClick)="onTeamYearEventTrigger($event)" 
+                       [tabSwitchFirst]="TabStringList[0]" 
+                       [tabSwitchSecond]="TabStringList[1]"
+                        [openTab]="0"
+                        *ngIf="IsShowYearTab">
+                      </app-ui-tab-page>
+    </div>
+  </app-ui-content-b-gap>
+
+  <div class="level-2-tab-padding">
+    <app-ui-content-b-gap [gapSize]="GAP_SIZE_20">
+      <app-ui-tab-style2 (onTabChildClick)="onTeamTimeEventTrigger($event)" [maxShow]="4" [tabIndex]="0">
+        <app-ui-tab-child>{{ Language.month | translate}}</app-ui-tab-child>
+        <app-ui-tab-child>{{ Language.quarter | translate}}</app-ui-tab-child>
+        <app-ui-tab-child>{{ Language.year | translate}}</app-ui-tab-child>
+      </app-ui-tab-style2>
+    </app-ui-content-b-gap>
+  </div>
+  
+
+  <!--agency table card-->
+  <snd-progress-team-table-card class="progress-element-space"
+                                [TeamMainDataList] = "TeamMainDataList"
+                                (onClick)="clickTableCardInfo()">
+                              </snd-progress-team-table-card>
+
+
+  <div class="level-2-tab-padding">
+    <app-ui-content-b-gap [gapSize]="GAP_SIZE_20">
+      <app-ui-tab-style2 (onTabChildClick)="onTeamValueTypeEventTrigger($event)" [maxShow]="4" [tabIndex]="0">
+        <app-ui-tab-child>FYFC</app-ui-tab-child>
+        <app-ui-tab-child>ANP</app-ui-tab-child>
+        <app-ui-tab-child>{{ Language.manpower | translate}}</app-ui-tab-child>
+        <app-ui-tab-child>{{ Language.recruitment | translate}}</app-ui-tab-child>
+      </app-ui-tab-style2>
+    </app-ui-content-b-gap>
+  </div>
+
+  <!-- Direct Unit -->
+  <snd-progress-team-direct-unit class="progress-element-space" 
+                                [TeamDirectDataList] = "TeamDirectDataList"
+                                (onClick)="infoClickDirect()"> 
+                              </snd-progress-team-direct-unit>
+
+  <!-- Indirect Uint -->
+  <snd-progress-team-indirect-unit class="progress-element-space" 
+                                  [TeamIndirectDataList] = "TeamIndirectDataList"
+                                  (onClick)="infoClickIndirect()">
+                                </snd-progress-team-indirect-unit>
+
+</div>

@@ -1,0 +1,152 @@
+{
+  "lastUpdateTime": "2018-02-01 11:11:00",
+  "success": true,
+  "Goals": [
+    {
+      "DataYear": 2019,
+      "GoalSetting": {
+        "IsNeedSetting": false,
+        "IsCurrent": true,
+        "IsFirstTime": false,
+        "Status": "A",
+        "GoalSetMonth": 6,
+        "Remainingdays": 0,
+        "PersonnelGoalApplicableYM": 1,
+        "TeamGoalApplicableYM": 3,
+        "extensions": [
+          {
+            "id": "1234",
+            "datatype": "text | number | boolean",
+            "value": "1234"
+          }
+        ]
+      },
+      "GoalValue": [
+        {
+          "DataType": "PERSON_ANP",
+          "Value": 300,
+          "extensions": [
+            {
+              "id": "1234",
+              "datatype": "text | number | boolean",
+              "value": "1234"
+            }
+          ]
+        },
+        {
+          "DataType": "PERSON_FYFC",
+          "Value": 250,
+          "extensions": [
+            {
+              "id": "1234",
+              "datatype": "text | number | boolean",
+              "value": "1234"
+            }
+          ]
+        },
+        {
+          "DataType": "TEAM_FYFC",
+          "Value": 2500,
+          "extensions": [
+            {
+              "id": "1234",
+              "datatype": "text | number | boolean",
+              "value": "1234"
+            }
+          ]
+        }
+      ],
+      "GoalPlan": {
+        "TimeBase": "Month",
+        "Values": [
+          {
+            "PerformanceType": "P",
+            "Month": 1,
+            "Value": 30,
+            "extensions": [
+              {
+                "id": "1234",
+                "datatype": "text | number | boolean",
+                "value": "1234"
+              }
+            ]
+          },
+          {
+            "PerformanceType": "P",
+            "Month": 2,
+            "Value": 33,
+            "extensions": [
+              {
+                "id": "1234",
+                "datatype": "text | number | boolean",
+                "value": "1234"
+              }
+            ]
+          },
+          {
+            "PerformanceType": "P",
+            "Month": 3,
+            "Value": 34,
+            "extensions": [
+              {
+                "id": "1234",
+                "datatype": "text | number | boolean",
+                "value": "1234"
+              }
+            ]
+          },
+          {
+            "PerformanceType": "P",
+            "Month": 4,
+            "Value": 54,
+            "extensions": [
+              {
+                "id": "1234",
+                "datatype": "text | number | boolean",
+                "value": "1234"
+              }
+            ]
+          },
+          {
+            "PerformanceType": "P",
+            "Month": 5,
+            "Value": 34,
+            "extensions": [
+              {
+                "id": "1234",
+                "datatype": "text | number | boolean",
+                "value": "1234"
+              }
+            ]
+          },
+          {
+            "PerformanceType": "T",
+            "Month": 1,
+            "Value": 54,
+            "extensions": [
+              {
+                "id": "1234",
+                "datatype": "text | number | boolean",
+                "value": "1234"
+              }
+            ]
+          }
+        ],
+        "extensions": [
+          {
+            "id": "1234",
+            "datatype": "text | number | boolean",
+            "value": "1234"
+          }
+        ]
+      },
+      "extensions": [
+        {
+          "id": "1234",
+          "datatype": "text | number | boolean",
+          "value": "1234"
+        }
+      ]
+    }
+  ]
+}

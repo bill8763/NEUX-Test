@@ -1,0 +1,40 @@
+{
+  "_from": "git+https://github.com/neuxtitanteng/Neux.cordova.AndroidFontSize.git",
+  "_id": "Neux.cordova.AndroidFontSize@1.0.0",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/Neux.cordova.AndroidFontSize",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "git+https://github.com/neuxtitanteng/Neux.cordova.AndroidFontSize.git",
+    "rawSpec": "git+https://github.com/neuxtitanteng/Neux.cordova.AndroidFontSize.git",
+    "saveSpec": "git+https://github.com/neuxtitanteng/Neux.cordova.AndroidFontSize.git",
+    "fetchSpec": "https://github.com/neuxtitanteng/Neux.cordova.AndroidFontSize.git",
+    "gitCommittish": null
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "git+https://github.com/neuxtitanteng/Neux.cordova.AndroidFontSize.git#9782a3490a55df5b794254061c29a3bf32bc7348",
+  "_spec": "git+https://github.com/neuxtitanteng/Neux.cordova.AndroidFontSize.git",
+  "_where": "/Users/bryant/SND/Allianz_S-D_codova",
+  "author": "",
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "Neux.cordova.AndroidFontSize",
+    "platforms": [
+      "android"
+    ]
+  },
+  "deprecated": false,
+  "description": "",
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "license": "ISC",
+  "name": "Neux.cordova.AndroidFontSize",
+  "version": "1.0.0"
+}

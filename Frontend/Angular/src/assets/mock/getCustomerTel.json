@@ -1,0 +1,44 @@
+{
+  "Header": {
+    "Time": "20190107000005",
+    "PageInfo": {
+      "pageNo": 1,
+      "pageSize": 10,
+      "totalPage": 3,
+      "totalRec": 30
+    },
+    "QueryParams": {}
+  },
+  "Body": [
+    {
+      "ClientID": "11",
+      "TelType": "Home",
+      "Tel": "0987654321",
+      "DataSource": "APP"
+    },
+    {
+      "ClientID": "22",
+      "TelType": "Work",
+      "Tel": "0987654321",
+      "DataSource": "OPUS"
+    },
+    {
+      "ClientID": "33",
+      "TelType": "Home",
+      "Tel": "0987654321",
+      "DataSource": "APP"
+    },
+    {
+      "ClientID": "44",
+      "TelType": "Home",
+      "Tel": "0987654321",
+      "DataSource": "APP"
+    },
+    {
+      "ClientID": "55",
+      "TelType": "Home",
+      "Tel": "0987654321",
+      "DataSource": "APP"
+    }
+  ]
+}

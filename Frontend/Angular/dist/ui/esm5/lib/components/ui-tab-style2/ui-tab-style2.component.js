@@ -1,0 +1,24 @@
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+import * as tslib_1 from "tslib";
+import { Component, ChangeDetectionStrategy } from '@angular/core';
+import { UiTabStyle1Component } from '../ui-tab-style1/ui-tab-style1.component';
+var UiTabStyle2Component = /** @class */ (function (_super) {
+    tslib_1.__extends(UiTabStyle2Component, _super);
+    function UiTabStyle2Component() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    UiTabStyle2Component.decorators = [
+        { type: Component, args: [{
+                    selector: 'app-ui-tab-style2',
+                    template: "<div class=\"ui-tab-style-2\" (mouseleave)=\"closeSelect()\" [ngClass]=\"{'tabToMore':getTabsArray().length>maxShow}\">\n  <div class=\"ui-tab-style-contnet\">\n    <ng-container *ngFor=\"let tab of getTabsArray().slice(0,maxShow);index as i\">\n      <div class=\"tab-child\" (click)=\"handleClick(i)\" [ngClass]=\"{'active':tabIndex==i}\">\n          <div *ngTemplateOutlet=\"tab.tab\" ></div>\n      </div>\n    </ng-container>\n  </div>\n  <div class=\"ui-tab-style-2-more\">\n    <app-ui-tab-more>\n      <ng-container *ngFor=\"let tab of tabs;index as i\">\n        <!-- <div  *ngIf=\"i>3\"> -->\n          <div *ngIf=\"i>=maxShow \" class=\"tab-child\" (click)=\"handleClick(i)\" [ngClass]=\"{'active':tabIndex==i}\">\n              <div *ngTemplateOutlet=\"tab.tab\"></div>\n          </div>\n        <!-- </div> -->\n      </ng-container>\n    </app-ui-tab-more>\n  </div>\n</div>\n",
+                    changeDetection: ChangeDetectionStrategy.OnPush,
+                    styles: ["@keyframes fadein{from{opacity:0}to{opacity:1}}@-webkit-keyframes fadein{from{opacity:0}to{opacity:1}}.ui-tab-style-2{display:flex}.ui-tab-style-2.tabToMore .ui-tab-style-contnet{max-width:calc(100% - 30px)}.ui-tab-style-2.tabToMore .ui-tab-style-2-more{display:block}.ui-tab-style-2 .ui-tab-style-contnet{display:table;table-layout:fixed;width:100%}.ui-tab-style-2 .ui-tab-style-contnet .tab-child{display:table-cell;height:32px;vertical-align:middle}.ui-tab-style-2 .ui-tab-style-contnet .tab-child ::ng-deep .tab-child-btn-style{padding:7px 8px;font-size:.75rem;font-weight:600;font-style:normal;font-stretch:normal;line-height:1.14;letter-spacing:1px;text-align:center;color:#007ab3;border:2px solid #007ab3;border-right-width:0;border-radius:5px 0 0 5px}.ui-tab-style-2 .ui-tab-style-contnet .tab-child+.tab-child:not(:last-child) ::ng-deep .tab-child-btn-style{border-radius:0}.ui-tab-style-2 .ui-tab-style-contnet .tab-child:last-child ::ng-deep .tab-child-btn-style{border-radius:0 4px 4px 0;border-right-width:2px}.ui-tab-style-2 .ui-tab-style-contnet .tab-child.active ::ng-deep .tab-child-btn-style{color:#fff;background-color:#007ab3}.ui-tab-style-2 .ui-tab-style-2-more{display:none;-webkit-transform:translateY(1px);transform:translateY(1px);min-width:30px;max-width:30px;height:30px}"]
+                }] }
+    ];
+    return UiTabStyle2Component;
+}(UiTabStyle1Component));
+export { UiTabStyle2Component };
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoidWktdGFiLXN0eWxlMi5jb21wb25lbnQuanMiLCJzb3VyY2VSb290Ijoibmc6Ly9AYWxsaWFuelNORC91aS8iLCJzb3VyY2VzIjpbImxpYi9jb21wb25lbnRzL3VpLXRhYi1zdHlsZTIvdWktdGFiLXN0eWxlMi5jb21wb25lbnQudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7QUFBQSxPQUFPLEVBQUUsU0FBUyxFQUErSCx1QkFBdUIsRUFBQyxNQUFNLGVBQWUsQ0FBQztBQUcvTCxPQUFPLEVBQUUsb0JBQW9CLEVBQUMsTUFBTSwwQ0FBMEMsQ0FBQztBQUMvRTtJQU0wQyxnREFBb0I7SUFOOUQ7O0lBT0EsQ0FBQzs7Z0JBUEEsU0FBUyxTQUFDO29CQUNULFFBQVEsRUFBRSxtQkFBbUI7b0JBQzdCLHU0QkFBNkM7b0JBRTdDLGVBQWUsRUFBQyx1QkFBdUIsQ0FBQyxNQUFNOztpQkFDL0M7O0lBRUQsMkJBQUM7Q0FBQSxBQVBELENBTTBDLG9CQUFvQixHQUM3RDtTQURZLG9CQUFvQiIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IENvbXBvbmVudCwgT25Jbml0LCAgQ29udGVudENoaWxkcmVuLCBUZW1wbGF0ZVJlZiwgUXVlcnlMaXN0LCBJbnB1dCwgT3V0cHV0LCBFdmVudEVtaXR0ZXIsIERvQ2hlY2ssIFZpZXdDaGlsZCwgQ29tcG9uZW50UmVmLCBFbGVtZW50UmVmLCBDaGFuZ2VEZXRlY3Rpb25TdHJhdGVneX0gZnJvbSAnQGFuZ3VsYXIvY29yZSc7XG5pbXBvcnQgeyBVaVRhYkNoaWxkQ29tcG9uZW50IH0gZnJvbSAnLi4vdWktdGFiLWNoaWxkL3VpLXRhYi1jaGlsZC5jb21wb25lbnQnO1xuaW1wb3J0IHsgVWlUYWJNb3JlQ29tcG9uZW50IH0gZnJvbSAnLi4vdWktdGFiLW1vcmUvdWktdGFiLW1vcmUuY29tcG9uZW50JztcbmltcG9ydCB7IFVpVGFiU3R5bGUxQ29tcG9uZW50fSBmcm9tICcuLi91aS10YWItc3R5bGUxL3VpLXRhYi1zdHlsZTEuY29tcG9uZW50JztcbkBDb21wb25lbnQoe1xuICBzZWxlY3RvcjogJ2FwcC11aS10YWItc3R5bGUyJyxcbiAgdGVtcGxhdGVVcmw6ICcuL3VpLXRhYi1zdHlsZTIuY29tcG9uZW50Lmh0bWwnLFxuICBzdHlsZVVybHM6IFsnLi91aS10YWItc3R5bGUyLmNvbXBvbmVudC5zY3NzJ10sXG4gIGNoYW5nZURldGVjdGlvbjpDaGFuZ2VEZXRlY3Rpb25TdHJhdGVneS5PblB1c2hcbn0pXG5leHBvcnQgY2xhc3MgVWlUYWJTdHlsZTJDb21wb25lbnQgZXh0ZW5kcyBVaVRhYlN0eWxlMUNvbXBvbmVudCB7XG59XG4iXX0=

@@ -1,0 +1,13 @@
+@import 'style-import';
+.popup-agree {
+    z-index: 999999;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+}
+
+.desc-sm{
+    font-size: $font-size-h9;
+    line-height: 20px;
+    text-align: left;
+}

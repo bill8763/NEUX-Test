@@ -1,0 +1,43 @@
+{
+  "Header": {
+    "status": true
+  },
+  "Body": [
+    {
+      "ClientID": "1",
+      "DataYear": 2019,
+      "DataType": "FYFC",
+      "Forecast": 46808000,
+      "Actual": 33600000,
+      "MonthPlan": 13208000,
+      "Manpower": 0,
+      "Recruitment": 0
+    }, {
+      "ClientID": "1",
+      "DataYear": 2019,
+      "DataType": "ANP",
+      "Forecast": 115929600,
+      "Actual": 40320000,
+      "MonthPlan": 75609600,
+      "Manpower": 0,
+      "Recruitment": 0
+    }, {
+      "ClientID": "1",
+      "DataYear": 2019,
+      "DataType": "Manpower",
+      "Forecast": 0,
+      "Actual": 0,
+      "MonthPlan": 70,
+      "Manpower": 0,
+      "Recruitment": 0
+    }, {
+      "ClientID": "1",
+      "DataYear": 2019,
+      "DataType": "Recruitment",
+      "Forecast": 0,
+      "Actual": 0,
+      "MonthPlan": 22,
+      "Manpower": 0,
+      "Recruitment": 0
+    }]
+}

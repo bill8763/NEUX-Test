@@ -1,0 +1,59 @@
+@import 'style-import';
+
+@import '../../style/goal-agency-card.standard.scss'; // left & right card standard style
+// @import './goal-agency-right-card.rate'; // completionRate area
+
+:host{
+    // button
+    .card-btn-content{
+        width: 100%;
+        ::ng-deep{
+            app-ui-btn-layout{
+                .btn-block{
+                    margin-bottom: 0;
+                    display: flex;
+                    app-ui-btn{
+                        flex: 0 1 50%;
+                        margin-right: 0;
+                    }
+                    .card-link{
+                        margin-left: 15px;
+                        flex: 1 0 50%;
+                        ::ng-deep{
+                            .btn-body{
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: $screen-sm-than-nb){
+    :host{
+        margin-top: $space-ui-element;
+    }
+}
+
+// 預防 button 在更小的版跑版
+@media screen and (max-width: $screen-sm-than-mobile){
+    .list-cards-li{
+        .card-btn-content{
+            ::ng-deep{
+                app-ui-btn-layout{
+                    margin-right: 0;
+                    .btn-block{
+                        flex-wrap: wrap;
+                        .card-link{
+                            margin-right: 15px;
+                            .btn-body{
+                                margin-top: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

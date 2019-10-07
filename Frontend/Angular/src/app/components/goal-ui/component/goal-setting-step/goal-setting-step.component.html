@@ -1,0 +1,8 @@
+<ng-container *ngIf="role && goalSettingStepDataParams.DataYear">
+  <snd-agent-goal-setting-step *ngIf="role===ROLEENUM.AGENT" [canSkip]="canSkip" [goalSettingStepDataParams]="goalSettingStepDataParams"
+    [backUrl]="backUrl" (submit)="onSubmit()">
+  </snd-agent-goal-setting-step>
+  <snd-agent-leader-goal-setting-step *ngIf="role!==ROLEENUM.AGENT" [canSkip]="canSkip" [goalSettingStepDataParams]="goalSettingStepDataParams"
+    [isPromo]="isPromo" [backUrl]="backUrl" (submit)="onSubmit()">
+  </snd-agent-leader-goal-setting-step>
+</ng-container>

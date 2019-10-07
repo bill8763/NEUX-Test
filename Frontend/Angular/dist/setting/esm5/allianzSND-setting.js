@@ -1,0 +1,11 @@
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ * Generated bundle index. Do not edit.
+ */
+export { SettingComponentService, SettingComponent, SettingModule, settingMetaControllerToken } from './public_api';
+export { SettingComponent as ɵa } from './lib/components/setting/setting.component';
+export { SettingComponentService as ɵb } from './lib/service/setting-service.service';
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiYWxsaWFuelNORC1zZXR0aW5nLmpzIiwic291cmNlUm9vdCI6Im5nOi8vQGFsbGlhbnpTTkQvc2V0dGluZy8iLCJzb3VyY2VzIjpbImFsbGlhbnpTTkQtc2V0dGluZy50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7O0FBSUEscUdBQWMsY0FBYyxDQUFDO0FBRTdCLE9BQU8sRUFBQyxnQkFBZ0IsSUFBSSxFQUFFLEVBQUMsTUFBTSw0Q0FBNEMsQ0FBQztBQUNsRixPQUFPLEVBQUMsdUJBQXVCLElBQUksRUFBRSxFQUFDLE1BQU0sdUNBQXVDLENBQUMiLCJzb3VyY2VzQ29udGVudCI6WyIvKipcbiAqIEdlbmVyYXRlZCBidW5kbGUgaW5kZXguIERvIG5vdCBlZGl0LlxuICovXG5cbmV4cG9ydCAqIGZyb20gJy4vcHVibGljX2FwaSc7XG5cbmV4cG9ydCB7U2V0dGluZ0NvbXBvbmVudCBhcyDJtWF9IGZyb20gJy4vbGliL2NvbXBvbmVudHMvc2V0dGluZy9zZXR0aW5nLmNvbXBvbmVudCc7XG5leHBvcnQge1NldHRpbmdDb21wb25lbnRTZXJ2aWNlIGFzIMm1Yn0gZnJvbSAnLi9saWIvc2VydmljZS9zZXR0aW5nLXNlcnZpY2Uuc2VydmljZSc7Il19

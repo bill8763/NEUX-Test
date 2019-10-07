@@ -1,0 +1,19 @@
+{
+  "Header": {
+    "Time": "20190114000005",
+    "PageInfo": {
+      "pageNo": 1,
+      "pageSize": 10,
+      "totalPage": 3,
+      "totalRec": 30
+    },
+    "QueryParams": {}
+  },
+  "Body": [
+    {
+      "SettingID": "CustomerFilterSetting",
+      "SettingName": 1548392921543,
+      "SettingVal": "{}"
+    }
+  ]
+}

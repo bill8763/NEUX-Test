@@ -1,0 +1,28 @@
+{
+  "Header": {
+    "Time": "20190107000005",
+    "PageInfo": {
+      "pageNo": 1,
+      "pageSize": 10,
+      "totalPage": 3,
+      "totalRec": 30
+    },
+    "QueryParams": {}
+  },
+  "Body": [{
+    "eventID": "1",
+    "start": "2019-01-14 18:00:00",
+    "end": "2019-01-14 19:00:00",
+    "eventName": "Interview with Anny Shen",
+    "location": "No. 8 Haji Lane #02-01, Singapore 1234567",
+    "activity": "Sell"
+  }, {
+    "eventID": "2",
+    "start": "2019-01-14 19:00:00",
+    "end": "2019-01-14 20:00:00",
+    "eventName": "Interview with Anny Shen",
+    "location": "No. 8 Haji Lane #02-01, Singapore 1234567",
+    "activity": "Sell"
+    }
+  ]
+}

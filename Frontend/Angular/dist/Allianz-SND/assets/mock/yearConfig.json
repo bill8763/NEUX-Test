@@ -1,0 +1,72 @@
+{
+    "lastUpdateTime": "2019/06/04 11:20:00",
+    "FirstUseAPP":true,
+    "Configurations": [
+      {
+        "IsCurrent": "Y",
+        "DataYear": 2019,
+        "PerformanceSettlementMonth": 5,
+        "WorkingMonth": 6,
+        "QuarterStartMonth": 1,
+        "QuarterEndMonth": 1,
+        "InitialPreCaseFyfc": 19,
+        "FyfcCovertAnpRate": 1,
+        "ProgressDayPointsLimit": 1,
+        "GoalSettingActivityProcMode": "TWMode",
+        "GoalAndPlanDifferenceLimit": 0.2,
+        "FindConvertPointBase": 0.2,
+        "ScheduleConvertPointBase": 0.2,
+        "MeetConvertPointBase": 0.2,
+        "SubmitConvertPointBase": 0.2,
+        "InforceConvertPointBase": 1,
+        "InforceConvertFindRate": 14.3,
+        "InforceConvertScheduleRate": 4.6,
+        "InforceConvertMeetRate": 2.3,
+        "InforceConvertSubmitRate": 1.1,
+        "ProgressBarControlMode": "TWMode",
+        "ApproveThreshold": 0.5,
+        "NowToYearEndDays": 286,
+        "MonthQuantityOfYear": 12,
+        "extensions": [
+          {
+            "id": "1234",
+            "datatype": "text | number | boolean",
+            "value": "1234"
+          }
+        ]
+      },
+      {
+        "IsCurrent": "N",
+        "DataYear": 2020,
+        "PerformanceSettlementMonth": 0,
+        "WorkingMonth": 0,
+        "QuarterStartMonth": 1,
+        "QuarterEndMonth": 1,
+        "InitialPreCaseFyfc": 20,
+        "FyfcCovertAnpRate": 1,
+        "ProgressDayPointsLimit": 1,
+        "GoalSettingActivityProcMode": "TWMode",
+        "GoalAndPlanDifferenceLimit": 0.2,
+        "FindConvertPointBase": 0.2,
+        "ScheduleConvertPointBase": 0.2,
+        "MeetConvertPointBase": 0.2,
+        "SubmitConvertPointBase": 0.2,
+        "InforceConvertPointBase": 1,
+        "InforceConvertFindRate": 14.3,
+        "InforceConvertScheduleRate": 4.6,
+        "InforceConvertMeetRate": 2.3,
+        "InforceConvertSubmitRate": 1.1,
+        "ProgressBarControlMode": "TWMode",
+        "ApproveThreshold": 0.5,
+        "NowToYearEndDays": 286,
+        "MonthQuantityOfYear": 12,
+        "extensions": [
+          {
+            "id": "1234",
+            "datatype": "text | number | boolean",
+            "value": "1234"
+          }
+        ]
+      }
+    ]
+  }

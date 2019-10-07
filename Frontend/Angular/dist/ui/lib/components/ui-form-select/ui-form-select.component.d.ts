@@ -1,0 +1,37 @@
+import { OnInit, EventEmitter } from '@angular/core';
+import { SelectOption } from '@allianzSND/core';
+import { UiFormErrorMsgInfoComponent } from '../ui-form-error-msg-info/ui-form-error-msg-info.component';
+export declare class UiFormSelectComponent implements OnInit {
+    nxValue: any;
+    nxValueChange: EventEmitter<any>;
+    onChange: EventEmitter<{}>;
+    selectTitle: string;
+    selectOption: Array<SelectOption>;
+    placeholder: string;
+    isShowTitle: boolean;
+    isShowDefaultOption: boolean;
+    isNoSpace: boolean;
+    dropdownGroup: string;
+    styleTitleFloatNow: string;
+    styleNoSpace: string;
+    private _value;
+    classError: string;
+    classDisable: string;
+    inputStatus: boolean;
+    isError: boolean;
+    isErrorChange: EventEmitter<any>;
+    private _isDisable;
+    isDisable: boolean;
+    currentValue: string;
+    onFocus: EventEmitter<{}>;
+    onBlur: EventEmitter<{}>;
+    errorMagInfo: UiFormErrorMsgInfoComponent;
+    isFocus: boolean;
+    focusBlurEvent(boolean: boolean): void;
+    selectChange(val: any): void;
+    focus(): void;
+    blur(): void;
+    titleFloat(): void;
+    ngOnInit(): void;
+    constructor();
+}

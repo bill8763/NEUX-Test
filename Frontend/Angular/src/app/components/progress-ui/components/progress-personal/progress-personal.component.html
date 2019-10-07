@@ -1,0 +1,42 @@
+<!--page tab-->
+<app-ui-content-b-gap [gapSize]="GapControl">
+  <div class="tab-page">
+    <app-ui-tab-page (onTabChildClick)="OnPersonalDataStateActivitiesByYearEventTrigger($event)" 
+                      [tabSwitchFirst]="TabStringList[0]" 
+                      [tabSwitchSecond]="TabStringList[1]" 
+                      [openTab]="0"
+                      *ngIf = "IsShowYearTab">
+                    </app-ui-tab-page>
+  </div>
+</app-ui-content-b-gap>
+
+<!-- month quarter year-->
+<app-ui-content-b-gap [gapSize]="GapControl">
+  <app-ui-tab-style1 (onTabChildClick)="OnPersonalDataStateActivitiesEventTrigger($event)" 
+                      [maxShow]="4" [tabIndex]="0">
+    <app-ui-tab-child>{{ Language.month | translate }}</app-ui-tab-child>
+    <app-ui-tab-child>{{ Language.quarter | translate }}</app-ui-tab-child>
+    <app-ui-tab-child>{{ Language.year | translate }}</app-ui-tab-child>
+  </app-ui-tab-style1>
+</app-ui-content-b-gap>
+
+<!-- main bar-->
+<snd-progress-personal-main-progressbar class="progress-content-space" 
+                                        [PersonalActivitiesData]="PersonalActivitiesData"                                                                       
+                                        [PersonalActivitiesGoalPlanData]="PersonalActivitiesGoalPlanData">                                                                
+                                        </snd-progress-personal-main-progressbar>
+
+<!-- activities -->
+<snd-progress-personal-progressbar-list class="progress-content-space" 
+                                        [inputScrollContent]="inputScrollContent"                                                                       
+                                        [ProgressYearConfigList] = "ProgressYearConfigList"                                                                        
+                                        [PersonalActivitiesData] = "PersonalActivitiesData"                                                                       
+                                        [PersonalActivitiesGoalPlanData] = "PersonalActivitiesGoalPlanData"
+                                        (onClick)="clickInfo()">                                                         
+                                        </snd-progress-personal-progressbar-list>
+
+<!-- review -->
+<snd-progress-personal-review [MonthlyPlanFYFCData]="MonthlyPlanFYFCData"
+                              [ProgressYearConfigList] = "ProgressYearConfigList"
+                              [CurrentWorkingMonth]="CurrentWorkingMonth">
+                              </snd-progress-personal-review>

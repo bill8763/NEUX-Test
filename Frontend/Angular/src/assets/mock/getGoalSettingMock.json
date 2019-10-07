@@ -1,0 +1,18 @@
+{
+    "Header": {
+        "record_length": 1,
+        "status": true
+    },
+    "Body": [
+        {
+            "DataYear": 2019,
+            "IsNeedSetting": "N",
+            "IsFirstTime": "N",
+            "ApproveStatus": "A",
+            "Remainingdays": 0,
+            "GoalSetMonth": 6,
+            "PersonnelGoalApplicableYM": 1,
+            "TeamGoalApplicableYM": 3
+        }
+    ]
+}

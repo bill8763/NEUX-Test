@@ -1,0 +1,31 @@
+@import 'style-import';
+// rocket title ft. blue-background-area
+.goal-agency-title-content{
+    text-align: left;
+    
+    .title-content-title,.title-content-info{
+        display: block;
+    }
+    .title-content-title{
+        ::ng-deep{
+            .goal-title-contnet{
+                border-bottom-right-radius: 0px;
+                border-bottom-left-radius: 0px;
+            }
+        }
+    }
+    .title-content-info{
+        margin-top: -1px;
+        ::ng-deep{
+            .table-title{
+                border-bottom-right-radius: $radius-card;
+                border-bottom-left-radius: $radius-card;
+
+                @media(max-width: $screen-sm-than-nb){
+                    padding: 20px 10px;
+                }
+            }
+            
+        }
+    }
+}
