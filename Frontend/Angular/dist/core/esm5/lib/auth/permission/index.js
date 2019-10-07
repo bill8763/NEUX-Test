@@ -1,7 +1,0 @@
-/**
- * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
- */
-export { CheckPermissionService } from './check-permission.service';
-export {} from './checkPermission.interface';
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290Ijoibmc6Ly9AYWxsaWFuelNORC9jb3JlLyIsInNvdXJjZXMiOlsibGliL2F1dGgvcGVybWlzc2lvbi9pbmRleC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7O0FBQUEsdUNBQWMsNEJBQTRCLENBQUM7QUFDM0MsZUFBYyw2QkFBNkIsQ0FBQyIsInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCAqIGZyb20gJy4vY2hlY2stcGVybWlzc2lvbi5zZXJ2aWNlJztcbmV4cG9ydCAqIGZyb20gJy4vY2hlY2tQZXJtaXNzaW9uLmludGVyZmFjZSc7Il19
