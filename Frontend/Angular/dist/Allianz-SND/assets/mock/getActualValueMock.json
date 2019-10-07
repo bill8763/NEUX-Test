@@ -1,0 +1,144 @@
+{
+    "Header": {
+        "record_length": 17,
+        "status": true
+    },
+    "Body": [
+        {
+            "ClientID": "b029700e-baa4-4406-9f64-e1ddce51d2e3",
+            "DataYear": 2019,
+            "PerformanceType": "P",
+            "DataType": "FYFC",
+            "Month": 1,
+            "Value": 8
+        },
+        {
+            "ClientID": "f4a0633d-a45a-422d-ac16-660a9a73016e",
+            "DataYear": 2019,
+            "PerformanceType": "P",
+            "DataType": "FYFC",
+            "Month": 2,
+            "Value": 11
+        },
+        {
+            "ClientID": "36cab2b8-4465-473a-9f90-15028d1c2a63",
+            "DataYear": 2019,
+            "PerformanceType": "P",
+            "DataType": "FYFC",
+            "Month": 3,
+            "Value": 13
+        },
+        {
+            "ClientID": "543ef599-ccd6-4d1c-8324-3b09dabeabdf",
+            "DataYear": 2019,
+            "PerformanceType": "P",
+            "DataType": "FYFC",
+            "Month": 4,
+            "Value": 10
+        },
+        {
+            "ClientID": "3825b745-ab6a-4853-af9c-dbd2e173eee0",
+            "DataYear": 2019,
+            "PerformanceType": "P",
+            "DataType": "FYFC",
+            "Month": 5,
+            "Value": 17
+        },
+        {
+            "ClientID": "5849aef6-dc44-46f4-a434-d1c27ae7546d",
+            "DataYear": 2020,
+            "PerformanceType": "P",
+            "DataType": "FYFC",
+            "Month": 1,
+            "Value": 18
+        },
+        {
+            "ClientID": "9895be98-6c6f-4e8f-88b4-5e5a8edcd597",
+            "DataYear": 2020,
+            "PerformanceType": "P",
+            "DataType": "FYFC",
+            "Month": 2,
+            "Value": 16
+        },
+        {
+            "ClientID": "10353e5f-13ba-4d41-bc52-8bfa952e060f",
+            "DataYear": 2020,
+            "PerformanceType": "P",
+            "DataType": "FYFC",
+            "Month": 3,
+            "Value": 11
+        },
+        {
+            "ClientID": "a10632ed-ed00-4a1c-8dea-083faa63ae37",
+            "DataYear": 2020,
+            "PerformanceType": "P",
+            "DataType": "FYFC",
+            "Month": 4,
+            "Value": 9
+        },
+        {
+            "ClientID": "24d7d73d-3524-4eb7-842d-4fa99229decf",
+            "DataYear": 2020,
+            "PerformanceType": "P",
+            "DataType": "FYFC",
+            "Month": 5,
+            "Value": 8
+        },
+        {
+            "ClientID": "d6fa728a-18f6-4424-a871-7ca7890d3f06",
+            "DataYear": 2020,
+            "PerformanceType": "P",
+            "DataType": "FYFC",
+            "Month": 6,
+            "Value": 16
+        },
+        {
+            "ClientID": "dd31eb7b-f71c-4e66-b401-2bad3e9576b9",
+            "DataYear": 2020,
+            "PerformanceType": "P",
+            "DataType": "FYFC",
+            "Month": 7,
+            "Value": 14
+        },
+        {
+            "ClientID": "0be89440-1ab1-4ab3-8bba-f13e3a70bd98",
+            "DataYear": 2020,
+            "PerformanceType": "P",
+            "DataType": "FYFC",
+            "Month": 8,
+            "Value": 10
+        },
+        {
+            "ClientID": "4c2eea23-60ca-4d43-9050-9f75a8ae8dfe",
+            "DataYear": 2020,
+            "PerformanceType": "P",
+            "DataType": "FYFC",
+            "Month": 9,
+            "Value": 8
+        },
+        {
+            "ClientID": "c9c6629d-3d7a-4bdf-bf78-f065acebfd2d",
+            "DataYear": 2020,
+            "PerformanceType": "P",
+            "DataType": "FYFC",
+            "Month": 10,
+            "Value": 18
+        },
+        {
+            "ClientID": "72456fc3-b301-4dc2-9631-de60268d9481",
+            "DataYear": 2020,
+            "PerformanceType": "P",
+            "DataType": "FYFC",
+            "Month": 11,
+            "Value": 15
+        },
+        {
+            "ClientID": "a42d7839-d9e5-4a6d-bb89-70e4dc7ee3eb",
+            "DataYear": 2020,
+            "PerformanceType": "P",
+            "DataType": "FYFC",
+            "Month": 12,
+            "Value": 21
+        }
+    ]
+}

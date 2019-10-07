@@ -1,0 +1,95 @@
+<app-ui-card-content-btn [hasBtn]="isHasBtn">
+  <ng-container infoContent>
+    <!-- title -->
+    <div class="card-title-block">
+      <h3 class="card-title font-size_h5">{{language.goalSettingStep5Title | translate}}</h3>
+      <h5 class="card-subtitle font-size_h9">{{goalEffectiveWorkingMonthTitle}}</h5>
+    </div>
+    <div *ngIf="!isAdjust" class="icon-block">
+      <img src="assets/img/icon-goal-setting-{{urlIcon}}-step5.svg">
+    </div>
+    <div *ngIf="isAdjust" class="card-title-other info-block margin-top">
+      <div class="goal-edit-info">
+        <div class="goal-edit-info-item goal-edit-left flex-display">
+          <p class="title-txt txt-width-auto">{{FYFCActualVariableTitle}}</p>
+          <p class="desc-txt">{{data.TeamFYFCActual | numberFormat}}</p>
+        </div>
+      </div>
+      <div class="goal-edit-info">
+        <div class="goal-edit-info-item goal-edit-left flex-display">
+          <p class="title-txt txt-width-auto">{{ANPActualVariableTitle}}</p>
+          <p class="desc-txt">{{data.TeamANPActual | numberFormat}}</p>
+        </div>
+      </div>
+    </div>
+    <!-- end of title -->
+    <!-- content -->
+    <div class="content-block">
+      <app-ui-form-layout-advanced>
+        <app-ui-form-layout-row>
+          <app-ui-form-layout-col>
+            <app-ui-form-input [type]="'dollar'" [maxLength]="10" [isError]="validationResult.isError('TeamFYFC')"
+              [inputTitle]="FYFCTitle | translate" [(nxValue)]="data.TeamFYFC"
+              (nxValueChange)="onChange('TeamFYFC',$event)" [typeUi]="'style2'" [id]="'input_teamFYFC'">
+            </app-ui-form-input>
+            <app-ui-form-error-msg *ngIf="validationResult.isError('TeamFYFC')">
+              {{validationResult.getErrorMsg('TeamFYFC')| translate}}</app-ui-form-error-msg>
+            <div class="other-descrp">
+              <p class="descrp-title">{{ANPTitle | translate}}</p>
+              <p class="descrp-data">{{data.TeamANP | numberFormat}}</p>
+            </div>
+          </app-ui-form-layout-col>
+        </app-ui-form-layout-row>
+        <app-ui-form-layout-row *ngIf="isAdjust">
+          <app-ui-form-layout-col>
+            <app-ui-form-input [type]="'dollar'" [maxLength]="10" [isError]="validationResult.isError('TeamFYFCNowToYearEnd')"
+              [inputTitle]="FYFCNoToYearEndTitle" [(nxValue)]="data.TeamFYFCNowToYearEnd"
+              (nxValueChange)="onChange('TeamFYFCNowToYearEnd',$event)" [typeUi]="'style2'" [id]="'input_teamFYFCNowToYearEnd'">
+            </app-ui-form-input>
+            <app-ui-form-error-msg *ngIf="validationResult.isError('TeamFYFCNowToYearEnd')">
+              {{validationResult.getErrorMsg('TeamFYFCNowToYearEnd')| translate}}</app-ui-form-error-msg>
+            <div class="other-descrp">
+              <p class="descrp-title">{{ANPNowToYearEndTitle}}</p>
+              <p class="descrp-data">{{data.TeamANPNowToYearEnd | numberFormat}}</p>
+            </div>
+          </app-ui-form-layout-col>
+        </app-ui-form-layout-row>
+        <app-ui-form-layout-row>
+          <app-ui-form-layout-col>
+            <app-ui-form-input [type]="'dollar'" [maxLength]="10" [isError]="validationResult.isError('Manpower')"
+              [inputTitle]="language.manpower | translate" [(nxValue)]="data.Manpower"
+              (nxValueChange)="onChange('Manpower',$event)" [typeUi]="'style2'" [id]="'input_manpower'">
+            </app-ui-form-input>
+            <app-ui-form-error-msg *ngIf="validationResult.isError('Manpower')">
+              {{validationResult.getErrorMsg('Manpower')| translate}}</app-ui-form-error-msg>
+          </app-ui-form-layout-col>
+        </app-ui-form-layout-row>
+        <app-ui-form-layout-row>
+          <app-ui-form-layout-col>
+            <app-ui-form-input [type]="'dollar'" [maxLength]="10" [isError]="validationResult.isError('Recruitment')"
+              [inputTitle]="language.recruitment | translate" [(nxValue)]="data.Recruitment"
+              (nxValueChange)="onChange('Recruitment',$event)" [typeUi]="'style2'" [id]="'input_recruitment'">
+            </app-ui-form-input>
+            <app-ui-form-error-msg *ngIf="validationResult.isError('Recruitment')">
+              {{validationResult.getErrorMsg('Recruitment')| translate}}</app-ui-form-error-msg>
+          </app-ui-form-layout-col>
+        </app-ui-form-layout-row>
+      </app-ui-form-layout-advanced>
+      <!-- reset -->
+      <app-ui-link [isUnderLine]="false" imgSrc="../assets/img/icon-reset.svg" [id]="'btn_goalsettingStep5Reset'" Action action="goalsettingStep5Reset" (actionClick)="onReset()" [isReset]=true
+        [hidden]="!isShowResetBtn">
+        <ng-container textType="linktext">{{language.reset | translate}}</ng-container>
+      </app-ui-link>
+      <!-- end of reset -->
+
+    </div>
+    <!-- end of content -->
+  </ng-container>
+  <ng-container btnContent>
+    <app-ui-btn-layout>
+      <app-ui-btn [btnColor]="isNextYear? 'main1':'main2'" [btnWd]="'lg'" [id]="'btn_goalsettingStep4'" Action action="goalsettingStep4" (actionClick)="doNext()" [isDisable]="isDisableBtn">
+        <ng-container TextType="cust">{{language.submit | translate}}</ng-container>
+      </app-ui-btn>
+    </app-ui-btn-layout>
+  </ng-container>
+</app-ui-card-content-btn>

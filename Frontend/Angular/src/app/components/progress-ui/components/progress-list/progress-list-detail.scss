@@ -1,0 +1,84 @@
+@import 'style-import';
+$wd-mid: 13px;
+$wd-side: calc((100% - #{$wd-mid}) / 2 );
+.progress-subtotal-list{
+    &,.subtotal-list-item{
+        list-style-type: none;
+    }
+    .subtotal-list-item{
+        padding-bottom: 10px;
+        + .subtotal-list-item{
+            padding-top: 10px;
+            border-top: 1px solid $color-grey5;
+        }
+        // title
+        .subtotal-list-title-block{
+            text-align: center;
+            display: block;
+        }
+        .subtotal-title-main{
+            font-size: $font-size-h9;
+            color: $color-main2;
+            font-weight: bold;
+            line-height: 20px;
+            padding-bottom: 5px;
+
+        }
+        .subtotal-title-sub{
+            color: $color-font-normal;
+            line-height: 16px;
+            letter-spacing: $letter-space-lg;
+            
+        }
+        // content
+        .subtotal-list-content-block{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .mid-part{
+                display: inline-block;
+                vertical-align: middle;
+                max-width: $wd-mid;
+                width: 100%;
+                text-align: center;
+                font-size: 0;
+                p{
+                    padding: 0;
+                    margin: 0;
+                    font-weight: bold;
+                    color: $color-font-normal;
+                    font-size: $font-size-h10;
+                }
+            }
+            .side-part{
+                text-align: center;
+                max-width: $wd-side;
+                width: 100%;
+
+                .subtotal-value{
+                    font-size: $font-size-h6;
+                    font-weight: bold;
+                    color: $color-main2;
+                    line-height: $font-line-height;
+                }
+                .subtotal-unit{
+                    line-height: 16px;
+                    font-size: $font-size-h10;
+                    font-weight: bold;
+
+                }
+            }
+        }
+    }
+
+    @media(max-width: $screen-sm-than-nb){
+        .subtotal-list-item{
+            // content
+            .subtotal-list-content-block{
+                max-width: 260px;
+                margin: 0 auto;                
+            }
+        }
+        
+    }
+}

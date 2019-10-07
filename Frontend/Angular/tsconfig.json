@@ -1,0 +1,92 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": "./",
+    "outDir": "./dist/out-tsc",
+    "sourceMap": true,
+    "declaration": false,
+    "module": "es2015",
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "target": "es5",
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "lib": [
+      "es2017",
+      "dom"
+    ],
+    "paths": {
+      "@app/*": [
+        "src/app/*"
+      ],
+      "@allianzSND/core": [
+        "dist/core"
+      ],
+      "@allianzSND/core/*": [
+        "dist/core/*"
+      ],
+      "@allianzSND/progress": [
+        "dist/progress"
+      ],
+      "@allianzSND/progress/*": [
+        "dist/progress/*"
+      ],
+      "@allianzSND/setting": [
+        "dist/setting"
+      ],
+      "@allianzSND/setting/*": [
+        "dist/setting/*"
+      ],
+      "@allianzSND/goal": [
+        "dist/goal"
+      ],
+      "@allianzSND/goal/*": [
+        "dist/goal/*"
+      ],
+      "@allianzSND/login": [
+        "dist/login"
+      ],
+      "@allianzSND/login/*": [
+        "dist/login/*"
+      ],
+      "@allianzSND/menu": [
+        "dist/menu"
+      ],
+      "@allianzSND/menu/*": [
+        "dist/menu/*"
+      ],
+      "@allianzSND/ui": [
+        "dist/ui"
+      ],
+      "@allianzSND/ui/*": [
+        "dist/ui/*"
+      ],
+      "@allianzSND/dashboard": [
+        "dist/dashboard"
+      ],
+      "@allianzSND/dashboard/*": [
+        "dist/dashboard/*"
+      ],
+      "@allianzSND/calendarCustomerCommon": [
+        "dist/calendar-customer-common"
+      ],
+      "@allianzSND/calendarCustomerCommon/*": [
+        "dist/calendar-customer-common/*"
+      ],
+      "@allianzSND/notification": [
+        "dist/notification"
+      ],
+      "@allianzSND/notification/*": [
+        "dist/notification/*"
+      ],
+      "@allianzSND/integration-calendar-customer": [
+        "dist/integration-calendar-customer"
+      ],
+      "@allianzSND/integration-calendar-customer/*": [
+        "dist/integration-calendar-customer/*"
+      ]
+    }
+  }
+}

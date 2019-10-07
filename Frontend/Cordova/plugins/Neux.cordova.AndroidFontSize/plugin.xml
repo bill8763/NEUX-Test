@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="Neux.cordova.AndroidFontSize" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+	<name>AndroidFontSize</name>
+	<js-module name="AndroidFontSize" src="www/AndroidFontSize.js">
+		<clobbers target="cordova.plugins.AndroidFontSize" />
+	</js-module>
+	<platform name="android">
+		<config-file parent="/*" target="res/xml/config.xml">
+			<feature name="AndroidFontSize">
+				<param name="android-package" value="Neux.cordova.AndroidFontSize.AndroidFontSize" /></feature>
+		</config-file>
+		<config-file parent="/*" target="AndroidManifest.xml"></config-file>
+		<source-file src="src/android/AndroidFontSize.java" target-dir="src/Neux/cordova/AndroidFontSize/AndroidFontSize" />
+		<source-file src="src/android/AbstractMobileAccessibilityHelper.java" target-dir="src/Neux/cordova/AndroidFontSize/AndroidFontSize" />
+		<source-file src="src/android/DonutMobileAccessibilityHelper.java" target-dir="src/Neux/cordova/AndroidFontSize/AndroidFontSize" />
+		<source-file src="src/android/IceCreamSandwichMobileAccessibilityHelper.java" target-dir="src/Neux/cordova/AndroidFontSize/AndroidFontSize" />
+		<source-file src="src/android/JellyBeanMobileAccessibilityHelper.java" target-dir="src/Neux/cordova/AndroidFontSize/AndroidFontSize" />
+		<source-file src="src/android/KitKatMobileAccessibilityHelper.java" target-dir="src/Neux/cordova/AndroidFontSize/AndroidFontSize" />
+
+	</platform>
+</plugin>

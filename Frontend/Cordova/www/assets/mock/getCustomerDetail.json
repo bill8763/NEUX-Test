@@ -1,0 +1,76 @@
+{
+  "Header": {
+    "record_length": 1,
+    "status": true
+  },
+  "Body": [{
+      "ClientID": "94b7197e-41f2-45f4-a119-c4b5480b5882",
+      "DataSource": "APP",
+      "CustomerID": null,
+      "FirstName": "",
+      "LastName": "Sarina",
+      "Occupation": null,
+      "Company": null,
+      "BirthdayYear": null,
+      "BirthdayMonth": null,
+      "BirthdayDate": null,
+      "Age": null,
+      "AgeRange": null,
+      "Gender": null,
+      "Income": null,
+      "Source": null,
+      "Marriage": null,
+      "Children": null,
+      "Familiarity": null,
+      "ContactFrequancy": null,
+      "Possibility": null,
+      "IsFollow": "N",
+      "DataTime": null,
+      "DataTimeBackend": null,
+      "ClientTime": 1560500469307,
+      "PartId": null,
+      "IsDelete": "N",
+      "Completeness": 0.12,
+      "IsOverTimeAlert": null,
+      "BirthDayTimeStamp": null,
+      "RecentStatus": null,
+      "MANPA": null,
+      "tel": [{
+          "ClientID": "4a0a8e4f-2fe1-4fbc-92d2-e758e7de3767",
+          "CustomerClientID": "b60156b0-eb80-4706-bd9e-b70bc159998a",
+          "TelType": "TelMobile",
+          "Tel": "888",
+          "DataSource": "OPUS"
+        },
+        {
+          "ClientID": "de86c5d1-4501-4205-9c3a-a7eeb0dab0c9",
+          "CustomerClientID": "b60156b0-eb80-4706-bd9e-b70bc159998a",
+          "TelType": "TelHome",
+          "Tel": "889",
+          "DataSource": "OPUS"
+        }
+      ],
+      "email": [{
+          "ClientID": "f1a47449-4613-4dc3-aa36-f352a0dc6bf3",
+          "CustomerClientID": "b60156b0-eb80-4706-bd9e-b70bc159998a",
+          "EmailType": "MailHome",
+          "Email": "jsksk@hod.mail.com",
+          "DataSource": "APP"
+        }
+      ],
+      "address": [{
+        "Address": "手術室內在的人都有推出",
+        "AddressDisplay": "家, 事實, 看過, 555, 手術室內在的人都有推出",
+        "AddressType": "AddressTypeHome",
+        "Area": "看過",
+        "City": "事實",
+        "ClientID": "859936b6-7b05-4f3b-a8f2-5f981ff63d33",
+        "Country": "家",
+        "CustomerClientID": "02a98443-0cef-4d69-95c2-f0a94270d61b",
+        "DataSource": "OPUS",
+        "Zipcode": "555"
+      }],
+      "Birthday": null
+    }
+  ]
+}

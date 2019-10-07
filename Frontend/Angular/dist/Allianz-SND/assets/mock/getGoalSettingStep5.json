@@ -1,0 +1,21 @@
+{
+  "Header": {
+    "Time": "20190107000005",
+    "PageInfo": {
+      "pageNo": 1,
+      "pageSize": 10,
+      "totalPage": 3,
+      "totalRec": 30
+    },
+    "QueryParams": {}
+  },
+  "Body": [
+    {
+      "FYFC": 200,
+      "FYFC_Actual": 30,
+      "FYFC_Now_To_Year_End": 170,
+      "Manpower": 70,
+      "Recruitment": 40
+    }
+  ]
+}

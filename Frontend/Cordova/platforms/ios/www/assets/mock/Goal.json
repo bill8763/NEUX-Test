@@ -1,0 +1,577 @@
+{
+  "lastUpdateTime": "2019-02-01 11:11:00",
+  "Goals": [
+    {
+      "DataYear": 2019,
+      "GoalSetting": {
+        "IsNeedSetting": false,
+        "IsCurrent": true,
+        "IsFirstTime": false,
+        "Status": "W",
+        "GoalSetMonth": 5,
+        "Remainingdays": 15,
+        "PersonnelGoalApplicableYM": 1,
+        "TeamGoalApplicableYM": 3,
+        "extensions": [
+          {
+            "id": "1234",
+            "datatype": "text | number | boolean",
+            "value": "1234"
+          }
+        ]
+      },
+      "GoalValue": [
+        {
+          "DataType": "PERSON_ANP",
+          "Value": 15,
+          "extensions": [
+            {
+              "id": "1234",
+              "datatype": "text | number | boolean",
+              "value": "1234"
+            }
+          ]
+        },
+        {
+          "DataType": "PERSON_FYFC",
+          "Value": 1500,
+          "extensions": [
+            {
+              "id": "1234",
+              "datatype": "text | number | boolean",
+              "value": "1234"
+            }
+          ]
+        },
+        {
+          "DataType": "ANNUAL_CONVENTION",
+          "Value": "1",
+          "extensions": [
+            {
+              "id": "1234",
+              "datatype": "text | number | boolean",
+              "value": "1234"
+            }
+          ]
+        },
+        {
+          "DataType": "MDRT",
+          "Value": "2",
+          "extensions": [
+            {
+              "id": "1234",
+              "datatype": "text | number | boolean",
+              "value": "1234"
+            }
+          ]
+        }
+      ],
+      "GoalPlan": {
+        "TimeBase": "Month",
+        "Values": [
+          {
+            "PerformanceType": "P",
+            "Month": 1,
+            "Value": 30,
+            "extensions": [
+              {
+                "id": "1234",
+                "datatype": "text | number | boolean",
+                "value": "1234"
+              }
+            ]
+          },
+          {
+            "PerformanceType": "P",
+            "Month": 2,
+            "Value": 12,
+            "extensions": [
+              {
+                "id": "1234",
+                "datatype": "text | number | boolean",
+                "value": "1234"
+              }
+            ]
+          },
+          {
+            "PerformanceType": "P",
+            "Month": 3,
+            "Value": 16,
+            "extensions": [
+              {
+                "id": "1234",
+                "datatype": "text | number | boolean",
+                "value": "1234"
+              }
+            ]
+          },
+          {
+            "PerformanceType": "P",
+            "Month": 4,
+            "Value": 14,
+            "extensions": [
+              {
+                "id": "1234",
+                "datatype": "text | number | boolean",
+                "value": "1234"
+              }
+            ]
+          },
+          {
+            "PerformanceType": "P",
+            "Month": 5,
+            "Value": 20,
+            "extensions": [
+              {
+                "id": "1234",
+                "datatype": "text | number | boolean",
+                "value": "1234"
+              }
+            ]
+          },
+          {
+            "PerformanceType": "P",
+            "Month": 6,
+            "Value": 30,
+            "extensions": [
+              {
+                "id": "1234",
+                "datatype": "text | number | boolean",
+                "value": "1234"
+              }
+            ]
+          },
+          {
+            "PerformanceType": "P",
+            "Month": 7,
+            "Value": 19,
+            "extensions": [
+              {
+                "id": "1234",
+                "datatype": "text | number | boolean",
+                "value": "1234"
+              }
+            ]
+          },
+          {
+            "PerformanceType": "P",
+            "Month": 8,
+            "Value": 17,
+            "extensions": [
+              {
+                "id": "1234",
+                "datatype": "text | number | boolean",
+                "value": "1234"
+              }
+            ]
+          },
+          {
+            "PerformanceType": "P",
+            "Month": 9,
+            "Value": 15,
+            "extensions": [
+              {
+                "id": "1234",
+                "datatype": "text | number | boolean",
+                "value": "1234"
+              }
+            ]
+          },
+          {
+            "PerformanceType": "P",
+            "Month": 10,
+            "Value": 13,
+            "extensions": [
+              {
+                "id": "1234",
+                "datatype": "text | number | boolean",
+                "value": "1234"
+              }
+            ]
+          },
+          {
+            "PerformanceType": "P",
+            "Month": 11,
+            "Value": 11,
+            "extensions": [
+              {
+                "id": "1234",
+                "datatype": "text | number | boolean",
+                "value": "1234"
+              }
+            ]
+          },
+          {
+            "PerformanceType": "P",
+            "Month": 12,
+            "Value": 9,
+            "extensions": [
+              {
+                "id": "1234",
+                "datatype": "text | number | boolean",
+                "value": "1234"
+              }
+            ]
+          }
+        ],
+        "extensions": [
+          {
+            "id": "1234",
+            "datatype": "text | number | boolean",
+            "value": "1234"
+          }
+        ]
+      },
+      "GoalExpected": {
+        "FYFC": 10,
+        "ANP": 10,
+        "Recruitments": [
+          {
+            "Qarter": 1,
+            "Value": 20,
+            "extensions": [
+              {
+                "id": "1234",
+                "datatype": "text | number | boolean",
+                "value": "1234"
+              }
+            ]
+          },
+                    {
+            "Qarter": 2,
+            "Value": 22,
+            "extensions": [
+              {
+                "id": "1234",
+                "datatype": "text | number | boolean",
+                "value": "1234"
+              }
+            ]
+          },
+                    {
+            "Qarter": 3,
+            "Value": 24,
+            "extensions": [
+              {
+                "id": "1234",
+                "datatype": "text | number | boolean",
+                "value": "1234"
+              }
+            ]
+          },
+                    {
+            "Qarter": 4,
+            "Value": 25,
+            "extensions": [
+              {
+                "id": "1234",
+                "datatype": "text | number | boolean",
+                "value": "1234"
+              }
+            ]
+          }
+        ],
+        "extensions": [
+          {
+            "id": "1234",
+            "datatype": "text | number | boolean",
+            "value": "1234"
+          }
+        ]
+      },
+      "extensions": [
+        {
+          "id": "1234",
+          "datatype": "text | number | boolean",
+          "value": "1234"
+        }
+      ]
+    },
+    {
+      "DataYear": 2020,
+      "GoalSetting": {
+        "IsNeedSetting": true,
+        "IsCurrent": false,
+        "IsFirstTime": true,
+        "Status": "W",
+        "GoalSetMonth": 1,
+        "Remainingdays": 15,
+        "PersonnelGoalApplicableYM": 1,
+        "TeamGoalApplicableYM": 1,
+        "extensions": [
+          {
+            "id": "1234",
+            "datatype": "text | number | boolean",
+            "value": "1234"
+          }
+        ]
+      },
+      "GoalValue": [
+        {
+          "DataType": "PERSON_ANP",
+          "Value": 15,
+          "extensions": [
+            {
+              "id": "1234",
+              "datatype": "text | number | boolean",
+              "value": "1234"
+            }
+          ]
+        },
+        {
+          "DataType": "PERSON_FYFC",
+          "Value": 1500,
+          "extensions": [
+            {
+              "id": "1234",
+              "datatype": "text | number | boolean",
+              "value": "1234"
+            }
+          ]
+        },
+        {
+          "DataType": "ANNUAL_CONVENTION",
+          "Value": "1",
+          "extensions": [
+            {
+              "id": "1234",
+              "datatype": "text | number | boolean",
+              "value": "1234"
+            }
+          ]
+        },
+        {
+          "DataType": "MDRT",
+          "Value": "2",
+          "extensions": [
+            {
+              "id": "1234",
+              "datatype": "text | number | boolean",
+              "value": "1234"
+            }
+          ]
+        }
+      ],
+      "GoalPlan": {
+        "TimeBase": "Month",
+        "Values": [
+          {
+            "PerformanceType": "P",
+            "Month": 1,
+            "Value": 19,
+            "extensions": [
+              {
+                "id": "1234",
+                "datatype": "text | number | boolean",
+                "value": "1234"
+              }
+            ]
+          },
+          {
+            "PerformanceType": "P",
+            "Month": 2,
+            "Value": 16,
+            "extensions": [
+              {
+                "id": "1234",
+                "datatype": "text | number | boolean",
+                "value": "1234"
+              }
+            ]
+          },
+          {
+            "PerformanceType": "P",
+            "Month": 3,
+            "Value": 13,
+            "extensions": [
+              {
+                "id": "1234",
+                "datatype": "text | number | boolean",
+                "value": "1234"
+              }
+            ]
+          },
+          {
+            "PerformanceType": "P",
+            "Month": 4,
+            "Value": 15,
+            "extensions": [
+              {
+                "id": "1234",
+                "datatype": "text | number | boolean",
+                "value": "1234"
+              }
+            ]
+          },
+          {
+            "PerformanceType": "P",
+            "Month": 5,
+            "Value": 12,
+            "extensions": [
+              {
+                "id": "1234",
+                "datatype": "text | number | boolean",
+                "value": "1234"
+              }
+            ]
+          },
+          {
+            "PerformanceType": "P",
+            "Month": 6,
+            "Value": 17,
+            "extensions": [
+              {
+                "id": "1234",
+                "datatype": "text | number | boolean",
+                "value": "1234"
+              }
+            ]
+          },
+          {
+            "PerformanceType": "P",
+            "Month": 7,
+            "Value": 15,
+            "extensions": [
+              {
+                "id": "1234",
+                "datatype": "text | number | boolean",
+                "value": "1234"
+              }
+            ]
+          },
+          {
+            "PerformanceType": "P",
+            "Month": 8,
+            "Value": 16,
+            "extensions": [
+              {
+                "id": "1234",
+                "datatype": "text | number | boolean",
+                "value": "1234"
+              }
+            ]
+          },
+          {
+            "PerformanceType": "P",
+            "Month": 9,
+            "Value": 18,
+            "extensions": [
+              {
+                "id": "1234",
+                "datatype": "text | number | boolean",
+                "value": "1234"
+              }
+            ]
+          },
+          {
+            "PerformanceType": "P",
+            "Month": 10,
+            "Value": 19,
+            "extensions": [
+              {
+                "id": "1234",
+                "datatype": "text | number | boolean",
+                "value": "1234"
+              }
+            ]
+          },
+          {
+            "PerformanceType": "P",
+            "Month": 11,
+            "Value": 20,
+            "extensions": [
+              {
+                "id": "1234",
+                "datatype": "text | number | boolean",
+                "value": "1234"
+              }
+            ]
+          },
+          {
+            "PerformanceType": "P",
+            "Month": 12,
+            "Value": 21,
+            "extensions": [
+              {
+                "id": "1234",
+                "datatype": "text | number | boolean",
+                "value": "1234"
+              }
+            ]
+          }
+        ],
+        "extensions": [
+          {
+            "id": "1234",
+            "datatype": "text | number | boolean",
+            "value": "1234"
+          }
+        ]
+      },
+      "GoalExpected": {
+        "FYFC": 10,
+        "ANP": 10,
+        "Recruitments": [
+          {
+            "Qarter": 1,
+            "Value": 20,
+            "extensions": [
+              {
+                "id": "1234",
+                "datatype": "text | number | boolean",
+                "value": "1234"
+              }
+            ]
+          },
+                    {
+            "Qarter": 2,
+            "Value": 22,
+            "extensions": [
+              {
+                "id": "1234",
+                "datatype": "text | number | boolean",
+                "value": "1234"
+              }
+            ]
+          },
+                    {
+            "Qarter": 3,
+            "Value": 24,
+            "extensions": [
+              {
+                "id": "1234",
+                "datatype": "text | number | boolean",
+                "value": "1234"
+              }
+            ]
+          },
+                    {
+            "Qarter": 4,
+            "Value": 25,
+            "extensions": [
+              {
+                "id": "1234",
+                "datatype": "text | number | boolean",
+                "value": "1234"
+              }
+            ]
+          }
+        ],
+        "extensions": [
+          {
+            "id": "1234",
+            "datatype": "text | number | boolean",
+            "value": "1234"
+          }
+        ]
+      },
+      "extensions": [
+        {
+          "id": "1234",
+          "datatype": "text | number | boolean",
+          "value": "1234"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+export { CustomerAddress, CustomerAlertItem, CustomerContactNote, CustomerEmail, CustomerItem, CustomerList, CustomerTel, MobileCustomerItem, MobileCustomerList, CustomerBirthday } from './model';
+export { CustomerService } from './customer-service.service';
+export { CustomerStoreService, CUSTOMER_STATE } from './customerStore/customerStore-service';
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290Ijoibmc6Ly9AYWxsaWFuelNORC9pbnRlZ3JhdGlvbi1jYWxlbmRhci1jdXN0b21lci8iLCJzb3VyY2VzIjpbImxpYi9jdXN0b21lci9zZXJ2aWNlL2luZGV4LnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7QUFBQSwwTEFBYyxTQUFTLENBQUM7QUFDeEIsZ0NBQWMsNEJBQTRCLENBQUM7QUFDM0MscURBQWMsdUNBQXVDLENBQUMiLCJzb3VyY2VzQ29udGVudCI6WyJleHBvcnQgKiBmcm9tICcuL21vZGVsJztcbmV4cG9ydCAqIGZyb20gJy4vY3VzdG9tZXItc2VydmljZS5zZXJ2aWNlJztcbmV4cG9ydCAqIGZyb20gJy4vY3VzdG9tZXJTdG9yZS9jdXN0b21lclN0b3JlLXNlcnZpY2UnOyJdfQ==

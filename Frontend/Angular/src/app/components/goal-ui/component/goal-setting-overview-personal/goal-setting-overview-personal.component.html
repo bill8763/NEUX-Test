@@ -1,0 +1,18 @@
+<!-- your goal -->
+<snd-goal-overview-goal-fyfc-card [allStepData]="allStepData">
+</snd-goal-overview-goal-fyfc-card>
+<!-- end : your goal -->
+
+<!-- Monthly-plan-FYFC -->
+<snd-goal-overview-monthly-plan-fyfc-card [title]="language.personalMonthlyPlanFYFC | translate"
+  [canEdit]="isMonthlyPlanFYFCCardCanEdit" [allStepData]="allStepData" (editPlanFYFC)="onEditPlanFYFC()">
+</snd-goal-overview-monthly-plan-fyfc-card>
+<!-- end of Monthly-plan-FYFC -->
+
+<!-- 火箭人 -->
+<snd-goal-overview-rocket-card [allStepData]="allStepData"></snd-goal-overview-rocket-card>
+<!-- end of 火箭人 -->
+
+<!-- start of appproveStatus card -->
+<snd-goal-setting-overview-approve-status-card [allStepData]="allStepData"></snd-goal-setting-overview-approve-status-card>
+<!-- end of appproveStatus card -->

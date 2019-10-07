@@ -1,0 +1,85 @@
+<!--tab personal or team  use identity to design personal btn or team btn here...-->
+<ng-template #tabPersonalTeam>
+  <app-ui-content-b-gap [gapSize]="GAP_SIZE_40" *ngIf="IsShowSwitchTab">
+    <app-ui-tab-style1 (onTabChildClick)="tabChangeView($event)" 
+                        [maxShow]="4" [tabIndex]= "IsShowTabTeam ? 1 : 0" 
+                        *ngIf="IsShowSwitchTab"><!-- !IsAgent -->
+      <app-ui-tab-child>{{ Language.personal | translate }}</app-ui-tab-child>
+      <app-ui-tab-child>{{ Language.team | translate}}</app-ui-tab-child>
+    </app-ui-tab-style1>
+  </app-ui-content-b-gap>
+</ng-template>
+  
+<!-- end of tab personal or team -->
+
+<app-ui-inner-full class="progress-inner-layout-block" 
+                  [prevText]="prevText" 
+                  [title]="AgentName" 
+                  (agentBackEvent)="onInnerAgentBackEvent($event)">
+                  
+  <div class="progress-info-content" main #scrollContent>
+
+
+   <ng-container *ngTemplateOutlet="tabPersonalTeam"></ng-container>
+    
+   <ng-container *ngIf="!IsSupervisor">
+    <ng-container *ngIf="!IsShowTabTeam; else teamView">
+      <app-progress-inner-personal [InnerPersonalData] = "InnerPersonalData" 
+                                   [InnerPersonalDataYesterdayPoints] = "InnerPersonalDataYesterdayPoints" 
+                                   [InnerProgressYearConfigList] = "InnerProgressYearConfigList"
+                                   [InnerPersonalActivitiesData] = "InnerPersonalActivitiesData"
+                                   [InnerPersonalActivitiesGoalPlanData] = "InnerPersonalActivitiesGoalPlanData"
+                                   [InnerMonthlyPlanFYFCData] = "InnerMonthlyPlanFYFCData"
+                                   (innerPersonalDataStateEvent) = "onInnerPersonalDataStateEvent($event)" 
+                                   (innerPersonalDataStateActivitiesEvent) = "onInnerPersonalDataStateActivitiesEvent($event)"
+                                   (onClick)="clickInfoPersonal()">
+                                  </app-progress-inner-personal>
+    </ng-container>
+  </ng-container>
+    
+    <ng-template #teamView>
+      <app-progress-team [inputScrollContent]="" 
+                          [ProgressYearConfigList] = "InnerProgressYearConfigList" 
+                          [TeamMainDataList] = "InnerTeamMainDataList" 
+                          [TeamDirectDataList] = "InnerTeamDirectDataList" 
+                          [TeamIndirectDataList] = "InnerTeamIndirectDataList" 
+                          (progressDataTeamValueEvent) = "onInnerTeamDataStateEvent($event)"
+                          (onClickInfoDirect)="clickInfoDirect()"
+                          (onClickInfoIndirect)="clickInfoIndirect()"
+                          (onClickTableCard)="clickInfoTableCard()">
+                        </app-progress-team>
+    </ng-template>
+
+    <!-- zone head -->
+    <snd-progress-head-leader *ngIf="IsSupervisor"
+                              [ProgressYearConfigList] = "InnerProgressYearConfigList" 
+                              [TeamMainDataList] = "InnerTeamMainDataList" 
+                              [TeamIndirectDataList] = "InnerTeamIndirectDataList" 
+                              (zoneHeadStateEvent) = "onInnerZoneHeadStateEvent($event)"
+                              (onClick)="clickInfoHead()"
+                              (onClickTableCard)="clickInfoTableCard()">
+                            </snd-progress-head-leader>
+    <!-- end of zone head -->
+
+    <!--back-->
+    <app-ui-link class="link-back" [isUnderLine]="false" [isImgFront]="true" 
+                [imgSrc]="'../assets/img/icon-turn-arror.svg'"
+                (onClick)="BackToProgress()">
+      <ng-container textType="linktext">{{ Language.backToProgressBtnText | translate }}</ng-container>
+    </app-ui-link>
+    <!-- end of back -->
+    
+  </div>
+  <!-- end: main -->
+
+  <div global-main>
+      <snd-progress-info-modal 
+    [(isPopupOpenProgressBarListInfo)]="isPopupOpenProgressBarListInfo"
+    [(isPopupOpenTableCardInfo)]="isPopupOpenTableCardInfo"
+    [(isPopupOpenInderectInfo)]="isPopupOpenInderectInfo"
+    [(isPopupOpenDerectInfo)]="isPopupOpenDerectInfo"
+    [(isPopupOpenHeadTablerInfo)]="isPopupOpenHeadTablerInfo">
+  </snd-progress-info-modal>
+  </div>
+  <!-- end: global-main -->
+</app-ui-inner-full>

@@ -1,0 +1,64 @@
+<div class="progress-list-block">
+  <div class="top-block">
+    <div class="progress-total-block">
+        <div class="progress-chart-block">
+
+          <button class="arrow-block prev-block" 
+                  (click)=" OnPersonalDataStateEventTrigger(TodayData)"  
+                  *ngIf="IsToggle">
+            <p class="text">{{ Language.today | translate }}</p>
+          </button>
+          <app-ui-progress-circle class="chart-block" 
+                                  [value]="PercentageBarValues" 
+                                  [sizeR]="WindowSize()? 51.5 : 65" 
+                                  [sizeStroke]="5">
+            <div class="chart-content">
+                <div class="progress-total-unit">{{ IsToggleMsg }}</div>
+                <div class="progress-total-value">{{ ShowTotalPoint | numberFormat }}</div>
+            </div>
+          </app-ui-progress-circle>
+
+          <button class="arrow-block next-block" 
+                  (click)=" OnPersonalDataStateEventTrigger(WeekData)"  
+                  *ngIf="!IsToggle">
+            <p class="text">{{Language.week | translate}}</p>
+          </button>
+        </div>
+        
+        <div class="text-block">
+          <p>{{ EncourageMsg }}</p>
+        </div>
+    </div>
+  </div>
+
+
+  <!-- btm -->
+  <div class="btm-block">
+    <ul class="progress-subtotal-list">
+      
+      <li class="subtotal-list-item" *ngFor="let item of ListItemName;">
+        <div class="subtotal-list-title-block">
+          <div class="subtotal-title-main">{{ item.Name }}</div>
+          <div class="subtotal-title-sub">{{ item.Content }}</div>
+        </div>
+
+        <div class="subtotal-list-content-block">
+
+          <div class="side-part left-part">
+              <div class="subtotal-value">{{ item.Value | numberFormat }}</div>
+              <div class="subtotal-unit">{{ item.Unit }}</div>
+          </div>
+
+          <div class="mid-part"><p>=</p></div>
+          
+          <div class="side-part right-part">
+            <div class="subtotal-value">{{ item.Points | numberFormat }}</div>
+            <div class="subtotal-unit">{{ Language.points | translate }}</div>
+          </div>
+
+        </div>
+      </li>
+    </ul>
+  </div>
+
+</div>

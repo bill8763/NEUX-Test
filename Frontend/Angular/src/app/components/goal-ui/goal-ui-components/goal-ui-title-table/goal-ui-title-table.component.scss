@@ -1,0 +1,19 @@
+@import 'style-import';
+p{
+    padding: 0;
+    margin: 0;
+}
+.title-block{
+    .title-text{
+        font-size: $font-size-h9;
+        font-weight: bold;
+        line-height: $font-line-height;
+    }
+}
+.desc-block{
+    .desc-text{
+        font-size: $font-size-h8;
+        font-weight: 300;
+        line-height: $font-line-height;
+    }
+}

@@ -1,0 +1,39 @@
+@import 'style-import';
+$space-left-info: 55px;
+
+.goal-info-info.goal-info-btm{
+    .data-table-block{
+        text-align: left;
+    }
+
+    .goal-info-left{
+        padding-left: $space-left-info;
+    }
+    .goal-info-right{
+        // right part data
+        .data-table-block{
+            flex: 50%;
+            flex-shrink: 0;
+            flex-grow: 0;
+        }
+    }
+    @media(max-width: $screen-sm-than-nb){
+        .goal-info-left,.goal-info-right{
+            .data-table-block{
+                flex: 100%;
+                + .data-table-block{
+                    padding-top: $space-ui-element;
+                }
+            }
+        }
+        
+        .goal-info-left{
+            padding-left: 0;
+        }
+        .goal-info-right{
+            flex-wrap: wrap;
+        }
+    }
+} // end of goal-info-info.goal-info-btm
+
+

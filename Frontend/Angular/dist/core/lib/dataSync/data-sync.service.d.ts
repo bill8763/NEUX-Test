@@ -1,0 +1,36 @@
+import { ErrorHandler } from '@angular/core';
+import { IFunctionSync } from './function/IFunctionSync';
+import { DaoFactory } from '../device/sqlite/DaoFactory';
+import { APIFactory } from '../api/APIFactory';
+import { APIDispatch } from '../api/APIDispatch';
+import { Observable } from 'rxjs';
+import { IregisterDataSyncFunc } from '../initTask/interface/registerDataSyncFunc.interface';
+import { DeviceService } from '../device/device.service';
+export declare class DataSyncService {
+    private APP_CONFIG;
+    private APIFactory;
+    private dispatcher;
+    private errorHandler;
+    private DaoFactory;
+    private devcieService;
+    private registerDataSyncFunc;
+    private syncAPIMap;
+    private FuncAPIMap;
+    private SyncProcessList;
+    private func_url;
+    private syncStateSubject;
+    constructor(APP_CONFIG: any, APIFactory: APIFactory, dispatcher: APIDispatch, errorHandler: ErrorHandler, DaoFactory: DaoFactory, devcieService: DeviceService, registerDataSyncFunc: IregisterDataSyncFunc);
+    private init;
+    getSyncState(): Observable<any>;
+    registerAPI(func: IFunctionSync): void;
+    syncAllFunc(async?: boolean): Promise<void>;
+    syncFunc(FuncList: Array<string>, async?: boolean): Promise<void>;
+    private sync;
+    private pushToServer;
+    private pullFromServer;
+    private getSequentialID;
+    private getCurrentSyncState;
+    private updateState;
+    private waitUntilSyncFinish;
+    private getSyncPromiseObject;
+}

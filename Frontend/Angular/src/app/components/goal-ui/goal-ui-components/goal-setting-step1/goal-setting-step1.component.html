@@ -1,0 +1,94 @@
+<!-- step1 -->
+<app-ui-card-content-btn [hasBtn]="isHasBtn" class="card-block" *ngIf="data">
+  <ng-container infoContent>
+    <!-- title -->
+    <div class="card-title-block">
+      <h3 class="card-title font-size_h5">{{language.goalSettingStep1Title | translate}}</h3>
+      <h5 class="card-subtitle font-size_h9">{{goalEffectiveWorkingMonthTitle}}
+      </h5>
+    </div>
+    <div *ngIf="!isAdjust" class="icon-block">
+      <img src="assets/img/icon-goal-setting-{{urlIcon}}-step1.svg">
+    </div>
+    <div *ngIf="isAdjust" class="card-title-other info-block margin-top">
+      <div class="goal-edit-info">
+        <div class="goal-edit-info-item goal-edit-left flex-display">
+          <p class="title-txt txt-width-auto">{{FYFCActualVariableTitle}}</p>
+          <p class="desc-txt">{{data.Actual| numberFormat}}</p>
+        </div>
+      </div>
+    </div>
+    <!-- end of title -->
+    <!-- content -->
+    <div class="content-block">
+      <app-ui-form-layout-advanced>
+        <app-ui-form-layout-row>
+          <app-ui-form-layout-col>
+            <app-ui-form-input [type]="'dollar'" [maxLength]="10" [isError]="validationResult.isError('FYFC')"
+              [inputTitle]="FYFCTitle | translate" [(nxValue)]="data.FYFC" (nxValueChange)="onChange('FYFC',$event)"
+              [typeUi]="'style2'" [id]="'input_FYFC'">
+            </app-ui-form-input>
+            <app-ui-form-error-msg *ngIf="validationResult.isError('FYFC')">
+              {{validationResult.getErrorMsg('FYFC')| translate}}</app-ui-form-error-msg>
+          </app-ui-form-layout-col>
+        </app-ui-form-layout-row>
+        <app-ui-form-layout-row *ngIf="isAdjust">
+          <app-ui-form-layout-col>
+            <app-ui-form-input [type]="'dollar'" [maxLength]="10" [isError]="validationResult.isError('FYFCNowToYearEnd')"
+              [inputTitle]="FYFCNoToYearEndTitle" [(nxValue)]="data.FYFCNowToYearEnd"
+              (nxValueChange)="onChange('FYFCNowToYearEnd',$event)" [typeUi]="'style2'" [id]="'input_FYFCNowToYearEnd'">
+            </app-ui-form-input>
+            <app-ui-form-error-msg *ngIf="validationResult.isError('FYFCNowToYearEnd')">
+              {{validationResult.getErrorMsg('FYFCNowToYearEnd')| translate}}</app-ui-form-error-msg>
+          </app-ui-form-layout-col>
+        </app-ui-form-layout-row>
+        <app-ui-form-layout-row>
+          <app-ui-form-layout-col>
+            <app-ui-form-select [selectTitle]="language.annualConvention | translate" [isShowDefaultOption]="false"
+              [selectOption]="annualConventionOption" [(nxValue)]="data.AnnualConvention"
+              (nxValueChange)="onChange('AnnualConvention',$event)" [isShowTitle]="true" [id]="'select_AnnualConvention'">
+            </app-ui-form-select>
+            <app-ui-form-error-msg *ngIf="validationResult.isError('AnnualConvention')">
+              {{validationResult.getErrorMsg('AnnualConvention')| translate}}</app-ui-form-error-msg>
+          </app-ui-form-layout-col>
+        </app-ui-form-layout-row>
+        <app-ui-form-layout-row>
+          <app-ui-form-layout-col>
+            <app-ui-form-select [selectTitle]="language.MDRT | translate" [isShowDefaultOption]="false"
+              [selectOption]="MDRTOption" [(nxValue)]="data.MDRT" (nxValueChange)="onChange('MDRT',$event)"
+              [isShowTitle]="true" [id]="'select_MDRT'">
+            </app-ui-form-select>
+            <app-ui-form-error-msg *ngIf="validationResult.isError('MDRT')">
+              {{validationResult.getErrorMsg('MDRT')| translate}}</app-ui-form-error-msg>
+          </app-ui-form-layout-col>
+        </app-ui-form-layout-row>
+        <app-ui-form-layout-row *ngIf="promotionPlanOption.length > 0">
+          <app-ui-form-layout-col>
+            <app-ui-form-select [selectTitle]="language.promotionPlan | translate" [isShowDefaultOption]="false"
+              [selectOption]="promotionPlanOption" [(nxValue)]="data.PromotionPlan"
+              (nxValueChange)="onChange('PromotionPlan',$event)" [isShowTitle]="true" [id]="'select_PromotionPlan'">
+            </app-ui-form-select>
+            <app-ui-form-error-msg *ngIf="validationResult.isError('PromotionPlan')">
+              {{validationResult.getErrorMsg('PromotionPlan')| translate}}</app-ui-form-error-msg>
+          </app-ui-form-layout-col>
+        </app-ui-form-layout-row>
+      </app-ui-form-layout-advanced>
+      <!-- reset -->
+      <app-ui-link [isUnderLine]="false" imgSrc="../assets/img/icon-reset.svg" (onClick)="onReset()" [isReset]=true
+        [hidden]="!isShowResetBtn">
+        <ng-container textType="linktext">{{language.reset | translate}}</ng-container>
+      </app-ui-link>
+      <!-- end of reset -->
+
+    </div>
+    <!-- end of content -->
+  </ng-container>
+  <ng-container btnContent>
+    <app-ui-btn-layout>
+      <app-ui-btn [btnColor]="isNextYear? 'main1':'main2'" [btnWd]="'lg'" [id]="'btn_goalsettingStep1'" Action action="goalsettingStep1" (actionClick)="doNext()" [isDisable]="isDisableBtn">
+        <ng-container TextType="cust">{{language.next | translate}}</ng-container>
+      </app-ui-btn>
+    </app-ui-btn-layout>
+  </ng-container>
+</app-ui-card-content-btn>
+<!-- end of step1 -->

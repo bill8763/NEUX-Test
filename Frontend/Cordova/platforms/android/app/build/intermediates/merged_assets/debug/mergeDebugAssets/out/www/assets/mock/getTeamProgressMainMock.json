@@ -1,0 +1,248 @@
+{
+    "Header": {
+        "record_length": 2,
+        "status": true
+    },
+    "Body": [
+        {
+            "ClientID": "be710625-8a82-45c3-983d-3c5fd67c4570",
+            "DataYear": 2019,
+            "TimeBase": "Month",
+            "DataType": "FYFC",
+            "Goal": 500,
+            "Forecast": 500,
+            "Actual": 400,
+            "Shortfall": 100
+        },
+        {
+            "ClientID": "be710625-8a82-45c3-983d-3c5fd67c4570",
+            "DataYear": 2019,
+            "TimeBase": "Month",
+            "DataType": "ANP",
+            "Goal": 1000,
+            "Forecast": 1000,
+            "Actual": 900,
+            "Shortfall": 100
+        },
+        {
+            "ClientID": "be710625-8a82-45c3-983d-3c5fd67c4570",
+            "DataYear": 2019,
+            "TimeBase": "Month",
+            "DataType": "Manpower",
+            "Goal": 200,
+            "Forecast": 200,
+            "Actual": 190,
+            "Shortfall": 10
+        },
+        {
+            "ClientID": "be710625-8a82-45c3-983d-3c5fd67c4570",
+            "DataYear": 2019,
+            "TimeBase": "Month",
+            "DataType": "Recruitment",
+            "Goal": 50,
+            "Forecast": 50,
+            "Actual": 49,
+            "Shortfall": 1
+        },
+        {
+            "ClientID": "190f3f03-0900-4324-8b33-93243a14b7f1",
+            "DataYear": 2019,
+            "TimeBase": "Quarter",
+            "DataType": "FYFC",
+            "Goal": 1000,
+            "Forecast": 1000,
+            "Actual": 900,
+            "Shortfall": 100
+        },
+        {
+            "ClientID": "190f3f03-0900-4324-8b33-93243a14b7f1",
+            "DataYear": 2019,
+            "TimeBase": "Quarter",
+            "DataType": "ANP",
+            "Goal": 1500,
+            "Forecast": 1500,
+            "Actual": 1400,
+            "Shortfall": 100
+        },
+        {
+            "ClientID": "190f3f03-0900-4324-8b33-93243a14b7f1",
+            "DataYear": 2019,
+            "TimeBase": "Quarter",
+            "DataType": "Manpower",
+            "Goal": 400,
+            "Forecast": 400,
+            "Actual": 390,
+            "Shortfall": 10
+        },
+        {
+            "ClientID": "190f3f03-0900-4324-8b33-93243a14b7f1",
+            "DataYear": 2019,
+            "TimeBase": "Quarter",
+            "DataType": "Recruitment",
+            "Goal": 100,
+            "Forecast": 100,
+            "Actual": 99,
+            "Shortfall": 1
+        },
+        {
+            "ClientID": "190f3f03-0900-4324-8b33-93243a14b7f1",
+            "DataYear": 2019,
+            "TimeBase": "Year",
+            "DataType": "FYFC",
+            "Goal": 1500,
+            "Forecast": 1500,
+            "Actual": 1400,
+            "Shortfall": 100
+        },
+        {
+            "ClientID": "190f3f03-0900-4324-8b33-93243a14b7f1",
+            "DataYear": 2019,
+            "TimeBase": "Year",
+            "DataType": "ANP",
+            "Goal": 2000,
+            "Forecast": 2000,
+            "Actual": 1900,
+            "Shortfall": 100
+        },
+        {
+            "ClientID": "190f3f03-0900-4324-8b33-93243a14b7f1",
+            "DataYear": 2019,
+            "TimeBase": "Year",
+            "DataType": "Manpower",
+            "Goal": 600,
+            "Forecast": 600,
+            "Actual": 590,
+            "Shortfall": 10
+        },
+        {
+            "ClientID": "190f3f03-0900-4324-8b33-93243a14b7f1",
+            "DataYear": 2019,
+            "TimeBase": "Year",
+            "DataType": "Recruitment",
+            "Goal": 150,
+            "Forecast": 150,
+            "Actual": 149,
+            "Shortfall": 1
+        },
+        {
+            "ClientID": "190f3f03-0900-4324-8b33-93243a14b7f1",
+            "DataYear": 2020,
+            "TimeBase": "Month",
+            "DataType": "FYFC",
+            "Goal": 1000,
+            "Forecast": 1000,
+            "Actual": 900,
+            "Shortfall": 100
+        },
+        {
+            "ClientID": "190f3f03-0900-4324-8b33-93243a14b7f1",
+            "DataYear": 2020,
+            "TimeBase": "Month",
+            "DataType": "ANP",
+            "Goal": 2000,
+            "Forecast": 2000,
+            "Actual": 1900,
+            "Shortfall": 100
+        },
+        {
+            "ClientID": "190f3f03-0900-4324-8b33-93243a14b7f1",
+            "DataYear": 2020,
+            "TimeBase": "Month",
+            "DataType": "Manpower",
+            "Goal": 400,
+            "Forecast": 400,
+            "Actual": 390,
+            "Shortfall": 10
+        },
+        {
+            "ClientID": "190f3f03-0900-4324-8b33-93243a14b7f1",
+            "DataYear": 2020,
+            "TimeBase": "Month",
+            "DataType": "Recruitment",
+            "Goal": 100,
+            "Forecast": 100,
+            "Actual": 99,
+            "Shortfall": 1
+        },
+        {
+            "ClientID": "190f3f03-0900-4324-8b33-93243a14b7f1",
+            "DataYear": 2020,
+            "TimeBase": "Quarter",
+            "DataType": "FYFC",
+            "Goal": 2000,
+            "Forecast": 2000,
+            "Actual": 1900,
+            "Shortfall": 100
+        },
+        {
+            "ClientID": "190f3f03-0900-4324-8b33-93243a14b7f1",
+            "DataYear": 2020,
+            "TimeBase": "Quarter",
+            "DataType": "ANP",
+            "Goal": 2500,
+            "Forecast": 2500,
+            "Actual": 2400,
+            "Shortfall": 100
+        },
+        {
+            "ClientID": "190f3f03-0900-4324-8b33-93243a14b7f1",
+            "DataYear": 2020,
+            "TimeBase": "Quarter",
+            "DataType": "Manpower",
+            "Goal": 800,
+            "Forecast": 800,
+            "Actual": 790,
+            "Shortfall": 10
+        },
+        {
+            "ClientID": "190f3f03-0900-4324-8b33-93243a14b7f1",
+            "DataYear": 2020,
+            "TimeBase": "Quarter",
+            "DataType": "Recruitment",
+            "Goal": 200,
+            "Forecast": 200,
+            "Actual": 190,
+            "Shortfall": 1
+        },
+        {
+            "ClientID": "190f3f03-0900-4324-8b33-93243a14b7f1",
+            "DataYear": 2020,
+            "TimeBase": "Year",
+            "DataType": "FYFC",
+            "Goal": 2500,
+            "Forecast": 2500,
+            "Actual": 2400,
+            "Shortfall": 100
+        },
+        {
+            "ClientID": "190f3f03-0900-4324-8b33-93243a14b7f1",
+            "DataYear": 2020,
+            "TimeBase": "Year",
+            "DataType": "ANP",
+            "Goal": 3000,
+            "Forecast": 3000,
+            "Actual": 2900,
+            "Shortfall": 100
+        },
+        {
+            "ClientID": "190f3f03-0900-4324-8b33-93243a14b7f1",
+            "DataYear": 2020,
+            "TimeBase": "Year",
+            "DataType": "Manpower",
+            "Goal": 1000,
+            "Forecast": 1000,
+            "Actual": 990,
+            "Shortfall": 10
+        },
+        {
+            "ClientID": "190f3f03-0900-4324-8b33-93243a14b7f1",
+            "DataYear": 2020,
+            "TimeBase": "Year",
+            "DataType": "Recruitment",
+            "Goal": 250,
+            "Forecast": 250,
+            "Actual": 149,
+            "Shortfall": 1
+        }
+    ]
+}

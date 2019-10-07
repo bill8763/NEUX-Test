@@ -1,0 +1,31 @@
+@import 'style-import';
+@import '../../style/progress-info-content';
+
+.progress-detail-info-content{
+    width: 595px;
+}
+.progress-table-card{
+    // title style
+    ::ng-deep{
+        .title-ele-block{
+            display: flex;
+            align-items: center;
+        }
+        .title-other-element{
+            padding-left: $space-form-add;
+        }
+    }
+}
+
+@media(max-width: $screen-sm-than-pad){
+    .progress-detail-info-content{
+        width: 310px;
+    }
+}
+
+
+@media(max-width: $screen-sm-than-nb){
+    .progress-table-card{
+        margin-right: -1*$space-layout-mobile-sm;
+    }
+ }

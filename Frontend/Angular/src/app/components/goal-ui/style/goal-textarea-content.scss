@@ -1,0 +1,40 @@
+@import "style-import";
+// comment area style
+.goal-agency-textarea-content{
+    padding: 30px 20px;
+    ::ng-deep{
+        .title-ele-block{
+            margin-bottom: 20px;
+            text-align: left;
+        }
+    }
+    .textarea-content{
+        margin-bottom: 30px;
+    }
+    .textarea-btn-content{
+        ::ng-deep{
+            app-ui-btn-layout{
+                margin-right: -15px;
+                margin-left: -15px;
+            }
+            .btn-block{
+                margin-bottom: 0;
+                app-ui-btn{
+                    margin-right: 15px;
+                    margin-left: 15px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: $screen-sm-than-nb){
+    .goal-agency-textarea-content{
+        .textarea-btn-content{
+            ::ng-deep{
+                .btn-body{
+                    max-width: 130px;
+                }
+            }
+        }
+    }
+} 

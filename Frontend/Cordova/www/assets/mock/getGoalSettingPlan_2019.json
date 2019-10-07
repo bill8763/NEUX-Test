@@ -1,0 +1,183 @@
+{
+    "Header": {
+            "status": true,
+            "Time": "20190114000005",
+            "PageInfo": {
+            "pageNo": 1,
+            "pageSize": 5,
+            "totalPage": 3,
+            "totalRec": 15
+        },
+        "QueryParams": {}
+    },
+    "Body": [
+        {
+            "ClientID": "0001",
+            "DataYear": 2019,
+            "PerformanceType": "P",
+            "Month": 1,
+            "Value": 180
+        },
+        {
+            "ClientID": "0001",
+            "DataYear": 2019,
+            "PerformanceType": "P",
+            "Month": 2,
+            "Value": 133
+        },
+        {
+            "ClientID": "0001",
+            "DataYear": 2019,
+            "PerformanceType": "P",
+            "Month": 3,
+            "Value": 359
+        },
+        {
+            "ClientID": "0001",
+            "DataYear": 2019,
+            "PerformanceType": "P",
+            "Month": 4,
+            "Value": 230
+        },
+        {
+            "ClientID": "0001",
+            "DataYear": 2019,
+            "PerformanceType": "P",
+            "Month": 5,
+            "Value": 119
+        },
+        {
+            "ClientID": "0001",
+            "DataYear": 2019,
+            "PerformanceType": "P",
+            "Month": 6,
+            "Value": 308
+        },
+        {
+            "ClientID": "0001",
+            "DataYear": 2019,
+            "PerformanceType": "P",
+            "Month": 7,
+            "Value": 330
+        },
+        {
+            "ClientID": "0001",
+            "DataYear": 2019,
+            "PerformanceType": "P",
+            "Month": 8,
+            "Value": 3590000
+        },
+        {
+            "ClientID": "0001",
+            "DataYear": 2019,
+            "PerformanceType": "P",
+            "Month": 9,
+            "Value": 257
+        },
+        {
+            "ClientID": "0001",
+            "DataYear": 2019,
+            "PerformanceType": "P",
+            "Month": 10,
+            "Value": 392
+        },
+        {
+            "ClientID": "0001",
+            "DataYear": 2019,
+            "PerformanceType": "P",
+            "Month": 11,
+            "Value": 180
+        },
+        {
+            "ClientID": "0001",
+            "DataYear": 2019,
+            "PerformanceType": "P",
+            "Month": 12,
+            "Value": 180
+        },
+        {
+            "ClientID": "0001",
+            "DataYear": 2019,
+            "PerformanceType": "T",
+            "Month": 1,
+            "Value": 1800
+        },
+        {
+            "ClientID": "0001",
+            "DataYear": 2019,
+            "PerformanceType": "T",
+            "Month": 2,
+            "Value": 1330
+        },
+        {
+            "ClientID": "0001",
+            "DataYear": 2019,
+            "PerformanceType": "T",
+            "Month": 3,
+            "Value": 3590
+        },
+        {
+            "ClientID": "0001",
+            "DataYear": 2019,
+            "PerformanceType": "T",
+            "Month": 4,
+            "Value": 2300
+        },
+        {
+            "ClientID": "0001",
+            "DataYear": 2019,
+            "PerformanceType": "T",
+            "Month": 5,
+            "Value": 1190
+        },
+        {
+            "ClientID": "0001",
+            "DataYear": 2019,
+            "PerformanceType": "T",
+            "Month": 6,
+            "Value": 3080
+        },
+        {
+            "ClientID": "0001",
+            "DataYear": 2019,
+            "PerformanceType": "T",
+            "Month": 7,
+            "Value": 3300
+        },
+        {
+            "ClientID": "0001",
+            "DataYear": 2019,
+            "PerformanceType": "T",
+            "Month": 8,
+            "Value": 3590
+        },
+        {
+            "ClientID": "0001",
+            "DataYear": 2019,
+            "PerformanceType": "T",
+            "Month": 9,
+            "Value": 2570
+        },
+        {
+            "ClientID": "0001",
+            "DataYear": 2019,
+            "PerformanceType": "T",
+            "Month": 10,
+            "Value": 3920
+        },
+        {
+            "ClientID": "0001",
+            "DataYear": 2019,
+            "PerformanceType": "T",
+            "Month": 11,
+            "Value": 1800
+        },
+        {
+            "ClientID": "0001",
+            "DataYear": 2019,
+            "PerformanceType": "T",
+            "Month": 12,
+            "Value": 1800
+        }
+    ]
+}

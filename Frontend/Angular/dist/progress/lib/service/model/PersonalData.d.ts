@@ -1,0 +1,31 @@
+import { PersonalDataTimeBase } from "./Enum/PersonalDataTimeBase";
+import { PersonalDataType } from "./Enum/PersonalDataType";
+export declare class PersonalData {
+    private _dataYear;
+    private _timeBase;
+    private _dataType;
+    private _find;
+    private _schedule;
+    private _meet;
+    private _submit;
+    private _inforce;
+    constructor(dataYear: number, timeBase: PersonalDataTimeBase, dataType: PersonalDataType, find: number, schedule: number, meet: number, submit: number, inforce: number);
+    readonly DataYear: number;
+    DataTear: number;
+    TimeBase: PersonalDataTimeBase;
+    readonly DataType: PersonalDataType;
+    DataTypet: PersonalDataType;
+    Find: number;
+    Schedule: number;
+    Meet: number;
+    Submit: number;
+    Inforce: number;
+    getTotalCount(): number;
+    getTotalPoints(): number;
+    getDifferentPercentage(numerator: number, denominator: number): number;
+    getFindPoints(): number;
+    getSchedulePoints(): number;
+    getMeetPoints(): number;
+    getSubmitPoints(): number;
+    getInforcePoints(): number;
+}

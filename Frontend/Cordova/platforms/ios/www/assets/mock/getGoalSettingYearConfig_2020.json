@@ -1,0 +1,44 @@
+{
+  "Header": {
+    "status":true,
+    "Time": "20190107000005",
+    "PageInfo": {
+      "pageNo": 1,
+      "pageSize": 10,
+      "totalPage": 3,
+      "totalRec": 30
+    },
+    "QueryParams": {}
+  },
+  "Body": [
+    {
+      "IsCurrent": "N",
+      "DataYear": 2020,
+      "PerformanceSettlementMonth": 0,
+      "WorkingMonth": 0,
+      "WorkingQuarter": 0,
+      "QuarterStartMonth": 0,
+      "QuarterEndMonth": 0,
+      "InitialPreCaseFyfc": 20,
+      "FyfcCovertAnpRate": 1.4,
+      "ProgressDayPointsLimit": 1,
+      "GoalSettingActivityProcMode": "TWMode",
+      "GoalAndPlanDifferenceLimit": 0.2,
+      "FindConvertPointBase": 0.2,
+      "ScheduleConvertPointBase": 0.2,
+      "MeetConvertPointBase": 0.2,
+      "SubmitConvertPointBase": 0.2,
+      "InforceConvertPointBase": 1,
+      "InforceConvertFindRate": 10.3,
+      "InforceConvertScheduleRate": 8.2,
+      "InforceConvertMeetRate": 2.5,
+      "InforceConvertSubmitRate": 1.6,
+      "ProgressBarControlMode": "TWMode",
+      "DayTabThreshold": 0.5,
+      "WeekTabThreshold": 0.5,
+      "MonthTabThreshold": 0.5,
+      "NowToYearEndDays": 365,
+      "MonthQuantityOfYear":12
+    }
+  ]
+}

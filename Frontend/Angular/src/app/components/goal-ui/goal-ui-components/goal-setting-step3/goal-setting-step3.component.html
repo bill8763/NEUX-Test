@@ -1,0 +1,176 @@
+<app-ui-card-content-btn [hasBtn]="isHasBtn" class="style-full" [noPadding]="true">
+  <ng-container *ngIf="currentActivityData" infoContent>
+    <!-- title -->
+    <div class="card-title-block">
+      <h3 class="card-title font-size_h5">{{language.goalSettingStep3Title | translate}}</h3>
+      <h5 class="card-subtitle font-size_h9">{{goalEffectiveWorkingMonthTitle}}</h5>
+      <!-- info -->
+      <div class="card-title-other info-block">
+        <!-- <app-ui-information-btn #infoBtnStep3 [outsideSpace]="outsideSpace" [messageContent]="information3"
+          [inputScrollContent]="inputScrollContent" [inputAutoScrollContent]="inputAutoScrollContent"
+          (onClick)="infoTabClick($event)"></app-ui-information-btn> -->
+          <snd-ui-information (onClick)="infoClick()" [containerSelector]="stepContainerBlock" [scrollContentSelector]="scrollContent" >
+            <ng-container info-content>
+              <div class="info-detail-block">
+                <div class="info-title-block">
+                  <h5 class="info-title-main">{{language.agencyPlanInformationTitle | translate}}</h5>
+                </div>
+                <!-- content -->
+                <div class="info-content-block">
+                  <!-- list data -->
+                  <ul class="info-list-data-block">
+                    <!-- item -->
+                    <li class="list-data-item-block">
+                      <div class="title-sm-main">{{language.find | translate}}</div>
+                      <p class="content-detail-block">{{language.goalSettingCreateCustomer | translate}}</p>
+                    </li>
+                    <!-- end of item -->
+                    <!-- item -->
+                    <li class="list-data-item-block">
+                      <div class="title-block">
+                        <div class="title-sm-main">{{language.schedule | translate}}</div>
+                      </div>
+                      <div class="content-block">
+                        <p class="content-detail-block">
+                          {{language.goalSettingCustomerJournal | translate}}<br />
+                          {{language.goalSettingCalendar | translate}}<br />
+                          {{language.goalSettingActivityType | translate}}
+                        </p>
+                      </div>
+                    </li>
+                    <!-- end of item -->
+                    <!-- item -->
+                    <li class="list-data-item-block">
+                      <div class="title-block">
+                        <div class="title-sm-main">{{language.meet | translate}}</div>
+                      </div>
+                      <div class="content-block">
+                        <p class="content-detail-block">{{language.goalSettingFastQuotation | translate}}</p>
+                      </div>
+                    </li>
+                    <!-- end of item -->
+                    <!-- item -->
+                    <li class="list-data-item-block">
+                      <div class="title-block">
+                        <div class="title-sm-main">{{language.submit | translate}}</div>
+                      </div>
+                      <div class="content-block">
+                        <p class="content-detail-block">{{language.submission | translate}}</p>
+                      </div>
+                    </li>
+                    <!-- end of item -->
+                    <!-- item -->
+                    <li class="list-data-item-block">
+                      <div class="title-block">
+                        <div class="title-sm-main">{{language.inforce | translate}}</div>
+                      </div>
+                      <div class="content-block">
+                        <p class="content-detail-block">{{language.goalSettingInforcePolicy | translate}}</p>
+                      </div>
+                    </li>
+                    <!-- end of item -->
+                  </ul>
+          
+                  <!-- end of list data -->
+          
+                </div>
+                <!-- end of content -->
+              </div>
+            </ng-container>  
+          </snd-ui-information>
+      </div>
+
+      <!-- end info -->
+    </div>
+    <!-- end of title -->
+    <!-- content -->
+    <div class="content-block">
+      <!-- tab -->
+      <div class="tab-block">
+        <!-- tab title -->
+        <app-ui-content-b-gap [gapSize]="GAP_SIZE_40">
+          <app-ui-tab-style1 (onTabChildClick)="tabChange($event)" [maxShow]="4" [tabIndex]="tabIndex">
+            <ng-container *ngFor="let option of tabOptionList;">
+              <app-ui-tab-child>{{option | translate}}</app-ui-tab-child>
+            </ng-container>
+          </app-ui-tab-style1>
+        </app-ui-content-b-gap>
+        <!-- end of tab title -->
+        <!-- tab content -->
+        <div class="tab-content-block card-content-detail-block">
+          <ul class="list-data-block">
+            <li class="list-data-item-block">
+              <div class="title-block">
+                <div class="title-sm-main">{{language.find | translate}}</div>
+                <div class="title-sm-sub">{{language.findSubtitle | translate}}</div>
+              </div>
+              <div class="content-block">
+                <div class="value">{{currentActivityData.Find}}</div>
+                <div class="unit">/{{unit | translate}}</div>
+              </div>
+            </li>
+
+            <li class="list-data-item-block">
+              <div class="title-block">
+                <div class="title-sm-main">{{language.schedule | translate}}</div>
+                <div class="title-sm-sub">{{language.scheduleSubtitle | translate}}</div>
+              </div>
+              <div class="content-block">
+                <div class="value">{{currentActivityData.Schedule}}</div>
+                <div class="unit">/{{unit | translate}}</div>
+              </div>
+            </li>
+
+            <li class="list-data-item-block">
+              <div class="title-block">
+                <div class="title-sm-main">{{language.meet | translate}}</div>
+                <div class="title-sm-sub">{{language.meetSubtitle | translate}}</div>
+              </div>
+              <div class="content-block">
+                <div class="value">{{currentActivityData.Meet}}</div>
+                <div class="unit">/{{unit | translate}}</div>
+              </div>
+            </li>
+
+            <li class="list-data-item-block">
+              <div class="title-block">
+                <div class="title-sm-main">{{language.submit | translate}}</div>
+                <div class="title-sm-sub">{{language.submitSubtitle | translate}}</div>
+              </div>
+              <div class="content-block">
+                <div class="value">{{currentActivityData.Submit}}</div>
+                <div class="unit">/{{unit | translate}}</div>
+              </div>
+            </li>
+
+            <li class="list-data-item-block">
+              <div class="title-block">
+                <div class="title-sm-main">{{language.inforce | translate}}</div>
+                <div class="title-sm-sub">{{language.inforceSubtitle | translate}}</div>
+              </div>
+              <div class="content-block">
+                <div class="value">{{currentActivityData.Inforce}}</div>
+                <div class="unit">/{{unit | translate}}</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!-- end of tab content -->
+
+      </div>
+      <!-- end of tab -->
+
+    </div>
+    <!-- end of content -->
+  </ng-container>
+  <ng-container btnContent>
+    <app-ui-btn-layout>
+      <app-ui-btn [btnColor]="isNextYear? 'main1':'main2'" [btnWd]="'lg'" [id]="'btn_goalsettingStep3'" Action action="goalsettingStep3" (actionClick)="doNext()" [isDisable]="isDisableBtn">
+        <ng-container TextType="cust">{{language.next | translate}}</ng-container>
+      </app-ui-btn>
+    </app-ui-btn-layout>
+  </ng-container>
+</app-ui-card-content-btn>
+<div information>
+
+</div>

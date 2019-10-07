@@ -1,0 +1,23 @@
+{
+  "name": "@allianzSND/goal",
+  "version": "0.0.5",
+  "peerDependencies": {
+    "@angular/common": "^6.0.0-rc.0 || ^6.0.0",
+    "@angular/core": "^6.0.0-rc.0 || ^6.0.0",
+    "@allianzSND/core": "^0.0.1",
+    "@allianzSND/ui": "^0.0.1"
+  },
+  "main": "bundles/allianzSND-goal.umd.js",
+  "module": "fesm5/allianzSND-goal.js",
+  "es2015": "fesm2015/allianzSND-goal.js",
+  "esm5": "esm5/allianzSND-goal.js",
+  "esm2015": "esm2015/allianzSND-goal.js",
+  "fesm5": "fesm5/allianzSND-goal.js",
+  "fesm2015": "fesm2015/allianzSND-goal.js",
+  "typings": "allianzSND-goal.d.ts",
+  "metadata": "allianzSND-goal.metadata.json",
+  "sideEffects": false,
+  "dependencies": {
+    "tslib": "^1.9.0"
+  }
+}

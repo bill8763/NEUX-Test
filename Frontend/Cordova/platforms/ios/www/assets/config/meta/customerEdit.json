@@ -1,0 +1,414 @@
+{
+  "source": {
+    "type": "API",
+    "read": "getCustomerDetail",
+    "write": "saveCustomerDetail"
+  },
+  "columns": [{
+      "id": "LastName",
+      "name": "Last_name",
+      "type": "Input",
+      "ref": "",
+      "grid": {
+        "pc": 6,
+        "nb": 6,
+        "pad": 6,
+        "mobile": 12
+      },
+      "inline": true,
+      "required": true,
+      "readonly": false
+    }, {
+      "id": "FirstName",
+      "name": "First_name",
+      "type": "Input",
+      "inline": false,
+      "grid": {
+        "pc": 6,
+        "nb": 6,
+        "pad": 6,
+        "mobile": 12
+      },
+      "ref": "",
+      "required": false,
+      "readonly": false
+    },
+    {
+      "id": "TelType",
+      "name": "TelType",
+      "type": "Select",
+      "ref": "Customer_TelType",
+      "default": "TelHome",
+      "showDefaultOption":false,
+      "showTitle": false,
+      "inline": true,
+      "required": false,
+      "readonly": false,
+      "grid": {
+        "pc": 3,
+        "nb": 3,
+        "pad": 3,
+        "mobile": 4
+      }
+    },
+    {
+      "id": "Tel",
+      "name": "Phone",
+      "type": "Input",
+      "ref": "",
+      "maxLength": 20,
+      "readonly": false,
+      "grid": {
+        "pc": 9,
+        "nb": 9,
+        "pad": 9,
+        "mobile": 8
+      }
+    },
+    {
+      "id": "EmailType",
+      "name": "EmailType",
+      "type": "Select",
+      "placeholder": "Select",
+      "ref": "Customer_EmailType",
+      "default": "MailHome",
+      "showDefaultOption":false,
+      "showTitle": false,
+      "inline": true,
+      "readonly": false,
+      "grid": {
+        "pc": 3,
+        "nb": 3,
+        "pad": 3,
+        "mobile": 4
+      }
+    }, {
+      "id": "Email",
+      "name": "Email",
+      "type": "Input",
+      "ref": "",
+      "readonly": false,
+      "grid": {
+        "pc": 9,
+        "nb": 9,
+        "pad": 9,
+        "mobile": 8
+      }
+    }, {
+      "id": "AddressType",
+      "name": "AddressType",
+      "type": "Select",
+      "ref": "Customer_AddressType",
+      "default": "AddressTypeHome",
+      "showDefaultOption":false,
+      "showTitle": false,
+      "required": false,
+      "readonly": false,
+      "grid": {
+        "pc": 3,
+        "nb": 3,
+        "pad": 3,
+        "mobile": 4
+      }
+    }, {
+      "id": "Country",
+      "name": "Country",
+      "type": "Input",
+      "ref": "",
+      "inline": true,
+      "required": false,
+      "readonly": false,
+      "grid": {
+        "pc": 4,
+        "nb": 4,
+        "pad": 4,
+        "mobile": 6
+      }
+    }, {
+      "id": "City",
+      "name": "City",
+      "type": "Input",
+      "ref": "",
+      "inline": true,
+      "required": false,
+      "readonly": false,
+      "grid": {
+        "pc": 4,
+        "nb": 4,
+        "pad": 4,
+        "mobile": 6
+      }
+    }, {
+      "id": "Area",
+      "name": "Area",
+      "type": "Input",
+      "ref": "",
+      "inline": true,
+      "required": false,
+      "readonly": false,
+      "grid": {
+        "pc": 4,
+        "nb": 4,
+        "pad": 4,
+        "mobile": 6
+      }
+    }, {
+      "id": "Zipcode",
+      "name": "Code",
+      "type": "Input",
+      "ref": "",
+      "inline": true,
+      "required": false,
+      "readonly": false,
+      "grid": {
+        "pc": 3,
+        "nb": 3,
+        "pad": 3,
+        "mobile": 6
+      }
+    }, {
+      "id": "Address",
+      "name": "Address",
+      "type": "Input",
+      "ref": "",
+      "required": false,
+      "readonly": false,
+      "grid": {
+        "pc": 9,
+        "nb": 9,
+        "pad": 9,
+        "mobile": 12
+      }
+    }, {
+      "id": "Birthday",
+      "name": "Birthday",
+      "type": "Date",
+      "ref": "",
+      "required": false,
+      "readonly": false,
+      "inline": true,
+      "grid": {
+        "pc": 6,
+        "nb": 6,
+        "pad": 6,
+        "mobile": 6
+      }
+    }, {
+      "id": "AgeRange",
+      "name": "Age",
+      "type": "Select",
+      "placeholder": "Select",
+      "ref": "Customer_Age",
+      "showTitle": true,
+      "required": false,
+      "readonly": false,
+      "grid": {
+        "pc": 6,
+        "nb": 6,
+        "pad": 6,
+        "mobile": 6
+      }
+    }, {
+      "id": "Gender",
+      "name": "Gender",
+      "type": "Select",
+      "placeholder": "Select",
+      "ref": "Customer_Gender",
+      "showTitle": true,
+      "inline": true,
+      "required": false,
+      "readonly": false,
+      "grid": {
+        "pc": 6,
+        "nb": 6,
+        "pad": 6,
+        "mobile": 6
+      }
+    }, {
+      "id": "Occupation",
+      "name": "Occupation",
+      "type": "Input",
+      "ref": "",
+      "required": false,
+      "readonly": false,
+      "grid": {
+        "pc": 6,
+        "nb": 6,
+        "pad": 6,
+        "mobile": 6
+      }
+    }, {
+      "id": "Company",
+      "name": "Company",
+      "type": "Input",
+      "ref": "",
+      "inline": true,
+      "required": false,
+      "readonly": false,
+      "grid": {
+        "pc": 6,
+        "nb": 6,
+        "pad": 6,
+        "mobile": 6
+      }
+    }, {
+      "id": "Income",
+      "name": "Annual_Income",
+      "type": "Select",
+      "placeholder": "Select",
+      "ref": "Customer_Income",
+      "showTitle": true,
+      "required": false,
+      "readonly": false,
+      "grid": {
+        "pc": 6,
+        "nb": 6,
+        "pad": 6,
+        "mobile": 6
+      }
+    }, {
+      "id": "Source",
+      "name": "Source",
+      "type": "Select",
+      "placeholder": "Select",
+      "ref": "Customer_Source",
+      "showTitle": true,
+      "inline": true,
+      "required": false,
+      "readonly": false,
+      "grid": {
+        "pc": 6,
+        "nb": 6,
+        "pad": 6,
+        "mobile": 6
+      }
+    }, {
+      "id": "Marriage",
+      "name": "Marriage",
+      "type": "Select",
+      "placeholder": "Select",
+      "ref": "Customer_Marriage",
+      "showTitle": true,
+      "required": false,
+      "readonly": false,
+      "grid": {
+        "pc": 6,
+        "nb": 6,
+        "pad": 6,
+        "mobile": 6
+      }
+    }, {
+      "id": "Children",
+      "name": "Children",
+      "type": "Select",
+      "placeholder": "Select",
+      "ref": "Customer_Children",
+      "showTitle": true,
+      "inline": true,
+      "required": false,
+      "readonly": false,
+      "grid": {
+        "pc": 6,
+        "nb": 6,
+        "pad": 6,
+        "mobile": 6
+      }
+    }, {
+      "id": "Familiarity",
+      "name": "Familiarity",
+      "type": "Select",
+      "placeholder": "Select",
+      "ref": "Customer_Familiarity",
+      "showTitle": true,
+      "required": false,
+      "readonly": false,
+      "grid": {
+        "pc": 6,
+        "nb": 6,
+        "pad": 6,
+        "mobile": 6
+      }
+    }, {
+      "id": "RecentStatus",
+      "name": "Recent_status",
+      "type": "Select",
+      "placeholder": "Select",
+      "ref": "Customer_RecentStatus",
+      "showTitle": true,
+      "required": false,
+      "readonly": false,
+      "grid": 12
+    }, {
+      "id": "MANPA",
+      "name": "Customer_Status",
+      "type": "Select",
+      "placeholder": "Select",
+      "ref": "Customer_Status",
+      "showTitle": true,
+      "required": false,
+      "readonly": false,
+      "grid": 12
+    }, {
+      "id": "ContactFrequancy",
+      "name": "Contact_Frequency_Year",
+      "type": "Select",
+      "placeholder": "Select",
+      "ref": "Customer_ContactFrequancy",
+      "showTitle": true,
+      "required": false,
+      "readonly": false,
+      "grid": 12
+    }, {
+      "id": "Possibility",
+      "name": "Possibility",
+      "type": "Radio",
+      "ref": "Customer_Possibility",
+      "grid": 12,
+      "required": false,
+      "readonly": false
+    }
+  ],
+  "group": [{
+    "id": "notOPUSTel",
+    "name": "TelGroup",
+    "columns": [
+      "TelType",
+      "Tel"
+    ],
+    "canAdd": true,
+    "maxNumber": 6,
+    "icon": "assets/img/icon-form-phone.svg",
+    "order": 2
+  }, {
+    "id": "email",
+    "name": "EmailGroup",
+    "columns": [
+      "EmailType",
+      "Email"
+    ],
+    "canAdd": true,
+    "maxNumber": 3,
+    "icon": "assets/img/icon-form-mail.svg",
+    "order": 3
+  }, {
+    "id": "address",
+    "name": "AddressGroup",
+    "columns": [
+      "AddressType",
+      "Country",
+      "City",
+      "Area",
+      "Zipcode",
+      "Address"
+    ],
+    "canAdd": true,
+    "maxNumber": 3,
+    "icon": "assets/img/icon-form-addr.svg",
+    "order": 4
+  }],
+  "footer": [{
+    "id": "customerSave",
+    "type": "submit",
+    "name": "Customer_Save"
+  }]
+}

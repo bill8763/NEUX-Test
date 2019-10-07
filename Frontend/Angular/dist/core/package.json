@@ -1,0 +1,31 @@
+{
+  "name": "@allianzSND/core",
+  "version": "0.0.5",
+  "peerDependencies": {
+    "@angular/common": "^6.0.0-rc.0 || ^6.0.0",
+    "@angular/core": "^6.0.0-rc.0 || ^6.0.0",
+    "@angular/platform-browser-dynamic": "^6.0.0",
+    "@angular/router": "^6.0.0",
+    "core-js": "^2.5.4",
+    "html2canvas": "^1.0.0-rc.1",
+    "rxjs": "~6.3.3",
+    "uuid": "^3.3.2",
+    "jwt-decode": "^2.2.0",
+    "stacktrace": "^1.2.0",
+    "zone.js": "~0.8.29",
+    "lodash": "^4.17.15"
+  },
+  "main": "bundles/allianzSND-core.umd.js",
+  "module": "fesm5/allianzSND-core.js",
+  "es2015": "fesm2015/allianzSND-core.js",
+  "esm5": "esm5/allianzSND-core.js",
+  "esm2015": "esm2015/allianzSND-core.js",
+  "fesm5": "fesm5/allianzSND-core.js",
+  "fesm2015": "fesm2015/allianzSND-core.js",
+  "typings": "allianzSND-core.d.ts",
+  "metadata": "allianzSND-core.metadata.json",
+  "sideEffects": false,
+  "dependencies": {
+    "tslib": "^1.9.0"
+  }
+}

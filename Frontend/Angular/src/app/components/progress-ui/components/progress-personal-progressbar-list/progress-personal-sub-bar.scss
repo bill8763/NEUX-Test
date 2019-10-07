@@ -1,0 +1,174 @@
+@import 'style-import';
+
+
+// card layout
+.card-content-block{
+    padding: 20px;
+    box-sizing: border-box; 
+}
+// progress list
+$wd-mid: 94px;
+$wd-right-pc: 83px;
+$wd-right-mobile: 63px;
+$wd-left-pc: calc(100% - #{$wd-mid} - #{$wd-right-pc});
+$wd-left-mobile: calc(100% - #{$wd-mid} - #{$wd-right-mobile});
+
+// arrow and num block pos 
+$pos-extra-data : 60px;
+$space-extra-data: 40px;
+
+$arrow-size: 2px;
+
+.progressbar-list-block{
+    // padding: 0;
+    list-style-type: none;
+    //item
+    .progressbar-list-item{
+        position: relative;
+        padding: 0;
+        padding-bottom: $space-extra-data;
+        &:last-of-type{
+            padding-bottom: 0;
+        }
+        p{
+            padding: 0;
+            margin: 0;
+            text-align: left;
+        }
+        .item-main-content{
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            position: static;
+            .left-block{
+                flex: 0 0 $wd-left-pc;
+                position: static;
+                //title
+                .title-block{
+                    p{
+                        font-size: $font-size-h8;
+                        font-weight: bold;
+                        color: $color-main2;
+                        line-height: $font-line-height;
+                    }
+                }
+
+                //progressbar
+                .progressbar{
+                    padding-right: 30px;
+                }
+                .progressbar-block{
+                    p{
+                        font-size: $font-size-h10;
+                        color: $color-font-normal;
+                        padding-bottom: 10px;
+                        line-height: 16px;
+
+                    }
+                }
+            } // end of left
+            .mid-block{
+                max-width: $wd-mid;
+                flex: 0 0 100%;
+                display: flex;
+                justify-content: center;
+                line-height: $font-line-height;
+                box-sizing: border-box;
+                padding: 0 10px;
+                position: relative;
+
+                .text-lg{
+                    font-size: $font-size-h6;
+                    font-weight: bold;
+                    color: $color-main2;
+                    +.text-sm{
+                        margin-left: 6px;
+                    }
+                }
+                .text-sm{
+                    font-size: $font-size-h10;
+                    color: $color-font-normal;
+                }
+                // item extra
+                .item-extra-block{
+                    position: absolute;
+                    bottom: -$pos-extra-data;
+                    display: flex;
+                    align-items: center;
+                    .icon{
+                        display: inline-block;
+                        height: 40px;
+                        background-color: $color-main2;
+                        width: 2px;
+                        font-size: 0;
+                        &:after{
+                            position: absolute;
+                            left: -$arrow-size;
+                            bottom: 0;
+                            margin: 0 auto;
+                            content: ' ';
+                            @include arrowDown($arrow-size, 2px, $color-main2)
+                        }
+                    }
+                    .value{
+                        color: $color-grey3;
+                        font-size: $font-size-h10;
+                        font-weight: bold;
+                        display: inline-block;
+                        padding-left: 10px;
+                        width: 33px;
+                    }
+                }
+
+            } // end of mid
+            .right-block{
+                flex: 0 0 $wd-right-pc;
+                display: flex;
+                justify-content: center;
+                box-sizing: border-box;
+                padding: 0 10px;
+                line-height: $font-line-height;
+                .text{
+                    color: $color-main2;
+                    font-size: $font-size-h10;
+                }
+
+            } //end of right
+        }
+    }
+    //item header
+    .progressbar-list-item-header{
+        padding-bottom: 10px;
+        .item-header-text{
+            font-size: $font-size-h10;
+            color: $color-font-normal;
+            white-space: nowrap;
+        }
+        .item-main-content{
+            align-items: stretch;
+            .mid-block,.right-block{
+                flex-wrap: wrap;
+                align-items: flex-end;
+            }
+        }
+    }
+}
+@media screen and (max-width:$screen-sm-than-nb){
+    .card-content-block{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .progressbar-list-block{
+        .progressbar-list-item{
+            .left-block{
+                flex: 0 0 $wd-left-mobile;
+            } // end of left
+            .mid-block{
+                flex: 0 0 105px;
+            } // end of mid
+            .right-block{
+                flex: 0 0 $wd-right-mobile;
+            } //end of right
+        }
+    }
+}

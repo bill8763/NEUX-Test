@@ -1,0 +1,21 @@
+{
+  "name": "@allianzSND/setting",
+  "version": "0.0.5",
+  "peerDependencies": {
+    "@angular/common": "^6.0.0-rc.0 || ^6.0.0",
+    "@angular/core": "^6.0.0-rc.0 || ^6.0.0"
+  },
+  "main": "bundles/allianzSND-setting.umd.js",
+  "module": "fesm5/allianzSND-setting.js",
+  "es2015": "fesm2015/allianzSND-setting.js",
+  "esm5": "esm5/allianzSND-setting.js",
+  "esm2015": "esm2015/allianzSND-setting.js",
+  "fesm5": "fesm5/allianzSND-setting.js",
+  "fesm2015": "fesm2015/allianzSND-setting.js",
+  "typings": "allianzSND-setting.d.ts",
+  "metadata": "allianzSND-setting.metadata.json",
+  "sideEffects": false,
+  "dependencies": {
+    "tslib": "^1.9.0"
+  }
+}
