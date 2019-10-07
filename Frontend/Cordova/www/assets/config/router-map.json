@@ -1,0 +1,65 @@
+{
+  "Login": {
+    "Login": {
+      "Path": "/login"
+    },
+    "Loading": {
+      "Path": "/loading"
+    }
+  },
+  "GoalSetting": {
+    "GoalLanding": {
+      "Path": "/goal/landing"
+    },
+    "GoalSetting": {
+      "Path": "/goal/setting"
+    },
+    "AgencyPlan": {
+      "Path": "/goal/agencyPlan"
+    },
+    "commitment": {
+      "Path": "/goal/commitment"
+    },
+    "Goal": {
+      "Role": ["AG", "AL"],
+      "Path": "/main/goal"
+    }
+  },
+  "Dashboard": {
+    "Dashboard": {
+      "Path": "/main/home"
+    }
+  },
+  "Customers": {
+    "Customers": {
+      "Path": "/main/customers"
+    },
+    "CustomerEdit": {
+      "Path": "/customers/editProfile"
+    }
+  },
+  "Progress": {
+    "Progress": {
+      "Path": "/main/progress"
+    },
+    "ProgressInner": {
+      "Path": "/progress/inner"
+    }
+  },
+  "Calendar": {
+    "Calendar": {
+      "Path": "/main/calendar"
+    }
+  },
+  "Setting": {
+    "Setting": {
+      "Path": "/main/setting"
+    }
+  },
+  "Loading": {
+    "MenuLoading": {
+      "Path": "/main/loading"
+    }
+  }
+
+}

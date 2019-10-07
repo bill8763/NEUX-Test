@@ -1,0 +1,54 @@
+<div class="progress-inner-personal">
+  <!--mobile-->
+  <ng-container left-content *ngIf="WindowWidth<1024">
+    
+    <ng-container left-content>
+      <div class="progress-list">
+        <app-progress-list class="content-block" 
+                          [PersonalData]="InnerPersonalData" 
+                          [ProgressYearConfigList] = "InnerProgressYearConfigList" 
+                          [PersonalDataYesterdayPoints] = "InnerPersonalDataYesterdayPoints"
+                          (personalDataStateEvent)="onInnerPersonalDataStateEventTrigger($event)">
+                        </app-progress-list>
+      </div>
+    </ng-container>
+    <ng-container right-content>
+      <div class="progress-personal">
+        <app-progress-personal class="content-block" 
+                              [MonthlyPlanFYFCData] = "InnerMonthlyPlanFYFCData" 
+                              [ProgressYearConfigList] = "InnerProgressYearConfigList" 
+                              [PersonalActivitiesData] = "InnerPersonalActivitiesData" 
+                              [PersonalActivitiesGoalPlanData] = "InnerPersonalActivitiesGoalPlanData" 
+                              (personalDataStateActivitiesEvent) = "onInnerPersonalDataStateActivitiesEventTrigger($event)"
+                              (onClick)="clickInfoPersonal()">
+                            </app-progress-personal>
+      </div>
+    </ng-container>
+  
+    <!--back-->
+  </ng-container>
+
+  <!--pc-->
+  <ng-container left-content *ngIf="WindowWidth > 1023">
+    <div class="progress-switch-content">
+      <div class="progress-list">
+          <app-progress-list class="content-block" 
+          [PersonalData]="InnerPersonalData" 
+          [ProgressYearConfigList] = "InnerProgressYearConfigList"
+          [PersonalDataYesterdayPoints] = "InnerPersonalDataYesterdayPoints" 
+          (personalDataStateEvent)="onInnerPersonalDataStateEventTrigger($event)">
+        </app-progress-list>
+
+      </div>
+      <div class="progress-personal">
+        <app-progress-personal [MonthlyPlanFYFCData] = "InnerMonthlyPlanFYFCData" 
+                              [ProgressYearConfigList] = "InnerProgressYearConfigList" 
+                              [PersonalActivitiesData] = "InnerPersonalActivitiesData" 
+                              [PersonalActivitiesGoalPlanData] = "InnerPersonalActivitiesGoalPlanData" 
+                              (personalDataStateActivitiesEvent) = "onInnerPersonalDataStateActivitiesEventTrigger($event)"
+                              (onClick)="clickInfoPersonal()">
+                            </app-progress-personal>
+      </div>
+    </div>
+  </ng-container>
+</div>

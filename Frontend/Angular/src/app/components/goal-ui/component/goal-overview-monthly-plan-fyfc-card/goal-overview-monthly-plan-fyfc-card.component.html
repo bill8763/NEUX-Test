@@ -1,0 +1,40 @@
+<div class="goal-overview-monthly-plan-fyfc-card">
+  <app-ui-card-content-btn [noPadding]="true" class="goal-content-space">
+    <ng-container infoContent>
+      <app-ui-table-edit-content [isEdit]="canEdit" [titleText]="title" (onClick)="onEditPlanFYFC()"
+        [styleType]="TABLETIELE_STYLE_5">
+        <ng-container body>
+          <app-ui-table-content2 [thMinHeight]="50" [tdMinHeight]="50" [fixed]="false">
+            <app-ui-table-row-head>
+              <app-ui-table-item [itemMinSize]="'md'">{{language.month | translate}}</app-ui-table-item>
+              <app-ui-table-item [itemMinSize]="'md'" [heightLight]="'style1'" *ngFor="let data of monthPlanActualList">
+                {{data.Month}}</app-ui-table-item>
+            </app-ui-table-row-head>
+            <app-ui-table-row>
+              <app-ui-table-item [itemMinSize]="'md'">{{language.plan | translate}}</app-ui-table-item>
+              <app-ui-table-item [itemMinSize]="'md'" *ngFor="let data of monthPlanActualList">
+                <ng-container *ngIf="data.Plan!=-1">
+                  {{data.Plan | numberFormat }}
+                </ng-container>
+                <ng-container *ngIf="data.Plan==-1">
+                  --
+                </ng-container>
+              </app-ui-table-item>
+            </app-ui-table-row>
+            <app-ui-table-row>
+              <app-ui-table-item [itemMinSize]="'md'">{{language.actual | translate}}</app-ui-table-item>
+              <app-ui-table-item [itemMinSize]="'md'" *ngFor="let data of monthPlanActualList">
+                <ng-container *ngIf="data.Actual!=-1">
+                  {{data.Actual | numberFormat}}
+                </ng-container>
+                <ng-container *ngIf="data.Actual==-1">
+                  --
+                </ng-container>
+              </app-ui-table-item>
+            </app-ui-table-row>
+          </app-ui-table-content2>
+        </ng-container>
+      </app-ui-table-edit-content>
+    </ng-container>
+  </app-ui-card-content-btn>
+</div>

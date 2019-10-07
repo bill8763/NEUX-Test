@@ -1,0 +1,105 @@
+<app-ui-inner-page class="agency-layout-block" [title]="drillDownTitle">
+
+  <div main>
+    <div #inpageMain class="layout-block">
+
+      <!--team info content -->
+      <div class="goal-agency-title-content goal-element-space" *ngIf="isTeamDataDone && isAllDataDone">
+        <app-goal-ui-title-content class="title-content-title" [showImg]="'assets/img/img-title-content-bg-01.svg'"
+          [hasBtn]="false" [translateVariable]="teamTranslateVariable">
+        </app-goal-ui-title-content>
+        <app-ui-table-title [isShowTitle]="false" class="title-content-info" [event]="false"
+          [styleType]="TABLETIELE_STYLE_4">
+
+          <!-- start agency plan -->
+          <div class="goal-list-card goal-element-space">
+            <div class="list-cards-ul">
+              <!-- start of left card -->
+              <snd-goal-agency-left-card [title]="language.yourAgencyGoal | translate" [allStepData]="teamAllStepData">
+              </snd-goal-agency-left-card>
+              <!-- end of left card  -->
+
+              <!-- start of right card -->
+              <snd-goal-agency-right-card [title]="language.agencyPlan | translate" [allStepData]="teamAllStepData"
+                [isShowBtnArea]=false>
+              </snd-goal-agency-right-card>
+
+              <!-- end of right card -->
+            </div>
+          </div>
+          <!-- end of agency plan -->
+
+          <!-- Monthly-plan-FYFC -->
+          <snd-goal-overview-monthly-plan-fyfc-card [title]="language.teamMonthlyPlanFYFCTitle | translate"
+            [canEdit]="false" [allStepData]="teamAllStepData">
+          </snd-goal-overview-monthly-plan-fyfc-card>
+          <!-- end of Monthly-plan-FYFC -->
+
+        </app-ui-table-title>
+        <!-- end of table title -->
+
+      </div>
+      <!-- end of team info content  -->
+
+      <!--personal info content -->
+      <div class="goal-agency-title-content goal-element-space" *ngIf="isPersonalDataDone && isAllDataDone">
+        <app-goal-ui-title-content class="title-content-title" [translateVariable]="personalTranslateVariable"
+          [showImg]="'assets/img/img-title-content-bg-01.svg'" [hasBtn]="false">
+        </app-goal-ui-title-content>
+        <app-ui-table-title [isShowTitle]="false" class="title-content-info" [event]="false"
+          [styleType]="TABLETIELE_STYLE_4">
+
+          <!-- your goal -->
+          <snd-goal-overview-goal-fyfc-card [allStepData]="personalAllStepData">
+          </snd-goal-overview-goal-fyfc-card>
+          <!-- end : your goal -->
+
+          <!-- Monthly-plan-FYFC -->
+          <snd-goal-overview-monthly-plan-fyfc-card [title]="language.personalMonthlyPlanFYFC | translate"
+            [canEdit]="false" [allStepData]="personalAllStepData">
+          </snd-goal-overview-monthly-plan-fyfc-card>
+          <!-- end of Monthly-plan-FYFC -->
+
+          <!-- 火箭人 -->
+          <snd-goal-overview-rocket-card [allStepData]="personalAllStepData"></snd-goal-overview-rocket-card>
+          <!-- end of 火箭人 -->
+
+
+        </app-ui-table-title>
+        <!-- end of table title -->
+      </div>
+      <!-- end of personal info content  -->
+
+
+
+      <!--textarea-->
+      <app-ui-card-content-btn class="goal-content-space" [noPadding]="true" *ngIf="personalApproveStauts == 'P' && isAllDataDone">
+        <ng-container infoContent>
+          <div class="goal-agency-textarea-content">
+            <app-ui-title-style1 class="space-ui-clear">
+              <ng-container textType="titleText">{{language.comment | translate}}</ng-container>
+            </app-ui-title-style1>
+            <div class="textarea-content">
+              <!-- <textarea placeholder="Write something for him/her" [(ngModel)]="commentTextArea"></textarea> -->
+              <snd-ui-form-textarea [maxLength]="500" [placeholder]="language.CommitmentPlaceholder|translate "
+                [(nxValue)]="commentTextArea" [height]="'75px'"></snd-ui-form-textarea>
+            </div>
+            <div class="textarea-btn-content">
+              <app-ui-btn-layout>
+                <app-ui-btn [btnStyle]="'border'" [btnHeight]="'sm'" [id]="btn_agencyReject" Action action="agencyReject" (actionClick)="submit(false)"
+                  [isDisable]="isDisabledButton">
+                  <ng-container TextType="cust">{{language.reject | translate}}</ng-container>
+                </app-ui-btn>
+                <app-ui-btn [btnHeight]="'sm'" [id]="'btn_agencyApprove'" Action action="agencyApprove" (actionClick)="submit(true)" [isDisable]="isDisabledButton">
+                  <ng-container TextType="cust">{{language.approve | translate}}</ng-container>
+                </app-ui-btn>
+              </app-ui-btn-layout>
+            </div>
+          </div>
+        </ng-container>
+      </app-ui-card-content-btn>
+
+
+    </div>
+  </div>
+</app-ui-inner-page>

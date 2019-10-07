@@ -1,0 +1,19 @@
+<div class="title-num-unit-container" [ngClass]="styleHasImg"> 
+  <!-- title -->
+  <div class="title-block">
+    <div *ngIf="imgUrl!=''" class="img-block">
+      <img [src]="imgUrl">
+    </div>
+    <span class="title-txt">
+      {{title}}
+    </span>
+  </div>
+  <!-- end of tiitle -->
+  <!-- detail -->
+  <div class="detail-block">
+    <div class="num-txt">{{num}}</div>
+    <div class="unit-txt">{{unit}}</div>
+  </div>
+  <!-- end of detail -->
+  
+</div>

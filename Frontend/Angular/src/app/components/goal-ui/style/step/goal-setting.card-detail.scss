@@ -1,0 +1,140 @@
+@import 'style-import';
+
+$wd-card-pad: 360px;
+
+:host{
+    .card-title-other{
+        &.margin-top{
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+        .goal-edit-info{
+            .goal-edit-info-item.flex-display{
+                display: flex;
+                justify-content: space-between;
+                p{
+                    margin: 0;
+                }
+                .title-txt{
+                    font-size: $font-size-h9;
+                    color: $color-grey1;
+                    line-height: 2;
+                    letter-spacing: 0.2px;
+                }
+                .desc-txt{
+                    font-size: $font-size-h8;
+                    color: $color-grey1;
+                    line-height: 1.75;
+                    letter-spacing: 0.2px;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    ::ng-deep{
+        // placeholder of input
+        app-ui-form-layout-col{
+            app-ui-form-input{
+                .input-block nx-formfield .nx-formfield__input input[placeholder]{
+                    text-align: center;
+                    font-weight: bold;
+                    font-size: $font-size-h6;
+                }
+            }
+    
+        }
+        //err msg
+        ::ng-deep app-ui-form-error-msg{
+            position: relative;
+            .error-msg{
+                margin-bottom: 5px;
+            }
+        }
+        .card-content-btn{ //step card white block
+            max-width: $wd-card-pad;
+            margin: 0 auto;
+            @media screen and(min-width: $screen-lg-than-nb){
+                max-width: caculate-vw($wd-card-pad);
+            }
+        }
+        .card-title-block{ //step title
+            text-align: center;
+            position: relative;
+            .card-title{ //main
+                color: $color-main2;
+                font-weight: bold;
+                margin-bottom: $space-ui-title-top;
+                margin-bottom: $space-ui-title-btm;
+            }
+            .card-subtitle{ //sub
+                font-weight: normal;
+            }
+            .card-subtitle.font-size_h9{
+                font-size: $font-size-h9;
+                margin-top: -20px;
+            }
+            .card-title-other{ //info i
+                position: absolute;
+                right: 20px;
+                top: 9px;
+            }
+        }
+        .icon-block{ //img block under step title
+            text-align: center;
+            margin-bottom: 30px; // input title上面要留間距
+            margin-top: 15px;
+            img{
+                max-width: 90px;
+                width: 100%;
+                margin: 0 auto;
+            }
+        }
+        //reset button
+        .ui-link-block{
+            justify-content: flex-end;
+            margin-top: -20px;
+        }
+    }
+}
+
+// other descrp text under input
+.other-descrp{
+    &.mb{
+        margin-bottom: 50px;
+    }
+    display: flex;
+    justify-content: space-between;
+    .descrp-title,.descrp-data{
+        font-size: $font-size-h9;
+        color: $color-grey1;
+        font-weight: normal;
+        letter-spacing: $letter-space-normal;
+        margin: 0;
+    }
+    .descrp-title{
+        &.font-lighter{
+            font-weight: lighter;
+            &+.descrp-data{
+                font-weight: normal;
+            }
+        }
+    }
+}
+// input
+:host{
+    .content-block{
+        ::ng-deep {
+            .input-block{
+                .c-input{
+                    &.is-filled{
+                        font-weight: bold;
+                    }
+                }
+            } 
+        }
+    }
+}
+
+
+
+

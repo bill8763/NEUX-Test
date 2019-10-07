@@ -1,0 +1,30 @@
+@import 'style-import';
+$size-arrow: 4px;
+$bold-arrow:  2px;
+.icon-arrow{
+    transition: all .2s;
+    &:after{
+        transition: all .2s;
+        content: ' ';
+        @include arrowDown($bold-arrow, $size-arrow, $color-grey5);
+        display: inline-block;
+    }
+    @media screen and (min-width: $screen-lg-than-nb ){
+        &:after{
+            @include arrowDown(caculate-vw($bold-arrow), caculate-vw($size-arrow), $color-grey5);
+        }
+    }
+}
+//when active, arrow will change direction to up arrow
+.active{
+    .icon-arrow{
+        &:after{
+            @include arrowTop($bold-arrow, $size-arrow, $color-grey5);
+        }
+        @media screen and (min-width: $screen-lg-than-nb ){
+            &:after{
+                @include arrowTop(caculate-vw($bold-arrow), caculate-vw($size-arrow), $color-grey5);
+            }
+        }
+    }
+}

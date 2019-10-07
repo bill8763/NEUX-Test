@@ -1,0 +1,191 @@
+@import 'style-import';
+@import '../../style/progress-common'; // 共用class
+@import 'layout/layout-space';
+@import '../../style/progress-info-content'; // info common style
+@import '../../style/progress-dot-info-content'; // info dot common style
+$team-top-gap: 30px;
+:host{
+    .progress-content{
+        .progress-lead-view-block{
+            padding-left: $space-progress-sideMain-LR-pad;
+            @media(max-width: $screen-sm-than-pad){
+                padding-left: $space-progress-sideMain-LR-mobile;
+            }
+        }
+        ::ng-deep{
+            .progress-team-view-block{
+                padding-left: $space-progress-sideMain-LR-pad;
+                &.hasNoTab{
+                    app-ui-infinite-scroll{
+                        .infiniti-scroll{
+                            max-height: calc(100vh - 40px); // can scroll
+                        }
+                    }
+                }
+            }
+                
+                
+            //main right page
+            app-ui-infinite-scroll{
+                .infiniti-scroll{
+                    max-height: calc(100vh - 82px - 40px); // can scroll
+                }
+                .refresh-content{
+                    > .scroll-content{
+                        padding-right: $space-progress-sideMain-LR-pad;
+                        padding-bottom: $space-layout-btm; //底部留的100px統一由這個控！
+                    }
+                }
+                
+                
+            }
+            .main-content.hasNoTab{
+                .infiniti-scroll{
+                    max-height: calc(100vh - 40px); // can scroll
+                }
+            }
+    
+            app-ui-main-collapse{
+                .ui-page-content{
+                    .ui-main-block{
+                        .ui-main-collapse-content{
+                            height: 100vh;
+                            overflow-y:hidden; 
+                        }
+                    }
+                }
+                
+            }
+            @media(max-width: $screen-sm-than-nb){
+                // scroll height when no tab fixed
+                .progress-team-view-block{
+                    &.hasNoTab{
+                        app-ui-infinite-scroll{
+                            .infiniti-scroll{
+                                max-height: calc(100vh - #{$header-mobile-height} - #{$footer-mobile-height});
+                            }
+                        }
+                    }
+                }
+                app-ui-infinite-scroll{ 
+                    .infiniti-scroll{
+                        max-height: calc(100vh - 82px -  #{$header-mobile-height} - #{$footer-mobile-height});
+                    }
+                    .refresh-content{
+                        > .scroll-content{
+                            padding-left: $space-progress-sideMain-LR-mobile;
+                        }
+                    }
+                    
+                }
+
+                .main-content.hasNoTab{
+                    .infiniti-scroll{                        
+                        max-height: calc(100vh -  #{$header-mobile-height} - #{$footer-mobile-height})!important;
+                    }
+                }
+            }
+    
+            @media(max-width: $screen-sm-than-pad){
+                app-ui-infinite-scroll{
+                    .refresh-content{
+                        > .scroll-content{
+                            padding-right: $space-progress-sideMain-LR-mobile;
+                        }
+                    }
+                }
+                
+            }
+    
+            
+        }
+    
+        //小版
+        @media screen and(max-width: $screen-sm-than-nb){  
+            ::ng-deep{
+                //for side menu list 
+                .ui-main-block-mobile{
+                    background-color: $color-white;
+                    padding-top: 0px;
+                    .ui-main-detail-block{ // for phone to scroll (list)
+                        height: calc(100vh - #{$header-mobile-height} - #{$footer-mobile-height}); 
+                        overflow: hidden;
+                        overflow-y: auto;
+                        padding-bottom: $space-ui-element; //for last update time space
+                    }
+                    .side-menu-content{
+                        margin-top: $space-top-btm-sm;
+                        min-height:calc(100vh - 235px);
+                    }
+                    // personal detail for mobile
+                    .ui-side-menu-lv2{
+                        .main-content{
+                            .infiniti-scroll{
+                                max-height: calc(100vh - #{$header-height} - #{$footer-mobile-height});
+                                .refresh-content>.scroll-content{
+                                   // padding-bottom: 0; //待討論：原始元件為何要下那麼大
+                                }
+                            }
+                        }
+                    }
+                }
+                // only for team tab content
+                app-ui-main-full{
+                    .ui-page-content{
+                        .ui-main-full-content{
+                            padding: 0px;
+                            .progress-team-view-block{
+                                padding-left: $space-progress-sideMain-LR-pad;
+                                .tab-block{
+                                    padding-top: $team-top-gap;
+                                }
+                                app-ui-infinite-scroll{
+                                    .infiniti-scroll{
+                                        // padding-bottom: calc(#{$space-layout-btm} + #{$team-top-gap});
+                                    }
+                                }
+                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        @media(max-width: $screen-sm-than-pad){
+            ::ng-deep{
+                // only for team tab content
+                app-ui-main-full{
+                    .ui-page-content{
+                        .ui-main-full-content{
+                            .progress-team-view-block{
+                                padding-left: $space-progress-sideMain-LR-mobile;
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+    
+
+}
+
+
+//space .. tab for personal
+.tab-item-block{
+    display: block;
+
+}
+.progress-personal-view-block{
+    @media(max-width: $screen-sm-than-nb){
+        .tab-item-block{
+            padding-left: $space-progress-sideMain-LR-pad;
+        }
+    }
+    @media(max-width: $screen-sm-than-pad){
+        .tab-item-block{
+            padding-left: $space-progress-sideMain-LR-mobile;
+        }
+    }
+}

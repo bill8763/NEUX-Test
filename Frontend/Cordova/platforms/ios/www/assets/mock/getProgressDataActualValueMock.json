@@ -1,0 +1,252 @@
+{
+    "lastUpdateTime": "2019-02-01 12:22:00",
+    "Actual": [
+        {
+            "DataYear": 2019,
+            "TimeBase": "Month",
+            "Values": [
+                {
+                    "Month": 1,
+                    "PerformanceType": "P",
+                    "DataType": "FYFC",
+                    "Value": 8,
+                    "extensions": [
+                        {
+                            "id": "1234",
+                            "datatype": "text | number | boolean",
+                            "value": "1234"
+                        }
+                    ]
+                },
+                {
+                    "Month": 2,
+                    "PerformanceType": "P",
+                    "DataType": "FYFC",
+                    "Value": 11,
+                    "extensions": [
+                        {
+                            "id": "1234",
+                            "datatype": "text | number | boolean",
+                            "value": "1234"
+                        }
+                    ]
+                },
+                {
+                    "Month": 3,
+                    "PerformanceType": "P",
+                    "DataType": "FYFC",
+                    "Value": 13,
+                    "extensions": [
+                        {
+                            "id": "1234",
+                            "datatype": "text | number | boolean",
+                            "value": "1234"
+                        }
+                    ]
+                },
+                {
+                    "Month": 4,
+                    "PerformanceType": "P",
+                    "DataType": "FYFC",
+                    "Value": 10,
+                    "extensions": [
+                        {
+                            "id": "1234",
+                            "datatype": "text | number | boolean",
+                            "value": "1234"
+                        }
+                    ]
+                },
+                {
+                    "Month": 5,
+                    "PerformanceType": "P",
+                    "DataType": "FYFC",
+                    "Value": 17,
+                    "extensions": [
+                        {
+                            "id": "1234",
+                            "datatype": "text | number | boolean",
+                            "value": "1234"
+                        }
+                    ]
+                }
+            ],
+            "extensions": [
+                {
+                    "id": "1234",
+                    "datatype": "text | number | boolean",
+                    "value": "1234"
+                }
+            ]
+        },
+        {
+            "DataYear": 2020,
+            "TimeBase": "Month",
+            "Values": [
+                {
+                    "Month": 1,
+                    "PerformanceType": "P",
+                    "DataType": "FYFC",
+                    "Value": 18,
+                    "extensions": [
+                        {
+                            "id": "1234",
+                            "datatype": "text | number | boolean",
+                            "value": "1234"
+                        }
+                    ]
+                },
+                {
+                    "Month": 2,
+                    "PerformanceType": "P",
+                    "DataType": "FYFC",
+                    "Value": 16,
+                    "extensions": [
+                        {
+                            "id": "1234",
+                            "datatype": "text | number | boolean",
+                            "value": "1234"
+                        }
+                    ]
+                },
+                {
+                    "Month": 3,
+                    "PerformanceType": "P",
+                    "DataType": "FYFC",
+                    "Value": 11,
+                    "extensions": [
+                        {
+                            "id": "1234",
+                            "datatype": "text | number | boolean",
+                            "value": "1234"
+                        }
+                    ]
+                },
+                {
+                    "Month": 4,
+                    "PerformanceType": "P",
+                    "DataType": "FYFC",
+                    "Value": 9,
+                    "extensions": [
+                        {
+                            "id": "1234",
+                            "datatype": "text | number | boolean",
+                            "value": "1234"
+                        }
+                    ]
+                },
+                {
+                    "Month": 5,
+                    "PerformanceType": "P",
+                    "DataType": "FYFC",
+                    "Value": 8,
+                    "extensions": [
+                        {
+                            "id": "1234",
+                            "datatype": "text | number | boolean",
+                            "value": "1234"
+                        }
+                    ]
+                },
+                {
+                    "Month": 6,
+                    "PerformanceType": "P",
+                    "DataType": "FYFC",
+                    "Value": 16,
+                    "extensions": [
+                        {
+                            "id": "1234",
+                            "datatype": "text | number | boolean",
+                            "value": "1234"
+                        }
+                    ]
+                },
+                {
+                    "Month": 7,
+                    "PerformanceType": "P",
+                    "DataType": "FYFC",
+                    "Value": 14,
+                    "extensions": [
+                        {
+                            "id": "1234",
+                            "datatype": "text | number | boolean",
+                            "value": "1234"
+                        }
+                    ]
+                },
+                {
+                    "Month": 8,
+                    "PerformanceType": "P",
+                    "DataType": "FYFC",
+                    "Value": 10,
+                    "extensions": [
+                        {
+                            "id": "1234",
+                            "datatype": "text | number | boolean",
+                            "value": "1234"
+                        }
+                    ]
+                },
+                {
+                    "Month": 9,
+                    "PerformanceType": "P",
+                    "DataType": "FYFC",
+                    "Value": 8,
+                    "extensions": [
+                        {
+                            "id": "1234",
+                            "datatype": "text | number | boolean",
+                            "value": "1234"
+                        }
+                    ]
+                },
+                {
+                    "Month": 10,
+                    "PerformanceType": "P",
+                    "DataType": "FYFC",
+                    "Value": 18,
+                    "extensions": [
+                        {
+                            "id": "1234",
+                            "datatype": "text | number | boolean",
+                            "value": "1234"
+                        }
+                    ]
+                },
+                {
+                    "Month": 11,
+                    "PerformanceType": "P",
+                    "DataType": "FYFC",
+                    "Value": 15,
+                    "extensions": [
+                        {
+                            "id": "1234",
+                            "datatype": "text | number | boolean",
+                            "value": "1234"
+                        }
+                    ]
+                },
+                {
+                    "Month": 12,
+                    "PerformanceType": "P",
+                    "DataType": "FYFC",
+                    "Value": 21,
+                    "extensions": [
+                        {
+                            "id": "1234",
+                            "datatype": "text | number | boolean",
+                            "value": "1234"
+                        }
+                    ]
+                }
+            ],
+            "extensions": [
+                {
+                    "id": "1234",
+                    "datatype": "text | number | boolean",
+                    "value": "1234"
+                }
+            ]
+        }
+    ]
+}

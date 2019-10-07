@@ -1,0 +1,48 @@
+<app-ui-card-content-btn [hasBtn]="isHasBtn">
+  <ng-container infoContent>
+    <!-- title -->
+    <div class="card-title-block">
+      <h3 class="card-title font-size_h5">{{language.goalSettingStep2Title | translate}}</h3>
+      <h5 class="card-subtitle font-size_h9">{{goalEffectiveWorkingMonthTitle}}</h5>
+    </div>
+    <div class="icon-block">
+      <img src="assets/img/icon-goal-setting-{{urlIcon}}-step2.svg">
+    </div>
+    <!-- end of title -->
+    <!-- content -->
+    <div class="content-block">
+      <app-ui-form-layout-advanced>
+        <!-- row1 -->
+        <app-ui-form-layout-row>
+          <app-ui-form-layout-col>
+            <div class="input-block">
+              <app-ui-form-input [type]="'dollar'" [maxLength]="10" [isError]="validationResult.isError('PerCase')"
+                [inputTitle]="language.averageFYFCPerCase | translate" [(nxValue)]="data.PerCase"
+                (nxValueChange)="onChange('PerCase',$event)" [typeUi]="'style2'" [id]="'input_perCase'">
+              </app-ui-form-input>
+              <span class="unit-block">/{{'Case' | translate}}</span>
+            </div>
+            <app-ui-form-error-msg *ngIf="validationResult.isError('PerCase')">
+              {{validationResult.getErrorMsg('PerCase') | translate}}
+            </app-ui-form-error-msg>
+          </app-ui-form-layout-col>
+        </app-ui-form-layout-row>
+        <!-- end of row1 -->
+      </app-ui-form-layout-advanced>
+      <!-- reset -->
+      <app-ui-link [isUnderLine]="false" imgSrc="../assets/img/icon-reset.svg" (onClick)="onReset()" [isReset]=true
+        [hidden]="!isShowResetBtn">
+        <ng-container textType="linktext">{{language.reset | translate}}</ng-container>
+      </app-ui-link>
+      <!-- end of reset -->
+    </div>
+    <!-- end of content -->
+  </ng-container>
+  <ng-container btnContent>
+    <app-ui-btn-layout>
+      <app-ui-btn [btnColor]="isNextYear? 'main1':'main2'" [btnWd]="'lg'" [id]="'btn_goalsettingStep2'" Action action="goalsettingStep2" (actionClick)="doNext()" [isDisable]="isDisableBtn">
+        <ng-container TextType="cust">{{language.next | translate}}</ng-container>
+      </app-ui-btn>
+    </app-ui-btn-layout>
+  </ng-container>
+</app-ui-card-content-btn>

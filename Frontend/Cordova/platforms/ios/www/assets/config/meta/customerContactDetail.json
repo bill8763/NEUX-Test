@@ -1,0 +1,23 @@
+{
+  "source": {
+    "type": "INPUT"
+  },
+  "columns": [{
+    "id": "Name",
+    "name": "Contact Name",
+    "type": "Label",
+    "ref": ""
+  }, {
+    "id": "Date",
+    "name": "Date",
+    "type": "Label",
+    "ref": ""
+  }, {
+    "id": "Note",
+    "name": "Message",
+    "type": "Label",
+    "ref": ""
+  }],
+  "group": [],
+  "footer": []
+}

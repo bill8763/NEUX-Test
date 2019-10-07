@@ -1,0 +1,498 @@
+{
+    "Header": {
+      "Time": "20190111000005",
+      "PageInfo": {
+        "pageNo": 1,
+        "pageSize": 10,
+        "totalPage": 3,
+        "totalRec": 30
+      },
+      "QueryParams": {}
+    },
+    "Body": [
+        {
+            "title" : "Customer Type",
+            "type"  : "TAG",
+            "option" : [
+                {
+                    "id" : "01",
+                    "text" : "Normal",
+                    "check" : false
+                },
+                {
+                    "id" : "02",
+                    "text" : "Follow",
+                    "check" : true
+                }
+            ]
+        },
+        {
+            "title" : "Possibility",
+            "type"  : "TAG",
+            "option" : [
+                {
+                    "id" : "01",
+                    "text" : "Hot",
+                    "check" : false
+                },
+                {
+                    "id" : "02",
+                    "text" : "Warm",
+                    "check" : false
+                },
+                {
+                    "id" : "03",
+                    "text" : "Cold",
+                    "check" : false
+                }
+            ]
+        },
+        {
+            "title" : "Source",
+            "type"  : "TAG",
+            "option" : [
+                {
+                    "id" : "01",
+                    "text" : "Relatives",
+                    "check" : false
+                },
+                {
+                    "id" : "02",
+                    "text" : "Friends",
+                    "check" : false
+                },
+                {
+                    "id" : "03",
+                    "text" : "Classmate",
+                    "check" : false
+                },
+                {
+                    "id" : "04",
+                    "text" : "Alumni",
+                    "check" : false
+                },
+                {
+                    "id" : "05",
+                    "text" : "Neighbors",
+                    "check" : false
+                },
+                {
+                    "id" : "06",
+                    "text" : "Community tenants",
+                    "check" : false
+                },
+                {
+                    "id" : "07",
+                    "text" : "Work",
+                    "check" : false
+                },
+                {
+                    "id" : "08",
+                    "text" : "Business related",
+                    "check" : false
+                },
+                {
+                    "id" : "09",
+                    "text" : "Persons who provide service",
+                    "check" : false
+                },
+                {
+                    "id" : "10",
+                    "text" : "Professional",
+                    "check" : false
+                },
+                {
+                    "id" : "11",
+                    "text" : "Social or religious group",
+                    "check" : false
+                },
+                {
+                    "id" : "12",
+                    "text" : "Leisure",
+                    "check" : false
+                },
+                {
+                    "id" : "13",
+                    "text" : "hobbies",
+                    "check" : false
+                },
+                {
+                    "id" : "14",
+                    "text" : "Known by family",
+                    "check" : false
+                },
+                {
+                    "id" : "15",
+                    "text" : "Engage Experience",
+                    "check" : false
+                },
+                {
+                    "id" : "16",
+                    "text" : "Discovery Experience",
+                    "check" : false
+                },
+                {
+                    "id" : "17",
+                    "text" : "Discovery Experience",
+                    "check" : false
+                }
+            ]
+        },
+        {
+            "title" : "Familiarity",
+            "type"  : "TAG",
+            "option" : [
+                {
+                    "id" : "01",
+                    "text" : "Close",
+                    "check" : false
+                },
+                {
+                    "id" : "02",
+                    "text" : "Known(acquaintance)",
+                    "check" : false
+                },
+                {
+                    "id" : "03",
+                    "text" : "Nodding acquaintance",
+                    "check" : false
+                }
+            ]
+        },
+        {
+            "title" : "Recent status",
+            "type"  : "TAG",
+            "option" : [
+                {
+                    "id" : "01",
+                    "text" : "CloseNewly married",
+                    "check" : false
+                },
+                {
+                    "id" : "02",
+                    "text" : "child get birth",
+                    "check" : false
+                },
+                {
+                    "id" : "03",
+                    "text" : "Get promoted",
+                    "check" : false
+                },
+                {
+                    "id" : "04",
+                    "text" : "change work",
+                    "check" : false
+                },
+                {
+                    "id" : "05",
+                    "text" : "Become a boss",
+                    "check" : false
+                },
+                {
+                    "id" : "06",
+                    "text" : "Buy house",
+                    "check" : false
+                },
+                {
+                    "id" : "07",
+                    "text" : "Burden family",
+                    "check" : false
+                }
+            ]
+        },
+        {
+            "title" : "MANPA",
+            "type"  : "TAG",
+            "option" : [
+                {
+                    "id" : "01",
+                    "text" : "M:Ability to pay",
+                    "check" : false
+                },
+                {
+                    "id" : "02",
+                    "text" : "A:Accessible",
+                    "check" : true
+                },
+                {
+                    "id" : "03",
+                    "text" : "N:Have Needs",
+                    "check" : true
+                },
+                {
+                    "id" : "04",
+                    "text" : "P:coulld be Approved",
+                    "check" : true
+                },
+                {
+                    "id" : "05",
+                    "text" : "A:Have right to decide",
+                    "check" : true
+                }
+            ]
+        },
+        {
+            "title" : "Sex",
+            "type"  : "TAG",
+            "option" : [
+                {
+                    "id" : "01",
+                    "text" : "Male",
+                    "check" : false
+                },
+                {
+                    "id" : "02",
+                    "text" : "Female",
+                    "check" : false
+                }
+            ]
+        },
+        {
+            "title" : "Marriage",
+            "type"  : "TAG",
+            "option" : [
+                {
+                    "id" : "01",
+                    "text" : "Single",
+                    "check" : false
+                },
+                {
+                    "id" : "02",
+                    "text" : "Married",
+                    "check" : false
+                },
+                {
+                    "id" : "03",
+                    "text" : "Single with child",
+                    "check" : false
+                }
+            ]
+        },
+        {
+            "title" : "Children",
+            "type"  : "TAG",
+            "option" : [
+                {
+                    "id" : "01",
+                    "text" : "0",
+                    "check" : false
+                },
+                {
+                    "id" : "02",
+                    "text" : "1-2",
+                    "check" : false
+                },
+                {
+                    "id" : "03",
+                    "text" : "3-4",
+                    "check" : false
+                },
+                {
+                    "id" : "03",
+                    "text" : ">5",
+                    "check" : false
+                }
+            ]
+        },
+        {
+            "title" : "Income (Year/NTD)",
+            "type"  : "TAG",
+            "option" : [
+                {
+                    "id" : "01",
+                    "text" : "<35k",
+                    "check" : false
+                },
+                {
+                    "id" : "02",
+                    "text" : "35k-49k",
+                    "check" : false
+                },
+                {
+                    "id" : "03",
+                    "text" : "50k-75k",
+                    "check" : false
+                },
+                {
+                    "id" : "04",
+                    "text" : "75k-99k",
+                    "check" : false
+                },
+                {
+                    "id" : "04",
+                    "text" : ">100k",
+                    "check" : false
+                }
+            ]
+        },
+        {
+            "title" : "Age",
+            "type"  : "TAG",
+            "option" : [
+                {
+                    "id" : "01",
+                    "text" : "0-15y",
+                    "check" : false
+                },
+                {
+                    "id" : "02",
+                    "text" : "16-24y",
+                    "check" : false
+                },
+                {
+                    "id" : "03",
+                    "text" : "25-34y",
+                    "check" : false
+                },
+                {
+                    "id" : "04",
+                    "text" : "35-44y",
+                    "check" : false
+                },
+                {
+                    "id" : "05",
+                    "text" : "45-54y",
+                    "check" : false
+                },
+                {
+                    "id" : "06",
+                    "text" : "55y or more",
+                    "check" : false
+                }
+            ]
+        },
+        {
+            "title" : "Birthday",
+            "type"  : "TAG",
+            "option" : [
+                {
+                    "id" : "01",
+                    "text" : "Today",
+                    "check" : false
+                },
+                {
+                    "id" : "02",
+                    "text" : "Jan",
+                    "check" : false
+                },
+                {
+                    "id" : "03",
+                    "text" : "Feb",
+                    "check" : false
+                },
+                {
+                    "id" : "04",
+                    "text" : "Mar",
+                    "check" : false
+                },
+                {
+                    "id" : "05",
+                    "text" : "Apr",
+                    "check" : false
+                },
+                {
+                    "id" : "06",
+                    "text" : "May",
+                    "check" : false
+                },
+                {
+                    "id" : "07",
+                    "text" : "Jun",
+                    "check" : false
+                },
+                {
+                    "id" : "08",
+                    "text" : "Jul",
+                    "check" : false
+                }
+            ]
+        },
+        {
+            "title" : "Contact Frequency (times/year)",
+            "type"  : "TAG",
+            "option" : [
+                {
+                    "id" : "01",
+                    "text" : "0",
+                    "check" : false
+                },
+                {
+                    "id" : "02",
+                    "text" : "1-3",
+                    "check" : false
+                },
+                {
+                    "id" : "03",
+                    "text" : "4-6",
+                    "check" : false
+                },
+                {
+                    "id" : "04",
+                    "text" : "7-10",
+                    "check" : false
+                },
+                {
+                    "id" : "05",
+                    "text" : "11 or more",
+                    "check" : false
+                }
+            ]
+        },
+        {
+            "title" : "Completeness",
+            "type"  : "TAG",
+            "option" : [
+                {
+                    "id" : "01",
+                    "text" : "0-10",
+                    "check" : false
+                },
+                {
+                    "id" : "02",
+                    "text" : "11-20",
+                    "check" : false
+                },
+                {
+                    "id" : "03",
+                    "text" : "21-30",
+                    "check" : false
+                },
+                {
+                    "id" : "04",
+                    "text" : "31-40",
+                    "check" : false
+                },
+                {
+                    "id" : "05",
+                    "text" : "41-50",
+                    "check" : false
+                },
+                {
+                    "id" : "06",
+                    "text" : "51-60",
+                    "check" : false
+                },
+                {
+                    "id" : "07",
+                    "text" : "61-70",
+                    "check" : false
+                },
+                {
+                    "id" : "08",
+                    "text" : "71-80",
+                    "check" : false
+                },
+                {
+                    "id" : "09",
+                    "text" : "81-90",
+                    "check" : false
+                },
+                {
+                    "id" : "10",
+                    "text" : "91-100",
+                    "check" : false
+                }
+            ]
+        }
+    ]
+}

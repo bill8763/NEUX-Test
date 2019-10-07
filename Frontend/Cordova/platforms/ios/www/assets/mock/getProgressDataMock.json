@@ -1,0 +1,492 @@
+{
+  "lastUpdateTime": "2019-06-06 11:11:00",
+  "Progress": [
+    {
+      "DataYear": 2019,
+      "YesterdayPoint": 20,
+      "Personal": {
+        "Values": [
+          {
+            "DataType": "Actual",
+            "TimeBase": "Day",
+            "FYFC": 0,
+            "Find": 10,
+            "Schedule": 5,
+            "Meet": 3,
+            "Submit": 3,
+            "Inforce": 2
+          },
+          {
+            "DataType": "Actual",
+            "TimeBase": "Week",
+            "FYFC":0,
+            "Find": 70,
+            "Schedule": 35,
+            "Meet": 21,
+            "Submit": 21,
+            "Inforce": 14
+          },
+          {
+            "DataType": "Actual",
+            "TimeBase": "Month",
+            "FYFC":0,
+            "Find": 280,
+            "Schedule": 140,
+            "Meet": 84,
+            "Submit": 84,
+            "Inforce": 56
+          },
+          {
+            "DataType": "Actual",
+            "TimeBase": "Quarter",
+            "FYFC": 0,
+            "Find": 100,
+            "Schedule": 420,
+            "Meet": 252,
+            "Submit": 252,
+            "Inforce": 168
+          },
+          {
+            "DataType": "Actual",
+            "TimeBase": "Year",
+            "FYFC": 0,
+            "Find": 3360,
+            "Schedule": 1680,
+            "Meet": 1008,
+            "Submit": 1008,
+            "Inforce": 672
+          },
+          {
+            "DataType": "Goal",
+            "TimeBase": "Month",
+            "FYFC": 18,
+            "Find": 300,
+            "Schedule": 150,
+            "Meet": 100,
+            "Submit": 100,
+            "Inforce": 60
+          },
+          {
+            "DataType": "Goal",
+            "TimeBase": "Quarter",
+            "FYFC": 32,
+            "Find": 900,
+            "Schedule": 450,
+            "Meet": 300,
+            "Submit": 300,
+            "Inforce": 180
+          },
+          {
+            "DataType": "Goal",
+            "TimeBase": "Year",
+            "FYFC": 90,
+            "Find": 3600,
+            "Schedule": 1800,
+            "Meet": 1200,
+            "Submit": 1200,
+            "Inforce": 720
+          }
+        ]
+      },
+      "Team": {
+        "Values": [
+          {
+            "DataType": "FYFC",
+            "TimeBase": "Month",
+            "Goal": 500,
+            "Forecast": 500,
+            "Actual": 400,
+            "Shortfall": 100
+          },
+          {
+            "DataType": "ANP",
+            "TimeBase": "Month",
+            "Goal": 1000,
+            "Forecast": 1000,
+            "Actual": 900,
+            "Shortfall": 100
+          },
+          {
+            "DataType": "Manpower",
+            "TimeBase": "Month",
+            "Goal": 200,
+            "Forecast": 200,
+            "Actual": 190,
+            "Shortfall": 10
+          },
+          {
+            "DataType": "Recruitment",
+            "TimeBase": "Month",
+            "Goal": 50,
+            "Forecast": 50,
+            "Actual": 49,
+            "Shortfall": 1
+          },
+          {
+            "DataType": "FYFC",
+            "TimeBase": "Quarter",
+            "Goal": 1000,
+            "Forecast": 1000,
+            "Actual": 900,
+            "Shortfall": 100
+          },
+          {
+            "DataType": "ANP",
+            "TimeBase": "Quarter",
+            "Goal": 1500,
+            "Forecast": 1500,
+            "Actual": 1400,
+            "Shortfall": 100
+          },
+          {
+            "DataType": "Manpower",
+            "TimeBase": "Quarter",
+            "Goal": 400,
+            "Forecast": 400,
+            "Actual": 390,
+            "Shortfall": 10
+          },
+          {
+            "DataType": "Recruitment",
+            "TimeBase": "Quarter",
+            "Goal": 100,
+            "Forecast": 100,
+            "Actual": 99,
+            "Shortfall": 1
+          },
+          {
+            "DataType": "FYFC",
+            "TimeBase": "Year",
+            "Goal": 1500,
+            "Forecast": 1500,
+            "Actual": 1400,
+            "Shortfall": 100
+          },
+          {
+            "DataType": "ANP",
+            "TimeBase": "Year",
+            "Goal": 2000,
+            "Forecast": 2000,
+            "Actual": 1900,
+            "Shortfall": 100
+          },
+          {
+            "DataType": "Manpower",
+            "TimeBase": "Year",
+            "Goal": 600,
+            "Forecast": 600,
+            "Actual": 590,
+            "Shortfall": 10
+          },
+          {
+            "DataType": "Recruitment",
+            "TimeBase": "Year",
+            "Goal": 150,
+            "Forecast": 150,
+            "Actual": 149,
+            "Shortfall": 1
+          }
+        ],
+        "DirectUnit": [
+          {
+            "AgentID": "1",
+            "AgentName": "titan",
+            "JobGrade": "SM",
+            "Drilldown": false,
+            "DataType": "FYFC / ANP / Manpower / Recruitment",
+            "TimeBase": "Month / Quarter / Year",
+            "Goal": 100,
+            "Forecast": 100,
+            "Actual": 100,
+            "Shortfall": 100,
+            "extensions": [
+              {
+                "id": "1234",
+                "datatype": "text | Quarter | boolean",
+                "value": "1234"
+              }
+            ]
+          }
+        ],
+        "InDirectUnit": [
+          {
+            "AgentID": "1",
+            "AgentName": "titan",
+            "JobGrade": "SM",
+            "Drilldown": false,
+            "DataType": "FYFC / ANP / Manpower / Recruitment",
+            "TimeBase": "month / Quarter / Year",
+            "Goal": 100,
+            "Forecast": 100,
+            "Actual": 100,
+            "Shortfall": 100,
+            "extensions": [
+              {
+                "id": "1234",
+                "datatype": "text | number | boolean",
+                "value": "1234"
+              }
+            ]
+          }
+        ],
+        "extensions": [
+          {
+            "id": "1234",
+            "datatype": "text | number | boolean",
+            "value": "1234"
+          }
+        ]
+      },
+      "extensions": [
+        {
+          "id": "1234",
+          "datatype": "text | number | boolean",
+          "value": "1234"
+        }
+      ]
+    },
+    {
+      "DataYear": 2020,
+      "Personal": {
+        "Values": [
+          {
+            "DataType": "Actual",
+            "TimeBase": "Day",
+            "FYFC": 0,
+            "Find": 9,
+            "Schedule": 7,
+            "Meet": 5,
+            "Submit": 3,
+            "Inforce": 2
+          },
+          {
+            "DataType": "Actual",
+            "TimeBase": "Week",
+            "FYFC": 0,
+            "Find": 63,
+            "Schedule": 49,
+            "Meet": 35,
+            "Submit": 21,
+            "Inforce": 14
+          },
+          {
+            "DataType": "Actual",
+            "TimeBase": "Month",
+            "FYFC": 0,
+            "Find": 252,
+            "Schedule": 196,
+            "Meet": 140,
+            "Submit": 84,
+            "Inforce": 56
+          },
+          {
+            "DataType": "Actual",
+            "TimeBase": "Quarter",
+            "FYFC": 0,
+            "Find": 756,
+            "Schedule": 588,
+            "Meet": 420,
+            "Submit": 252,
+            "Inforce": 168
+          },
+          {
+            "DataType": "Actual",
+            "TimeBase": "Year",
+            "FYFC": 0,
+            "Find": 3024,
+            "Schedule": 2352,
+            "Meet": 1680,
+            "Submit": 1008,
+            "Inforce": 672
+          },
+          {
+            "DataType": "Goal",
+            "TimeBase": "Month",
+            "FYFC": 20,
+            "Find": 300,
+            "Schedule": 200,
+            "Meet": 150,
+            "Submit": 90,
+            "Inforce": 60
+          },
+          {
+            "DataType": "Goal",
+            "TimeBase": "Quarter",
+            "FYFC": 34,
+            "Find": 900,
+            "Schedule": 600,
+            "Meet": 450,
+            "Submit": 270,
+            "Inforce": 180
+          },
+          {
+            "DataType": "Goal",
+            "TimeBase": "Year",
+            "FYFC": 92,
+            "Find": 3600,
+            "Schedule": 2400,
+            "Meet": 1800,
+            "Submit": 1080,
+            "Inforce": 720
+          }
+        ]
+      },
+      "Team": {
+        "Values": [
+          {
+            "DataType": "FYFC",
+            "TimeBase": "Month",
+            "Goal": 1000,
+            "Forecast": 1000,
+            "Actual": 900,
+            "Shortfall": 100
+          },
+          {
+            "DataType": "ANP",
+            "TimeBase": "Month",
+            "Goal": 2000,
+            "Forecast": 2000,
+            "Actual": 1900,
+            "Shortfall": 100
+          },
+          {
+            "DataType": "Manpower",
+            "TimeBase": "Month",
+            "Goal": 400,
+            "Forecast": 400,
+            "Actual": 390,
+            "Shortfall": 10
+          },
+          {
+            "DataType": "Recruitment",
+            "TimeBase": "Month",
+            "Goal": 100,
+            "Forecast": 100,
+            "Actual": 99,
+            "Shortfall": 1
+          },
+          {
+            "DataType": "FYFC",
+            "TimeBase": "Quarter",
+            "Goal": 2000,
+            "Forecast": 2000,
+            "Actual": 1900,
+            "Shortfall": 100
+          },
+          {
+            "DataType": "ANP",
+            "TimeBase": "Quarter",
+            "Goal": 2500,
+            "Forecast": 2500,
+            "Actual": 2400,
+            "Shortfall": 100
+          },
+          {
+            "DataType": "Manpower",
+            "TimeBase": "Quarter",
+            "Goal": 800,
+            "Forecast": 800,
+            "Actual": 790,
+            "Shortfall": 10
+          },
+          {
+            "DataType": "Recruitment",
+            "TimeBase": "Quarter",
+            "Goal": 200,
+            "Forecast": 200,
+            "Actual": 190,
+            "Shortfall": 1
+          },
+          {
+            "DataType": "FYFC",
+            "TimeBase": "Year",
+            "Goal": 2500,
+            "Forecast": 2500,
+            "Actual": 2400,
+            "Shortfall": 100
+          },
+          {
+            "DataType": "ANP",
+            "TimeBase": "Year",
+            "Goal": 3000,
+            "Forecast": 3000,
+            "Actual": 2900,
+            "Shortfall": 100
+          },
+          {
+            "DataType": "Manpower",
+            "TimeBase": "Year",
+            "Goal": 1000,
+            "Forecast": 1000,
+            "Actual": 990,
+            "Shortfall": 10
+          },
+          {
+            "DataType": "Recruitment",
+            "TimeBase": "Year",
+            "Goal": 250,
+            "Forecast": 250,
+            "Actual": 149,
+            "Shortfall": 1
+          }
+        ],
+        "DirectUnit": [
+          {
+            "AgentID": "1",
+            "AgentName": "titan",
+            "JobGrade": "SM",
+            "Drilldown": false,
+            "DataType": "FYFC / ANP / Manpower / Recruitment",
+            "TimeBase": "month / Quarter / year",
+            "Goal": 100,
+            "Forecast": 100,
+            "Actual": 100,
+            "Shortfall": 100,
+            "extensions": [
+              {
+                "id": "1234",
+                "datatype": "text | number | boolean",
+                "value": "1234"
+              }
+            ]
+          }
+        ],
+        "InDirectUnit": [
+          {
+            "AgentID": "1",
+            "AgentName": "titan",
+            "JobGrade": "SM",
+            "Drilldown": false,
+            "DataType": "FYFC / ANP / Manpower / Recruitment",
+            "TimeBase": "month / Quarter / year",
+            "Goal": 100,
+            "Forecast": 100,
+            "Actual": 100,
+            "Shortfall": 100,
+            "extensions": [
+              {
+                "id": "1234",
+                "datatype": "text | number | boolean",
+                "value": "1234"
+              }
+            ]
+          }
+        ],
+        "extensions": [
+          {
+            "id": "1234",
+            "datatype": "text | number | boolean",
+            "value": "1234"
+          }
+        ]
+      },
+      "extensions": [
+        {
+          "id": "1234",
+          "datatype": "text | number | boolean",
+          "value": "1234"
+        }
+      ]
+    }
+  ]
+}

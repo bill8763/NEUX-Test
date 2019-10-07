@@ -1,0 +1,16 @@
+@import 'style-import';
+
+//card common style
+$wd-card-pad: 360px;
+:host {
+    ::ng-deep{
+        .card-block{
+            display: inline-block;
+            width: 100%;
+            + .card-block{ //step 之間的間距
+                margin-top: $space-top-btm-sm;
+            }
+        }
+    }
+}
+

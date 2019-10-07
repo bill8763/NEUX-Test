@@ -1,0 +1,51 @@
+@import 'style-import';
+
+:host{
+    .goal-overview-monthly-plan-fyfc-card{
+        margin-top: $space-ui-element;
+        margin-bottom: $space-ui-element;
+    }
+
+
+    // personal monthly plan-FYFC
+    ::ng-deep{
+        app-ui-table-edit-content{
+            .table-edit{
+                app-ui-table-title{
+                    .table-title{
+                        padding: 20px 15px;
+                        .title-content{
+                            width: 100%;
+                        }
+                        // edit pen
+                        .event-btn{
+                            right: 15px;
+                            top: 100%;
+                            z-index: 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    @media screen and (max-width: $screen-sm-than-nb){
+        ::ng-deep{
+            app-ui-table-edit-content{
+                .table-edit{
+                    app-ui-table-title{
+                        .table-title{
+                            .event-btn{
+                                transform: translateY(-50%); 
+                            }
+                            .title-content{
+                                margin-bottom: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

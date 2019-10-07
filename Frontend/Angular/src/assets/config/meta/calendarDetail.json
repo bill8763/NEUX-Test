@@ -1,0 +1,54 @@
+{
+  "source": {
+    "type": "API",
+    "read": "getCalendarEventDetail"
+  },
+  "columns": [{
+    "id": "Title",
+    "name": "Title",
+    "type": "Label",
+    "ref": ""
+  }, {
+    "id": "Location",
+    "name": "Location",
+    "type": "Label",
+    "ref": ""
+  }, {
+    "id": "CalendarType",
+    "name": "Activity",
+    "type": "Label",
+    "ref": "Calendar_Type"
+  }, {
+    "id": "CustomerClientName",
+    "name": "Customer",
+    "type": "Label",
+    "ref": ""
+  }, {
+    "id": "DisplayDate",
+    "name": "Date",
+    "type": "Label",
+    "ref": ""
+  }, {
+    "id": "Alert1",
+    "name": "Alert",
+    "type": "Label",
+    "inline": true,
+    "ref": "Calendar_RemindTime"
+  }, {
+    "id": "Alert2",
+    "name": "Alert",
+    "type": "Label",
+    "ref": "Calendar_RemindTime"
+  }, {
+    "id": "Remark",
+    "name": "Remark",
+    "type": "Label",
+    "ref": ""
+  }],
+  "group": [],
+  "footer": [{
+    "id": "save",
+    "type": "submit",
+    "name": "save"
+  }]
+}

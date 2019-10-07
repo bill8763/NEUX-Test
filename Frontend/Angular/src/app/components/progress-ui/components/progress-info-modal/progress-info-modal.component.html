@@ -1,0 +1,320 @@
+<!-- personal progressbarlist info popup -->
+<app-ui-modal-style-img-base class="wd-sm" [isHasBtmBlock]="false" [typeBtn]="'style3'" [(isPopupOpen)]="isPopupOpenProgressBarListInfo">
+    <ng-container textType="modal-img-detail">
+      <nx-icon class="icon-i" name="info-circle" fill="false" outline="false" size="auto"></nx-icon>
+    </ng-container>
+    <ng-container textType="modal-title-detail">{{ Language.infoHowToReadThisTitle | translate}}</ng-container>
+    <ng-container textType="modal-content-detail">
+      <div class="personal-progresslist-info progress-detail-info-content">
+        <div class="detail-info-info">
+          <div class="detail-info-title">
+              <div class="title-num">
+                  <span class="icon"></span>
+                  <div class="value">58%</div>
+              </div>
+              <div class="title-text">{{ Language.infoConversionRateText | translate}}</div>
+          </div>
+          <div class="detail-info-text">{{ Language.infoConversionRateDetailText | translate}}</div>
+        </div>
+      </div> 
+    </ng-container>
+</app-ui-modal-style-img-base>
+<!-- end of personal progressbar list info popup -->
+
+<!-- head table info popup -->
+<app-ui-modal-style-img-base class="wd-md" [isHasBtmBlock]="false" [typeBtn]="'style3'" [(isPopupOpen)]="isPopupOpenHeadTablerInfo">
+    <ng-container textType="modal-img-detail">
+      <nx-icon class="icon-i" name="info-circle" fill="false" outline="false" size="auto"></nx-icon>
+    </ng-container>
+    <ng-container textType="modal-title-detail">{{ Language.informationDescriptionText | translate}}</ng-container>
+    <ng-container textType="modal-content-detail">
+        <div class="progress-detail-info-content info-block">
+            <div class="detail-info-subtitle">
+                <div class="title-text">{{ Language.infoTitle | translate }}</div>
+            </div>
+            <div class="detail-info-info">
+          
+              <ul class="detail-info-list-block">
+                <li class="detail-info-list">
+                    <div class="detail-info-title">
+                        <div class="title-text">{{ Language.month | translate }}:</div>
+                    </div>
+                    <div class="detail-info-text">{{ Language.infoMonthDetailText | translate }}</div>
+                    
+                </li>
+                <li class="detail-info-list">
+                    <div class="detail-info-title">
+                        <div class="title-text">{{ Language.quarter | translate }} :</div>
+                    </div>
+                    <div class="detail-info-text">{{ Language.infoQuarterDetailText | translate }}</div>
+              
+                </li>
+                <li class="detail-info-list">
+                  <div class="detail-info-title">
+                      <div class="title-text">{{ Language.year | translate }} :</div>
+                  </div>
+                  <div class="detail-info-text">{{ Language.infoYearDetailText | translate }}</div>
+                </li>
+                <li class="detail-info-list">
+                  <div class="detail-info-title">
+                      <div class="title-text">{{ Language.forecast | translate }} {{ Language.recruitment | translate }}:</div>
+                  </div>
+                  <div class="detail-info-text">{{ Language.infoForecastRecruitmentDetailText | translate }}</div>
+                </li>
+              </ul>
+              
+            </div>
+        </div> 
+    </ng-container>
+</app-ui-modal-style-img-base>
+<!-- end of head table list info popup -->
+
+<!-- head and team table card info popup -->
+<app-ui-modal-style-img-base class="wd-md" [isHasBtmBlock]="false" [typeBtn]="'style3'" [(isPopupOpen)]="isPopupOpenTableCardInfo">
+    <ng-container textType="modal-img-detail">
+      <nx-icon class="icon-i" name="info-circle" fill="false" outline="false" size="auto"></nx-icon>
+    </ng-container>
+    <ng-container textType="modal-title-detail">{{ Language.informationDescriptionText | translate}}</ng-container>
+    <ng-container textType="modal-content-detail">
+        <div class="progress-detail-info-content">
+            <div class="detail-info-subtitle">
+                <div class="title-text">{{ Language.infoTitle | translate}}</div>
+            </div>
+            <div class="detail-info-info">
+              
+              <ul class="detail-info-list-block">
+                <li class="detail-info-list">
+                    <div class="detail-info-title">
+                        <div class="title-text">{{ Language.month | translate}}:</div>
+                    </div>
+                    <div class="detail-info-text">{{ Language.infoMonthDetailText | translate}}</div>
+                    
+                </li>
+                <li class="detail-info-list">
+                    <div class="detail-info-title">
+                        <div class="title-text">{{ Language.quarter | translate}}:</div>
+                    </div>
+                    <div class="detail-info-text">{{ Language.infoQuarterDetailText | translate}}</div>
+              
+                </li>
+                <li class="detail-info-list">
+                  <div class="detail-info-title">
+                      <div class="title-text">{{ Language.year | translate}}:</div>
+                  </div>
+                  <div class="detail-info-text">{{ Language.infoYearDetailText | translate}}</div>
+                </li>
+                <li class="detail-info-list">
+                  <div class="detail-info-title">
+                      <div class="title-text">{{ Language.forecast | translate}} {{ Language.recruitment | translate}}:</div>
+                  </div>
+                  <div class="detail-info-text">{{ Language.infoForecastRecruitmentDetailText | translate}}</div>
+                </li>
+              </ul>
+            </div>
+        </div> 
+    </ng-container>
+</app-ui-modal-style-img-base>
+<!-- end of head and team table card info popup -->
+
+<!-- team direct table info popup -->
+<app-ui-modal-style-img-base class="wd-md" [isHasBtmBlock]="false" [typeBtn]="'style3'" [(isPopupOpen)]="isPopupOpenDerectInfo">
+    <ng-container textType="modal-img-detail">
+      <nx-icon class="icon-i" name="info-circle" fill="false" outline="false" size="auto"></nx-icon>
+    </ng-container>
+    <ng-container textType="modal-title-detail">{{ Language.informationDescriptionText | translate}}</ng-container>
+    <ng-container textType="modal-content-detail">
+        <div class="progress-dot-info-content info-block">
+            <div class="dot-title-sub-block">
+              <h6 class="dot-title-sub">{{ Language.infoActivityLabelText | translate}}</h6>
+            </div>
+            <div class="dot-sample">
+              <ul class="dot-sample-ul">
+                <li class="dot-sample-li">
+                  <div class="sample-icon">
+                    <app-progress-ui-dot-mark [fontSize]="14"  [ActivityData]="[{text:'F', active:false}]"  [ActivityString]="'F'" ></app-progress-ui-dot-mark>
+                  </div>
+                  <div class="sample-text">{{Language.infoRedMeanText|translate}}</div>
+                </li>
+                <li class="dot-sample-li">
+                  <div class="sample-icon">
+                    <app-progress-ui-dot-mark [fontSize]="14"  [ActivityData]="[{text:'F', active:false}]" ></app-progress-ui-dot-mark>
+                  </div>
+                  <div class="sample-text">{{ Language.infoGreyMeanText | translate}}</div>
+                </li>
+              </ul>
+            </div>
+            <div class="dot-detail-info-block">
+                <div class="dot-sample-text">{{ Language.infoIfAnActivity1Text | translate}}<span class="height-light">{{ Language.infoIfAnActivity2Text | translate}}</span>.</div>
+                <ul class="dot-list-ul">
+                  <li class="dot-list-li">
+                    <app-progress-ui-dot-list [ActivityData]="[{text:' F ',active:true}]" [titleText]="'Find'">
+                      {{ Language.infoToFindText | translate}}
+                    </app-progress-ui-dot-list>
+                  </li>
+                  <li class="dot-list-li">
+                    <app-progress-ui-dot-list [ActivityData]="[{text:'S',active:true}]" [titleText]="'Schedule'">
+                        {{ Language.infoTryTo1Text | translate}} <span class="height-light">{{ Language.infoTryTo2Text | translate}}</span> {{ Language.infoTryTo3Text | translate}}
+                    </app-progress-ui-dot-list>
+                  </li>
+                  <li class="dot-list-li">
+                      <app-progress-ui-dot-list [ActivityData]="[{text:'M',active:true}]" [titleText]="'Meet/Present'">
+                        <span class="height-light">{{ Language.infoMoreActive1Text | translate}}</span> {{ Language.infoMoreActive2Text | translate}} <span class="height-light">{{ Language.infoMoreActive3Text | translate}}</span> {{ Language.infoMoreActive4Text | translate}}
+                      </app-progress-ui-dot-list>
+                  </li>
+                  <li class="dot-list-li">
+                      <app-progress-ui-dot-list [ActivityData]="[{text:'Su',active:true}]" [titleText]="'Submit'">
+                         {{ Language.infoTryHard1Text | translate}} <span class="height-light">{{ Language.infoTryHard2Text | translate}}</span> {{ Language.infoTryHard3Text | translate}}
+                      </app-progress-ui-dot-list>
+                  </li>
+                  <li class="dot-list-li">
+                    <app-progress-ui-dot-list [ActivityData]="[{text:'C',active:true}]" [titleText]="'Close'">
+                        <span class="height-light">{{ Language.infoHighQuality1Text | translate}}</span> {{ Language.infoHighQuality2Text | translate}}
+                    </app-progress-ui-dot-list>
+                  </li>
+                </ul>
+            </div>      
+      </div>
+      <div class="progress-detail-info-content info-block">
+          <div class="detail-info-subtitle">
+              <div class="title-text">{{ Language.infoTitle | translate}}</div>
+          </div>
+          <div class="detail-info-info">
+           
+            <ul class="detail-info-list-block">
+              <li class="detail-info-list">
+                  <div class="detail-info-title">
+                      <div class="title-text">{{ Language.month | translate}}:</div>
+                  </div>
+                  <div class="detail-info-text">{{ Language.infoMonthDetailText | translate}}</div>
+                  
+              </li>
+              <li class="detail-info-list">
+                  <div class="detail-info-title">
+                      <div class="title-text">{{ Language.quarter | translate}}:</div>
+                  </div>
+                  <div class="detail-info-text">{{ Language.infoQuarterDetailText | translate}}</div>
+            
+              </li>
+              <li class="detail-info-list">
+                <div class="detail-info-title">
+                    <div class="title-text">{{ Language.year | translate}}:</div>
+                </div>
+                <div class="detail-info-text">{{ Language.infoYearDetailText | translate}}</div>
+              </li>
+              <li class="detail-info-list">
+                <div class="detail-info-title">
+                    <div class="title-text">{{ Language.forecast | translate}} {{ Language.recruitment | translate}}:</div>
+                </div>
+                <div class="detail-info-text">{{ Language.infoForecastRecruitmentDetailText | translate }}</div>
+              </li>
+            </ul>
+            
+          </div>
+      </div>
+    </ng-container>
+</app-ui-modal-style-img-base>
+<!-- end of team direct table list info popup -->
+
+<!-- team indirect table info popup -->
+<app-ui-modal-style-img-base class="wd-md" [isHasBtmBlock]="false" [typeBtn]="'style3'" [(isPopupOpen)]="isPopupOpenInderectInfo">
+    <ng-container textType="modal-img-detail">
+      <nx-icon class="icon-i" name="info-circle" fill="false" outline="false" size="auto"></nx-icon>
+    </ng-container>
+    <ng-container textType="modal-title-detail">{{ Language.informationDescriptionText | translate}}</ng-container>
+    <ng-container textType="modal-content-detail">
+        <div class="progress-dot-info-content info-block">
+            <div class="dot-title-sub-block">
+              <h6 class="dot-title-sub">{{ Language.infoActivityLabelText | translate}}</h6>
+            </div>
+            <div class="dot-sample">
+              <ul class="dot-sample-ul">
+                <li class="dot-sample-li">
+                  <div class="sample-icon">
+                    <app-progress-ui-dot-mark [fontSize]="14" [ActivityData]="[{text:'F',active:false}]" [ActivityString]="'F'"></app-progress-ui-dot-mark>
+                  </div>
+                  <div class="sample-text">{{ Language.infoRedMeanText | translate}}</div>
+                </li>
+                <li class="dot-sample-li">
+                  <div class="sample-icon">
+                    <app-progress-ui-dot-mark [fontSize]="14" [ActivityData]="[{text:'F',active:false}]"></app-progress-ui-dot-mark>
+                  </div>
+                  <div class="sample-text">{{ Language.infoGreyMeanText | translate}}</div>
+                </li>
+              </ul>
+            </div>
+            <div class="dot-detail-info-block">
+              <div class="dot-sample-text">{{ Language.infoIfAnActivity1Text | translate}}<span
+                  class="height-light">{{ Language.infoIfAnActivity2Text | translate}}</span>.</div>
+              <ul class="dot-list-ul">
+                <li class="dot-list-li">
+                  <app-progress-ui-dot-list [ActivityData]="[{text:'F',active:true}]" [titleText]="Language.find | translate">
+                    {{ Language.infoToFindText | translate}}
+                  </app-progress-ui-dot-list>
+                </li>
+                <li class="dot-list-li">
+                  <app-progress-ui-dot-list [ActivityData]="[{text:'S',active:true}]" [titleText]="Language.schedule | translate">
+                    {{ Language.infoTryTo1Text | translate}} <span class="height-light">{{ Language.infoTryTo2Text | translate}}</span>
+                    {{ Language.infoTryTo3Text | translate}}
+                  </app-progress-ui-dot-list>
+                </li>
+                <li class="dot-list-li">
+                  <app-progress-ui-dot-list [ActivityData]="[{text:'M',active:true}]" [titleText]="Language.meetPresentText | translate">
+                    <span class="height-light">{{ Language.infoMoreActive1Text | translate}}</span>
+                    {{ Language.infoMoreActive2Text | translate}} <span
+                      class="height-light">{{ Language.infoMoreActive3Text | translate}}</span>
+                    {{ Language.infoMoreActive4Text | translate}}
+                  </app-progress-ui-dot-list>
+                </li>
+                <li class="dot-list-li">
+                  <app-progress-ui-dot-list [ActivityData]="[{text:'Su',active:true}]" [titleText]="Language.submit | translate">
+                    {{ Language.infoTryHard1Text | translate}} <span
+                      class="height-light">{{ Language.infoTryHard2Text | translate}}</span> {{ Language.infoTryHard3Text | translate}}
+                  </app-progress-ui-dot-list>
+                </li>
+                <li class="dot-list-li">
+                  <app-progress-ui-dot-list [ActivityData]="[{text:'C',active:true}]" [titleText]="'Close'">
+                    <span class="height-light">{{ Language.infoHighQuality1Text | translate}}</span>
+                    {{ Language.infoHighQuality2Text | translate}}
+                  </app-progress-ui-dot-list>
+                </li>
+              </ul>
+            </div>
+        </div>
+        <div class="progress-detail-info-content info-block">
+          <div class="detail-info-subtitle">
+            <div class="title-text">{{ Language.infoTitle | translate}}</div>
+          </div>
+          <div class="detail-info-info">
+            <ul class="detail-info-list-block">
+              <li class="detail-info-list">
+                <div class="detail-info-title">
+                  <div class="title-text">{{ Language.month | translate}}:</div>
+                </div>
+                <div class="detail-info-text">{{ Language.infoMonthDetailText | translate}}</div>
+      
+              </li>
+              <li class="detail-info-list">
+                <div class="detail-info-title">
+                  <div class="title-text">{{ Language.quarter | translate}}:</div>
+                </div>
+                <div class="detail-info-text">{{ Language.infoQuarterDetailText | translate}}</div>
+      
+              </li>
+              <li class="detail-info-list">
+                <div class="detail-info-title">
+                  <div class="title-text">{{ Language.year | translate}}:</div>
+                </div>
+                <div class="detail-info-text">{{ Language.infoYearDetailText | translate}}</div>
+              </li>
+              <li class="detail-info-list">
+                <div class="detail-info-title">
+                  <div class="title-text">{{ Language.forecast | translate}} {{ Language.recruitment | translate}}:</div>
+                </div>
+                <div class="detail-info-text">{{ Language.infoForecastRecruitmentDetailText | translate}}</div>
+              </li>
+            </ul>
+          </div>
+        </div> 
+    </ng-container>
+</app-ui-modal-style-img-base>
+<!-- end of team indirect table list info popup -->

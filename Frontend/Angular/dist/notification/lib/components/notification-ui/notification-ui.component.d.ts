@@ -1,0 +1,30 @@
+import { OnInit, EventEmitter, Injector } from "@angular/core";
+import { NotificationObject, Language, TranslateService, NotificationType } from "@allianzSND/core";
+export declare class NotificationUiComponent implements OnInit {
+    private injector;
+    private translateService;
+    constructor(injector: Injector, translateService: TranslateService);
+    isCheck: boolean;
+    translateMap: Map<string, string>;
+    NotificationType: typeof NotificationType;
+    private _notification;
+    notification: NotificationObject;
+    onConfirm: EventEmitter<{}>;
+    onCancel: EventEmitter<{}>;
+    type: any;
+    data: any;
+    language: Language;
+    Need_To_Goal_Setting_Body: string;
+    Need_To_Goal_Setting_Remaining: string;
+    Pending_Review_Body: string;
+    Goal_Period_Is_Begin_Title: string;
+    Goal_Period_Is_Begin_Body: string;
+    Logout_Message: string;
+    readonly You_Have_N_Appointment: string;
+    ngOnInit(): void;
+    onCancelHandler(): void;
+    onConfirmHandler(): void;
+    private _doTranslate;
+    private readonly _translateVariable;
+    private _translateWithVariable;
+}

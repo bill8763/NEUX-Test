@@ -1,0 +1,14 @@
+@import 'style-import';
+:host{
+    ::ng-deep{
+        snd-goal-ui-data-card1{
+            .goal-agency-info-content{
+                background-color: $color-white;
+                border-radius: $radius-card;
+                @include box-shadow($color-shadow-card);
+            }
+        }
+    }
+}
+
+

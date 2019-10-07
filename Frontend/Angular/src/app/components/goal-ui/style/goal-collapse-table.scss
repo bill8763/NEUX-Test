@@ -1,0 +1,106 @@
+@import 'style-import';
+
+$wd-title-content: 50%; // top title content
+$space-subtitle-and-btn: 40px; // right subtitle space and btn
+$space-subtitle-btw: 50px;
+// .table-goal-agency{
+    :host{
+        ::ng-deep.table-title{
+            &.style-1{
+                display: flex;
+                align-items: center; 
+                .title-content{
+                    flex: 0 0 $wd-title-content;
+                    flex-shrink: 0;
+                    flex-grow: 0;
+                }
+                .info-content{
+                    flex: 0 0 calc(100% - #{$wd-title-content});
+                    flex-shrink: 0;
+                    flex-grow: 0;
+                }
+            }
+            
+            // subtitle
+            .sub-header-data-block{
+                display: flex;
+                width: 100%;
+                padding-right: $space-subtitle-and-btn;
+                margin-top: 10px;
+                align-items: center; 
+                position: relative;
+                &:before{
+                    content: '';
+                    width: 2px;
+                    height: 10px;
+                    background-color: $color-grey5;
+                    position: absolute;
+                    left: calc((100% - 40px) / 2);
+                }
+                .col-half{
+                    flex-shrink: 0;
+                    flex-grow:0;
+                    max-width:  calc((100% - #{$space-subtitle-btw})/2);
+                    width: 100%;
+                    + .col-half{
+                        margin-left: $space-subtitle-btw;
+                    }
+                }
+            }
+            
+        }
+    }
+
+
+
+:host{
+    @media(max-width: $screen-sm-than-nb){
+        ::ng-deep app-ui-table-title{
+            ::ng-deep .table-title{
+                &.style-1{
+                    display: block;
+                    .title-content{
+                        width: 100%;
+                        max-width: 100%;
+                        .first-title-content{
+                            max-width: calc(100% - 50px);
+                        }
+                    }
+                    .info-content{
+                        width: 100%;
+                        max-width: 100%;
+                    }
+                }
+                
+            }
+        }
+    
+        ::ng-deep app-ui-table-collapse-content{
+            .table-title{
+                // subtitle
+                .sub-header-data-block{
+                    display: flex;
+                    flex-wrap: wrap;
+                    padding-right: 0;
+                    &:before{
+                        display: none;
+                    }
+                    .col-half{
+                        max-width:100%;
+                        + .col-half{
+                            margin-left: 0;
+                        }
+                    }
+                }
+
+            }
+
+        }
+
+    }
+    
+}
+    
+
+// }
+

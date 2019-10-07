@@ -1,0 +1,14 @@
+<div class="goal-agency-title-content goal-element-space" *ngIf="dataObjectList">
+  <app-goal-ui-title-content class="title-content-title"
+                             [titleText]="language.agencyPlanOverviewTitle | translate"
+                             [showImg]="'assets/img/img-title-content-bg-01.svg'"
+                             [hasBtn]="false">
+  </app-goal-ui-title-content>
+  <app-ui-table-title [isShowTitle]="true" class="title-content-info"
+                      [event]="false" [styleType]="tableStyle" [titleText]="language.agencyPlan | translate">
+    <!-- [New] info content data2 -->
+    <snd-goal-ui-data-card2 [dataObjectList] ="dataObjectList">
+    </snd-goal-ui-data-card2>
+    <!-- end of [New] info content data2 -->
+  </app-ui-table-title>
+</div>

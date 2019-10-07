@@ -1,0 +1,17 @@
+<div class="title-desc-container" 
+    [ngClass]="[styleDescColor, styleDescWeight, styleDescSize, styleTitleColor, styleTitleWeight , styleTitleSize, styleImgChild]">
+  <div class="title-block" [ngClass]="">
+      <div *ngIf="imgUrl" class="img-block">
+        <img [src]="imgUrl">
+      </div>
+      <div class="title-txt">{{title}}</div>
+  </div>
+  <div *ngIf="isHasDesc" class="desc-block">
+      <div class="desc-txt" [ngClass]="[descSize == 'lg' ? 'font-size_h5' : '']">{{desc}}</div>
+  </div>
+  <div *ngIf="isHasCustContent" class="other-block">
+    <ng-content>
+      
+    </ng-content>
+  </div>
+</div>

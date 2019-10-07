@@ -1,0 +1,101 @@
+@import 'style-import';
+$space-btm: 15px;
+.skelton-layout{
+    margin: 0;
+}
+.skelton-row{
+    display: flex;
+    &.align-side{
+        justify-content: space-between;
+    }
+}
+
+.align-right{
+    margin: 0 0 $space-btm auto;
+
+}
+.align-center{
+    margin: $space-btm auto;
+
+}
+.skeleton-round{
+    border-radius: 50%;
+    background-color: $color-loading;
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    height: 100%;
+
+}
+.skelton-square{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+}
+.skelton-text{
+    min-height: 1rem;
+    max-width: 100%;
+    width: 100%;
+    background-color: $color-loading;
+    display: block;
+    margin-bottom: $space-btm;
+
+}
+.skelton-line{
+    display: inline-block;
+    height: 1px;
+    max-width: 100%;
+    width: 100%;
+    background-color: $color-loading;
+    height: 1px;
+
+}
+.skelton-img-text{
+    .skelton-square{
+        margin-bottom: 10px;
+    }
+}
+
+::ng-deep{
+    ion-skeleton-text{
+        background-color: $color-loading;
+        span{
+            opacity: 1;
+            background-color: $color-loading;
+        }
+    }
+}
+
+$animationDuration: 1s;
+$defaultBorderRadius: 4px;
+$gradientColor1: rgba(194, 194, 194, 0.3);
+$gradientColor2: rgba(194,194,194,0.2);
+
+.skelton-animate {
+    animation-duration: $animationDuration;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: placeHolderShimmer;
+    animation-timing-function: linear;
+    background: $gradientColor1;
+    background: linear-gradient(to right, $gradientColor1 8%, $gradientColor2 18%, $gradientColor1 33%);
+    background-size: 800px 100px;
+    position: relative;
+}
+
+@-webkit-keyframes placeHolderShimmer {
+    0% {
+    background-position: -268px 0
+    }
+    100% {
+    background-position: 268px 0
+    }
+}
+@keyframes placeHolderShimmer {
+    0% {
+    background-position: -268px 0
+    }
+    100% {
+    background-position: 268px 0
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "Header": {
+      "Time": "20190111000005",
+      "QueryParams": {}
+    },
+    "Body": [
+      {
+        "Language": "en",
+        "FontSize": "1",
+        "LastUpdatedTime": "See_Details",
+        "Version":"1.0.0"
+      }
+    ]
+  }

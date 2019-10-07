@@ -1,0 +1,35 @@
+{
+  "Header": {
+    "Time": "20181231000000",
+    "PageInfo": {
+      "pageNo": 1,
+      "pageSize": 10,
+      "totalPage": 3,
+      "totalRec": 30
+    },
+    "QueryParams": {}
+  },
+  "Body": [
+    {
+      "ClientID": "212121212221",
+      "FirstName": "Gary",
+      "LastName": "Cooper",
+      "BirthdayMonth": "4",
+      "BirthdayDate": "20"
+    },
+    {
+      "ClientID": "423232323223",
+      "FirstName": "Thomas",
+      "LastName": "HAHA",
+      "BirthdayMonth": "4",
+      "BirthdayDate": "30"
+    },
+    {
+      "ClientID": "123123",
+      "FirstName": "Hello",
+      "LastName": "Bingo",
+      "BirthdayMonth": "8",
+      "BirthdayDate": "16"
+    }
+  ]
+}

@@ -1,0 +1,200 @@
+{
+    "Header": {
+        "record_length": 16,
+        "status": true
+    },
+    "Body": [
+        {
+            "ClientID": "307291c3-fab9-4404-bb81-5308fb7e3260",
+            "DataYear": 2019,
+            "TimeBase": "Day",
+            "DataType": "Actual",
+            "Find": 10,
+            "Schedule": 5,
+            "Meet": 3,
+            "Submit": 3,
+            "Inforce": 2,
+            "FYFC": 0
+        },
+        {
+            "ClientID": "307291c3-fab9-4404-bb81-5308fb7e3260",
+            "DataYear": 2019,
+            "TimeBase": "Week",
+            "DataType": "Actual",
+            "Find": 70,
+            "Schedule": 35,
+            "Meet": 21,
+            "Submit": 21,
+            "Inforce": 14,
+            "FYFC": 0
+        },
+        {
+            "ClientID": "307291c3-fab9-4404-bb81-5308fb7e3260",
+            "DataYear": 2019,
+            "TimeBase": "Month",
+            "DataType": "Actual",
+            "Find": 280,
+            "Schedule": 140,
+            "Meet": 84,
+            "Submit": 84,
+            "Inforce": 56,
+            "FYFC": 129
+        },
+        {
+            "ClientID": "307291c3-fab9-4404-bb81-5308fb7e3260",
+            "DataYear": 2019,
+            "TimeBase": "Quarter",
+            "DataType": "Actual",
+            "Find": 100,
+            "Schedule": 420,
+            "Meet": 252,
+            "Submit": 252,
+            "Inforce": 168,
+            "FYFC": 239
+        },
+        {
+            "ClientID": "307291c3-fab9-4404-bb81-5308fb7e3260",
+            "DataYear": 2019,
+            "TimeBase": "Year",
+            "DataType": "Actual",
+            "Find": 3360,
+            "Schedule": 1680,
+            "Meet": 1008,
+            "Submit": 1008,
+            "Inforce": 672,
+            "FYFC": 1600
+        },
+        {
+            "ClientID": "307291c3-fab9-4404-bb81-5308fb7e3260",
+            "DataYear": 2019,
+            "TimeBase": "Month",
+            "DataType": "Goal",
+            "Find": 300,
+            "Schedule": 150,
+            "Meet": 100,
+            "Submit": 100,
+            "Inforce": 60,
+            "FYFC": 142
+        },
+        {
+            "ClientID": "307291c3-fab9-4404-bb81-5308fb7e3260",
+            "DataYear": 2019,
+            "TimeBase": "Quarter",
+            "DataType": "Goal",
+            "Find": 900,
+            "Schedule": 450,
+            "Meet": 300,
+            "Submit": 300,
+            "Inforce": 180,
+            "FYFC": 426
+        },
+        {
+            "ClientID": "307291c3-fab9-4404-bb81-5308fb7e3260",
+            "DataYear": 2019,
+            "TimeBase": "Year",
+            "DataType": "Goal",
+            "Find": 3600,
+            "Schedule": 1800,
+            "Meet": 1200,
+            "Submit": 1200,
+            "Inforce": 720,
+            "FYFC": 1704
+        },
+        {
+            "ClientID": "307291c3-fab9-4404-bb81-5308fb7e3260",
+            "DataYear": 2020,
+            "TimeBase": "Day",
+            "DataType": "Actual",
+            "Find": 9,
+            "Schedule": 7,
+            "Meet": 5,
+            "Submit": 3,
+            "Inforce": 2,
+            "FYFC": 0
+        },
+        {
+            "ClientID": "307291c3-fab9-4404-bb81-5308fb7e3260",
+            "DataYear": 2020,
+            "TimeBase": "Week",
+            "DataType": "Actual",
+            "Find": 63,
+            "Schedule": 49,
+            "Meet": 35,
+            "Submit": 21,
+            "Inforce": 14,
+            "FYFC": 0
+        },
+        {
+            "ClientID": "307291c3-fab9-4404-bb81-5308fb7e3260",
+            "DataYear": 2020,
+            "TimeBase": "Month",
+            "DataType": "Actual",
+            "Find": 252,
+            "Schedule": 196,
+            "Meet": 140,
+            "Submit": 84,
+            "Inforce": 56,
+            "FYFC": 150
+        },
+        {
+            "ClientID": "307291c3-fab9-4404-bb81-5308fb7e3260",
+            "DataYear": 2020,
+            "TimeBase": "Quarter",
+            "DataType": "Actual",
+            "Find": 756,
+            "Schedule": 588,
+            "Meet": 420,
+            "Submit": 252,
+            "Inforce": 168,
+            "FYFC": 413
+        },
+        {
+            "ClientID": "307291c3-fab9-4404-bb81-5308fb7e3260",
+            "DataYear": 2020,
+            "TimeBase": "Year",
+            "DataType": "Actual",
+            "Find": 3024,
+            "Schedule": 2352,
+            "Meet": 1680,
+            "Submit": 1008,
+            "Inforce": 672,
+            "FYFC": 1638
+        },
+        {
+            "ClientID": "307291c3-fab9-4404-bb81-5308fb7e3260",
+            "DataYear": 2020,
+            "TimeBase": "Month",
+            "DataType": "Goal",
+            "Find": 300,
+            "Schedule": 200,
+            "Meet": 150,
+            "Submit": 90,
+            "Inforce": 60,
+            "FYFC": 160
+        },
+        {
+            "ClientID": "307291c3-fab9-4404-bb81-5308fb7e3260",
+            "DataYear": 2020,
+            "TimeBase": "Quarter",
+            "DataType": "Goal",
+            "Find": 900,
+            "Schedule": 600,
+            "Meet": 450,
+            "Submit": 270,
+            "Inforce": 180,
+            "FYFC": 480
+        },
+        {
+            "ClientID": "307291c3-fab9-4404-bb81-5308fb7e3260",
+            "DataYear": 2020,
+            "TimeBase": "Year",
+            "DataType": "Goal",
+            "Find": 3600,
+            "Schedule": 2400,
+            "Meet": 1800,
+            "Submit": 1080,
+            "Inforce": 720,
+            "FYFC": 1920
+        }
+    ]
+}

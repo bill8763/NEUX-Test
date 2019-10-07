@@ -1,0 +1,100 @@
+@import 'style-import';
+@import '../../style/step/goal-setting.card-detail';
+
+$space-card-side: 20px;
+$space-card-top: 20px;
+$space-content-side: 35px;
+
+// list data on step3 (in tab)
+
+.list-data-block{
+    list-style: none;
+    padding-bottom: 20px;
+    .list-data-item-block{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        color: $color-font-normal;
+        + .list-data-item-block{
+            margin-top: $space-ui-element;
+        }
+        .title-block{
+            display: flex;
+            flex-grow: 0;
+            flex-shrink: 0;
+            width: 50%;
+            flex-wrap: wrap;
+            .title-sm-main{
+                font-size: $font-size-h8;
+                font-weight: bold;
+                display: block;
+                width: 100%;
+            }
+            .title-sm-sub{
+                font-size: $font-size-h10;
+                padding: 2px 0;
+
+            }
+        }
+        .content-block{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: flex-end;
+            flex-grow: 0;
+            flex-shrink: 0;
+            width: 50%;
+            .value{
+                display: flex;
+                min-width: 70px;
+                flex-grow: 0;
+                flex-shrink: 0;
+                font-size: $font-size-h6;
+                font-weight: bold;
+                justify-content: center;
+                padding-right: $space-base;
+                
+            }
+            .unit{
+                font-size: $font-size-h9;
+                display: flex;
+                justify-content: flex-end;
+
+
+
+            }
+        }
+    }
+}
+.tab-block{
+    margin-top: 17px;
+}
+
+
+
+
+
+:host {
+    ::ng-deep{
+        .info-content{
+            padding-top: $space-card-side;
+            
+        }
+        .style-full{ 
+            .card-content-btn{
+                &.noPadding{
+                    padding-top: $space-card-top;
+                }
+            }
+            .card-content-detail-block{
+                padding-left: $space-content-side;
+                padding-right: $space-content-side;
+                .list-data-block{
+                    padding-left: 0;
+                    padding-right: 0;
+                }
+            }
+        }
+        
+    }
+}
